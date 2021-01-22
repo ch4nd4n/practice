@@ -1,0 +1,7 @@
+version: '2'
+services:
+  broker:
+    image: apache-kafka
+    hostname: kafka-broker
+    container_name: kafka-broker
+
