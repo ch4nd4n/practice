@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: nginx-service
 spec:
+  type: NodePort
   selector:
     app: ngnix
   ports:
     - protocol: TCP
       port: 80
       targetPort: 9376
+      nodePort: 30007
