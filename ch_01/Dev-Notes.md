@@ -1,3 +1,15 @@
+# Tutorial: Nodejs with Typescript, Eslint and Prettier
+
+I am going to walk you through setting up nodejs project with Typescript, Eslint and prettier. This will help you scratch the surface of Typescript, linting and code formatting. This is not an indepth tutorial on Typescript
+but give you an insight of things.
+
+## Why Typescript?
+
+For a long time I did not find Typescript enticing enough, to me, it was just another thing.
+While I ignored typescript others did not. It grew leaps and bound.
+
+This should be interesting one for people who use some framework which have these things pretty much baked in.
+
 Compiling and executing
 
 ```bash
@@ -119,3 +131,62 @@ yarn lint
 This is due to conflicting default rules of prettier with eslint. To fix this, we can update
 prettier to use eslint rules instead.
 
+```bash
+yarn add -D eslint-plugin-prettier
+```
+
+Update `.prettierrc.json`
+
+```json
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true
+}
+```
+
+Finally test out if prettier and eslint is working good.
+
+Open `index.ts` and update it with some linting issue
+
+For example if we change it to something like
+
+```diff
+-console.log('hello');
++console.log('hello')
+```
+
+Now lint it
+
+```
+yarn lint
+```
+
+It should error out to something like
+
+```
+  2:21  error  Insert `;⏎`                                    prettier/prettier
+  2:21  error  Newline required at end of file but not found  eol-last
+  2:21  error  Missing semicolon                              semi
+```
+
+```
+yarn prettier --check .
+```
+
+```
+Checking formatting...
+[warn] src/index.ts
+[warn] Code style issues found in the above file(s). Forgot to run Prettier?
+error Command failed with exit code 1.
+```
+
+Enable and disable prettier plugin to test out things.
+
+Over and out for this one.
+
+# Bonus
+
+- Set up your code editor
+- Git Hooks
