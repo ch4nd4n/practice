@@ -1,0 +1,13 @@
+{
+  "name": "ch_01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/index.js",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
