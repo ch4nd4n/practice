@@ -199,3 +199,49 @@ Style `firebase-login.tsx`
     </button>
   )}
 ```
+
+## Add MongoDB
+
+I am using [typegoose](https://typegoose.github.io/typegoose/docs/guides/quick-start-guide)
+over mongoose to connect to database. Remix uses Typescript and Typegoose makes it easy
+
+Add mongoose and typegoose dependency
+
+```
+npm install mongoose @typegoose/typegoose
+```
+
+Create MenuItem class
+
+```
+import { prop } from "@typegoose/typegoose";
+
+export default class MenuItem {
+  @prop()
+  public itemName: string;
+}
+```
+
+Create Service
+
+```
+import { getModelForClass } from "@typegoose/typegoose";
+import mongoose from "mongoose";
+import MenuItem from "../models/menu-item";
+
+mongoose.connect(process.env.MONGODB_URL as string);
+export function getMenuItems() {
+  const MenuItemModel = getModelForClass(MenuItem);
+  return MenuItemModel.find();
+}
+```
+
+```
+touch .env
+```
+
+add database url
+
+```
+MONGODB_URL=mongodb://root:example@localhost/menu?authSource=admin
+```

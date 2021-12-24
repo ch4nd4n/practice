@@ -14,9 +14,7 @@ const provider = new GoogleAuthProvider();
 const auth = getAuth();
 
 function googleLogin() {
-  signInWithPopup(auth, provider).then((result) => {
-    console.log({ result });
-  });
+  signInWithPopup(auth, provider);
 }
 
 function logout() {
@@ -24,7 +22,7 @@ function logout() {
 }
 
 export default function FirebaseLogin() {
-  const [user, setUser] = useState<User>();
+  const [user, setUser] = useState<User | null>(null);
   onAuthStateChanged(auth, (result) => {
     result ? setUser(result) : setUser(null);
   });
