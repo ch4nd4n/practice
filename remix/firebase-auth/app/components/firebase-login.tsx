@@ -26,15 +26,21 @@ function logout() {
 export default function FirebaseLogin() {
   const [user, setUser] = useState<User>();
   onAuthStateChanged(auth, (result) => {
-    if (result) setUser(result);
+    result ? setUser(result) : setUser(null);
   });
   return (
     <>
-      {!user && <button onClick={googleLogin}>Login</button>}
+      {!user && (
+        <button className="btn" onClick={googleLogin}>
+          Login
+        </button>
+      )}
       {user && (
         <>
           {user.displayName}
-          <button onClick={logout}>Logout</button>
+          <button className="btn" onClick={logout}>
+            Logout
+          </button>
         </>
       )}
     </>

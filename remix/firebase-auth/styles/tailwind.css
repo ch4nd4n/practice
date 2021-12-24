@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-cyan-900 text-cyan-50 p-2 hover:bg-cyan-600;
+  }
+}

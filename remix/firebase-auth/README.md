@@ -116,3 +116,86 @@ export default function FirebaseLogin() {
   );
 }
 ```
+
+## Add Tailwind
+
+```
+npm add -D concurrently tailwindcss
+```
+
+```sh
+touch tailwind.config.js
+```
+
+```
+module.exports = {
+  content: ["./app/**/*.{ts,tsx}"],
+  theme: {
+    extend: {}
+  },
+  variants: {},
+  plugins: []
+};
+```
+
+package.json
+
+```
+    "build": "npm run build:css && remix build",
+    "build:css": "tailwindcss -i ./styles/tailwind.css -o ./app/tailwind.css --minify",
+    "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
+    "dev:css": "tailwindcss -i ./styles/tailwind.css -o ./app/tailwind.css --watch",
+```
+
+root.tsx
+
+```
+// ...
+import styles from "./tailwind.css";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
+```
+
+```
+mkdir styles
+touch styles/tailwind.css
+```
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-slate-50;
+  }
+}
+```
+
+Refresh the page at this point to view Tailwind kick in
+
+Style
+
+```tsx:title=index.tsx
+  <header className="bg-cyan-100">
+    <div className="flex justify-between container mx-auto pt-5 pb-5">
+      <h1 className="text-3xl">Firebase Authentication</h1>
+      <nav className="">
+        <FirebaseLogin />
+      </nav>
+    </div>
+  </header>
+```
+
+Style `firebase-login.tsx`
+
+```
+  {!user && (
+    <button className="btn" onClick={googleLogin}>
+      Login
+    </button>
+  )}
+```
