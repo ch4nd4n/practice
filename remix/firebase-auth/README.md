@@ -51,3 +51,68 @@ rm -rf app
 # copy your app over
 cp -R ../my-old-remix-app/app app
 ```
+
+```sh
+npm add dotenv -D
+```
+
+Update package.json
+
+```
+node -r dotenv/config node_modules/.bin/remix dev
+```
+
+```sh
+npm run dev # ensure server runs fine
+```
+
+```
+touch app/config/firebase.js # Add firebase config here
+```
+
+Add component `firebase-login.tsx`
+
+```tsx:title=app/components/firebase-login.tsx
+import { initializeApp } from "firebase/app";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  onAuthStateChanged,
+  signInWithPopup,
+  User,
+} from "firebase/auth";
+import { useState } from "react";
+import firebaseConfig from "~/config/firebase";
+
+initializeApp(firebaseConfig);
+const provider = new GoogleAuthProvider();
+const auth = getAuth();
+
+function googleLogin() {
+  signInWithPopup(auth, provider).then((result) => {
+    console.log({ result });
+  });
+}
+
+function logout() {
+  auth.signOut();
+}
+
+export default function FirebaseLogin() {
+  const [user, setUser] = useState<User>();
+  onAuthStateChanged(auth, (result) => {
+    if (result) setUser(result);
+  });
+  return (
+    <>
+      {!user && <button onClick={googleLogin}>Login</button>}
+      {user && (
+        <>
+          {user.displayName}
+          <button onClick={logout}>Logout</button>
+        </>
+      )}
+    </>
+  );
+}
+```
