@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -6,7 +7,9 @@ import {
   signInWithPopup,
   User,
 } from "firebase/auth";
-import { useState } from "react";
+import { FaGoogle } from "@react-icons/all-files/fa/FaGoogle";
+import { HiLogout } from "@react-icons/all-files/hi/HiLogout";
+
 import firebaseConfig from "~/config/firebase";
 
 initializeApp(firebaseConfig);
@@ -30,14 +33,14 @@ export default function FirebaseLogin() {
     <>
       {!user && (
         <button className="btn" onClick={googleLogin}>
-          Login
+          <FaGoogle />
         </button>
       )}
       {user && (
         <>
           {user.displayName}
           <button className="btn" onClick={logout}>
-            Logout
+            <HiLogout />
           </button>
         </>
       )}

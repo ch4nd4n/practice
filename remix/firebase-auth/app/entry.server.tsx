@@ -1,6 +1,12 @@
 import { renderToString } from "react-dom/server";
 import { RemixServer } from "remix";
 import type { EntryContext } from "remix";
+import { connect } from "mongoose";
+
+// Establish MongoDB connection once server boots up
+connect(process.env.MONGODB_URL as string).then((data) =>
+  console.log("Connected to MongoDB")
+);
 
 export default function handleRequest(
   request: Request,
@@ -16,6 +22,6 @@ export default function handleRequest(
 
   return new Response("<!DOCTYPE html>" + markup, {
     status: responseStatusCode,
-    headers: responseHeaders
+    headers: responseHeaders,
   });
 }

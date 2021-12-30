@@ -1,19 +1,19 @@
 import FirebaseLogin from "./firebase-login";
-import { FaHamburger } from "@react-icons/all-files/fa/FaHamburger";
+import { CgCoffee } from "@react-icons/all-files/cg/CgCoffee";
 import { Link } from "remix";
 
 export default function Layout(props: any) {
   return (
     <>
       <header className="bg-cyan-900 shadow-md text-cyan-100">
-        <div className="flex justify-between container mx-auto pt-2 pb-2">
-          <div className="flex">
-            <FaHamburger />
+        <div className="flex justify-between container mx-auto p-1 items-center">
+          <div className="flex items-center">
+            <CgCoffee className="mr-2 text-2xl" />
             <Link to="/">
-              <h1 className="text-sm">App</h1>
+              <h1 className="text-lg">Fud-Mnu</h1>
             </Link>
           </div>
-          <nav>
+          <nav className="flex items-center">
             <Link to="/menus" className="pr-5">
               Menu
             </Link>
@@ -21,8 +21,10 @@ export default function Layout(props: any) {
           </nav>
         </div>
       </header>
-      <main className="container mx-auto pt-10 pb-10">{props.children}</main>
-      <footer className="border-t">
+      <main className="container mx-auto md:pt-10 md:pb-10 p-1">
+        {props.children}
+      </main>
+      <footer className="border-t  p-1">
         <div className="container mx-auto pt-5">I am just a footer</div>
       </footer>
     </>

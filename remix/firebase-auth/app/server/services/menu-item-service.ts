@@ -1,9 +1,14 @@
 import { getModelForClass } from "@typegoose/typegoose";
-import mongoose from "mongoose";
 import MenuItem from "../models/menu-item";
 
-export async function getMenuItems() {
-  await mongoose.connect(process.env.MONGODB_URL as string);
-  const MenuItemModel = getModelForClass(MenuItem);
-  return await MenuItemModel.find();
+const MenuItemModel = getModelForClass(MenuItem);
+export async function getMenuItems(): Promise<MenuItem[]> {
+  const items = await MenuItemModel.find();
+  return items ? items : [];
+}
+
+export async function createMenuItem(data: MenuItem): Promise<MenuItem> {
+  console.log({ data });
+  const persistedObj = await MenuItemModel.create(data);
+  return persistedObj;
 }
