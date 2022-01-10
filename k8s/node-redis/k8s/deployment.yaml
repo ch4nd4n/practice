@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    name: node-redis
+  name: node-redis
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: node-redis
+  template:
+    metadata:
+      labels:
+        name: node-redis
+    spec:
+      containers:
+      - image: ch4nd4n/node-redis
+        name: node-redis
+        env:
+          - name: REDIS_URL
+            value: "redis://redis-leader:6379"
+        ports:
+        - containerPort: 3000
