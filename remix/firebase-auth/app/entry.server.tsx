@@ -4,9 +4,11 @@ import type { EntryContext } from "remix";
 import { connect } from "mongoose";
 
 // Establish MongoDB connection once server boots up
-connect(process.env.MONGODB_URL as string).then((data) =>
-  console.log("Connected to MongoDB")
-);
+connect(process.env.MONGODB_URL as string)
+  .then((data) => console.log("Connected to MongoDB"))
+  .catch((err) => {
+    console.log({ mongoErr: err });
+  });
 
 export default function handleRequest(
   request: Request,
