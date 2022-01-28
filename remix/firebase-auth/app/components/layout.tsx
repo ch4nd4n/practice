@@ -17,6 +17,9 @@ export default function Layout(props: any) {
             <Link to="/menus" className="pr-5">
               Menu
             </Link>
+            <Link to="/login" className="pr-5">
+              Login
+            </Link>
             <FirebaseLogin />
           </nav>
         </div>

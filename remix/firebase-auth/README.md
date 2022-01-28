@@ -245,3 +245,11 @@ add database url
 ```
 MONGODB_URL=mongodb://root:example@localhost/menu?authSource=admin
 ```
+
+
+```
+https://remix.run/docs/en/v1/guides/resource-routes#handling-different-request-methods
+https://remix.run/docs/en/v1/api/remix#signing-cookies
+https://remix.run/docs/en/v1/api/remix#json
+https://github.com/satansdeer/firebase-server-auth
+```
