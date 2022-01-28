@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { initializeApp } from "firebase/app";
 import {
+  connectAuthEmulator,
   getAuth,
   GoogleAuthProvider,
   onAuthStateChanged,
@@ -13,8 +14,13 @@ import { HiLogout } from "@react-icons/all-files/hi/HiLogout";
 import firebaseConfig from "~/config/firebase";
 
 initializeApp(firebaseConfig);
+
 const provider = new GoogleAuthProvider();
 const auth = getAuth();
+
+if (process.env.NODE_ENV === "development") {
+  connectAuthEmulator(auth, "http://localhost:9099");
+}
 
 function googleLogin() {
   signInWithPopup(auth, provider);
