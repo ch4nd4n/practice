@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase</title>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCDlxKXJqCUpWm-Hrw5_w49bl26b-dkbKo",
+        authDomain: "juicy-miles-ui.firebaseapp.com",
+        databaseURL: "https://juicy-miles-ui.firebaseio.com",
+        projectId: "juicy-miles-ui",
+        storageBucket: "juicy-miles-ui.appspot.com",
+        messagingSenderId: "207305119919",
+        appId: "1:207305119919:web:313e6d1284ab4217071c5a",
+        measurementId: "G-X76G79V1J4",
+      };
+      // Initialize Firebase
+      var defaultProject = firebase.initializeApp(firebaseConfig);
+      var db = firebase.firestore();
+      //   if (location.hostname === "localhost") {
+      //     db.settings({
+      //       host: "localhost:8080",
+      //       ssl: false,
+      //     });
+      //   }
+      console.log(defaultProject.name);
+    </script>
+    <script>
+      db.collection("details")
+        .get()
+        .then((querySnapshot) => {
+          querySnapshot.forEach((doc) => {
+            console.log(`${doc.id} => ${JSON.stringify(doc.data())}`);
+          });
+        })
+        .catch((err) => console.error({ msg: "Firebase bombed", err }));
+    </script>
+  </head>
+  <body>
+    <h1>Firebase</h1>
+  </body>
+</html>

@@ -1,0 +1,2439 @@
+{
+    "data": [
+        {
+            "author_id": "1282422551797305345",
+            "source": "Twitter for iPhone",
+            "entities": {
+                "hashtags": [
+                    {
+                        "start": 164,
+                        "end": 177,
+                        "tag": "BackToOffice"
+                    },
+                    {
+                        "start": 178,
+                        "end": 188,
+                        "tag": "paytmkaro"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 13,
+                        "username": "vijayshekhar",
+                        "id": "17239667"
+                    },
+                    {
+                        "start": 14,
+                        "end": 23,
+                        "username": "easydesq",
+                        "id": "1362776391868026882"
+                    }
+                ]
+            },
+            "id": "1438243362012688389",
+            "text": "@vijayshekhar @easydesq will help you look for a hybrid work space for you and your team. Our study shows 85% reduction of video calling after you choose Easydesq. #BackToOffice #paytmkaro If I can be your customer, I’m sure you can be our customer too.",
+            "lang": "en",
+            "created_at": "2021-09-15T20:48:33.000Z",
+            "possibly_sensitive": false,
+            "in_reply_to_user_id": "17239667",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1437367504981032961"
+                }
+            ]
+        },
+        {
+            "author_id": "1380953038521729025",
+            "attachments": {
+                "media_keys": [
+                    "3_1438224655647600640"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 270,
+                        "end": 293,
+                        "url": "https://t.co/g62oXGaOJ9",
+                        "expanded_url": "https://twitter.com/tpmguru360/status/1438224716406214659/photo/1",
+                        "display_url": "pic.twitter.com/g62oXGaOJ9"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 139,
+                        "end": 147,
+                        "tag": "TPMGuru"
+                    },
+                    {
+                        "start": 148,
+                        "end": 152,
+                        "tag": "TPM"
+                    },
+                    {
+                        "start": 153,
+                        "end": 180,
+                        "tag": "totalproductivemaintenance"
+                    },
+                    {
+                        "start": 181,
+                        "end": 203,
+                        "tag": "thirdpartymaintenance"
+                    },
+                    {
+                        "start": 204,
+                        "end": 212,
+                        "tag": "service"
+                    },
+                    {
+                        "start": 213,
+                        "end": 221,
+                        "tag": "support"
+                    },
+                    {
+                        "start": 222,
+                        "end": 231,
+                        "tag": "hardware"
+                    },
+                    {
+                        "start": 232,
+                        "end": 237,
+                        "tag": "MVSS"
+                    },
+                    {
+                        "start": 238,
+                        "end": 255,
+                        "tag": "ThriveWhySurvive"
+                    },
+                    {
+                        "start": 256,
+                        "end": 269,
+                        "tag": "backtooffice"
+                    }
+                ]
+            },
+            "source": "TweetDeck",
+            "id": "1438224716406214659",
+            "text": "“The secret of getting ahead is getting started.” \n\nHere's to getting back into the groove at TPMGuru\n\nWe are Ready ! We are Vaccinated !\n\n#TPMGuru #TPM #totalproductivemaintenance #thirdpartymaintenance #service #support #hardware #MVSS #ThriveWhySurvive #backtooffice https://t.co/g62oXGaOJ9",
+            "lang": "en",
+            "created_at": "2021-09-15T19:34:27.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "823689986373455873",
+            "source": "Grassroots DNC",
+            "id": "1438213599756005376",
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 15,
+                        "username": "_mediaspace",
+                        "id": "135532327"
+                    }
+                ]
+            },
+            "text": "RT @_mediaspace: Hello hybrid style! Our first day back to the office was a success \uD83D\uDE00 We're giving team members the option to work from hom…",
+            "lang": "en",
+            "created_at": "2021-09-15T18:50:17.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438212006922891265"
+                }
+            ]
+        },
+        {
+            "author_id": "135532327",
+            "attachments": {
+                "media_keys": [
+                    "3_1438209576298557445",
+                    "3_1438209576344637448",
+                    "3_1438209576390864897",
+                    "3_1438209576554356739"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 279,
+                        "end": 302,
+                        "url": "https://t.co/WMKYKc0vjf",
+                        "expanded_url": "https://twitter.com/_mediaspace/status/1438212006922891265/photo/1",
+                        "display_url": "pic.twitter.com/WMKYKc0vjf"
+                    },
+                    {
+                        "start": 279,
+                        "end": 302,
+                        "url": "https://t.co/WMKYKc0vjf",
+                        "expanded_url": "https://twitter.com/_mediaspace/status/1438212006922891265/photo/1",
+                        "display_url": "pic.twitter.com/WMKYKc0vjf"
+                    },
+                    {
+                        "start": 279,
+                        "end": 302,
+                        "url": "https://t.co/WMKYKc0vjf",
+                        "expanded_url": "https://twitter.com/_mediaspace/status/1438212006922891265/photo/1",
+                        "display_url": "pic.twitter.com/WMKYKc0vjf"
+                    },
+                    {
+                        "start": 279,
+                        "end": 302,
+                        "url": "https://t.co/WMKYKc0vjf",
+                        "expanded_url": "https://twitter.com/_mediaspace/status/1438212006922891265/photo/1",
+                        "display_url": "pic.twitter.com/WMKYKc0vjf"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 189,
+                        "end": 210,
+                        "tag": "teambuildingtuesdays"
+                    },
+                    {
+                        "start": 211,
+                        "end": 216,
+                        "tag": "team"
+                    },
+                    {
+                        "start": 217,
+                        "end": 230,
+                        "tag": "WorkFromHome"
+                    },
+                    {
+                        "start": 231,
+                        "end": 242,
+                        "tag": "HybridWork"
+                    },
+                    {
+                        "start": 243,
+                        "end": 252,
+                        "tag": "yeswecan"
+                    },
+                    {
+                        "start": 253,
+                        "end": 264,
+                        "tag": "AgencyLife"
+                    },
+                    {
+                        "start": 265,
+                        "end": 278,
+                        "tag": "BackToOffice"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1438212006922891265",
+            "text": "Hello hybrid style! Our first day back to the office was a success \uD83D\uDE00 We're giving team members the option to work from home or come into the office because we value their health and safety\n#teambuildingtuesdays #team #WorkFromHome #HybridWork #yeswecan #AgencyLife #BackToOffice https://t.co/WMKYKc0vjf",
+            "lang": "en",
+            "created_at": "2021-09-15T18:43:57.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1260045204",
+            "attachments": {
+                "media_keys": [
+                    "7_1438210627428880393"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 201,
+                        "end": 224,
+                        "url": "https://t.co/McFUXDfDdl",
+                        "expanded_url": "https://bit.ly/3EvNMYD",
+                        "display_url": "bit.ly/3EvNMYD"
+                    },
+                    {
+                        "start": 272,
+                        "end": 295,
+                        "url": "https://t.co/hoq7RhlGu9",
+                        "expanded_url": "https://twitter.com/USAVoiceData/status/1438211051170971658/video/1",
+                        "display_url": "pic.twitter.com/hoq7RhlGu9"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 20,
+                        "end": 33,
+                        "tag": "movingoffice"
+                    },
+                    {
+                        "start": 183,
+                        "end": 194,
+                        "tag": "officemove"
+                    },
+                    {
+                        "start": 226,
+                        "end": 243,
+                        "tag": "officerelocation"
+                    },
+                    {
+                        "start": 244,
+                        "end": 257,
+                        "tag": "returntowork"
+                    },
+                    {
+                        "start": 258,
+                        "end": 271,
+                        "tag": "backtooffice"
+                    }
+                ]
+            },
+            "source": "TweetDeck",
+            "id": "1438211051170971658",
+            "text": "If your business is #movingoffice, we can make this a painless, well planned + smooth process. See how we can help you avoid losing any business + prevent costly downtime during your #officemove here: https://t.co/McFUXDfDdl\n\n#officerelocation #returntowork #backtooffice https://t.co/hoq7RhlGu9",
+            "lang": "en",
+            "created_at": "2021-09-15T18:40:09.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "80786493",
+            "source": "Twitter for Android",
+            "entities": {
+                "hashtags": [
+                    {
+                        "start": 146,
+                        "end": 155,
+                        "tag": "kenangan"
+                    },
+                    {
+                        "start": 258,
+                        "end": 271,
+                        "tag": "BackToOffice"
+                    }
+                ]
+            },
+            "id": "1438198545270468613",
+            "text": "Tetiba nyasar kemari lagi setelah sekian lama bertepi ke rumah yang lain. Dan lalu jemari mulai bergilir ke bawah lari ke tahun 2012 bulan april. #kenangan. Rindu masa itu, masa dimana semua \"ada\" untuk ku. Tp hidup itu pilihan. Dan aku memilih utk KEMBALI. #BackToOffice soon \uD83E\uDD32",
+            "lang": "in",
+            "created_at": "2021-09-15T17:50:28.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1376744694302994438",
+            "attachments": {
+                "media_keys": [
+                    "3_1363045412282667010"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 105,
+                        "end": 128,
+                        "url": "https://t.co/01DzUqRe3Z",
+                        "expanded_url": "https://bit.ly/3syyYTo",
+                        "display_url": "bit.ly/3syyYTo"
+                    },
+                    {
+                        "start": 0,
+                        "end": 23,
+                        "url": "https://t.co/39Q91XDNfD",
+                        "expanded_url": "https://twitter.com/kanta_gw/status/1363045417642954758/photo/1",
+                        "display_url": "pic.twitter.com/39Q91XDNfD"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1438195331607384066",
+            "text": "https://t.co/39Q91XDNfD Universal Standard's Online Sample Sale: Score Up to 75% Off BacktoOffice Styles https://t.co/01DzUqRe3Z",
+            "lang": "en",
+            "created_at": "2021-09-15T17:37:42.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "14853081",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 72,
+                        "end": 95,
+                        "url": "https://t.co/pSwK0earET",
+                        "expanded_url": "https://youtu.be/YADTeIKybz8",
+                        "display_url": "youtu.be/YADTeIKybz8"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 58,
+                        "end": 71,
+                        "tag": "backtooffice"
+                    }
+                ]
+            },
+            "source": "Twitter for iPad",
+            "id": "1438190315324776451",
+            "text": "Für alle Kinder, die ihre Eltern unterstützen wollen ;-). #backtooffice https://t.co/pSwK0earET",
+            "lang": "de",
+            "created_at": "2021-09-15T17:17:46.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "342044972",
+            "attachments": {
+                "media_keys": [
+                    "3_1438179836191813632"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 149,
+                        "end": 172,
+                        "url": "https://t.co/Z6CBSpXQOh",
+                        "expanded_url": "https://twitter.com/patriciaparcos/status/1438179842869051396/photo/1",
+                        "display_url": "pic.twitter.com/Z6CBSpXQOh"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 135,
+                        "end": 148,
+                        "tag": "BackToOffice"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1438179842869051396",
+            "text": "I left this \"BRB\" notice in my office back in February 2020 thinking I would be back after 3 months of fieldwork. Little did I know... #BackToOffice https://t.co/Z6CBSpXQOh",
+            "lang": "en",
+            "created_at": "2021-09-15T16:36:09.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1592746165",
+            "source": "Twitter for iPad",
+            "entities": {
+                "hashtags": [
+                    {
+                        "start": 19,
+                        "end": 32,
+                        "tag": "BackToOffice"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 17,
+                        "username": "WithDaughters",
+                        "id": "741399732292071425"
+                    },
+                    {
+                        "start": 87,
+                        "end": 98,
+                        "username": "RoArquette",
+                        "id": "3148736402"
+                    },
+                    {
+                        "start": 99,
+                        "end": 108,
+                        "username": "paimadhu",
+                        "id": "3419251203"
+                    },
+                    {
+                        "start": 109,
+                        "end": 125,
+                        "username": "AodhanORiordain",
+                        "id": "120117254"
+                    },
+                    {
+                        "start": 126,
+                        "end": 135,
+                        "username": "peppapig",
+                        "id": "440741351"
+                    }
+                ]
+            },
+            "id": "1438174432707682304",
+            "text": "RT @WithDaughters: #BackToOffice \uD83D\uDE02 \n\nIs this the best back to the office video ever? \n\n@RoArquette @paimadhu @AodhanORiordain @peppapig @NY…",
+            "lang": "en",
+            "created_at": "2021-09-15T16:14:39.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437185457092243456"
+                }
+            ]
+        },
+        {
+            "author_id": "52466265",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 182,
+                        "end": 205,
+                        "url": "https://t.co/6l7KKrdoJM",
+                        "expanded_url": "https://partners.timerack.com/timerack-payroll-vault-webinar",
+                        "display_url": "partners.timerack.com/timerack-payro…",
+                        "status": 200,
+                        "title": "Timerack & Payroll Vault webinar",
+                        "description": "Join our panelists for a discussion and Q & A about how they’ve created winning strategies with their",
+                        "unwound_url": "https://partners.timerack.com/timerack-payroll-vault-webinar"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 120,
+                        "end": 138,
+                        "tag": "timeandattendance"
+                    },
+                    {
+                        "start": 139,
+                        "end": 155,
+                        "tag": "worklifebalance"
+                    },
+                    {
+                        "start": 160,
+                        "end": 173,
+                        "tag": "backtooffice"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 47,
+                        "end": 60,
+                        "username": "PayrollVault",
+                        "id": "95966364"
+                    },
+                    {
+                        "start": 89,
+                        "end": 98,
+                        "username": "timerack",
+                        "id": "52466265"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1438162932374941699",
+            "text": "We are excited to be hosting this webinar with @PayrollVault.  Sign up now and learn how @timerack  can accelerate your #timeandattendance #worklifebalance and #backtooffice needs.\n\nhttps://t.co/6l7KKrdoJM",
+            "lang": "en",
+            "created_at": "2021-09-15T15:28:57.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1299318514902167554",
+            "attachments": {
+                "media_keys": [
+                    "3_1438155855933939718"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 258,
+                        "end": 281,
+                        "url": "https://t.co/kAgFA3qXEZ",
+                        "expanded_url": "https://twitter.com/Stratosfy_inc/status/1438155859025178629/photo/1",
+                        "display_url": "pic.twitter.com/kAgFA3qXEZ"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 212,
+                        "end": 225,
+                        "tag": "backtooffice"
+                    },
+                    {
+                        "start": 226,
+                        "end": 245,
+                        "tag": "commercialcleaning"
+                    },
+                    {
+                        "start": 246,
+                        "end": 257,
+                        "tag": "janitorial"
+                    }
+                ]
+            },
+            "source": "Hootsuite Inc.",
+            "id": "1438155859025178629",
+            "text": "As offices are reopening, property managers and tenants are looking for ways to ensure everybody feels safe and sound in their work environment, so they can be more productive and enjoy their time at the office.\n#backtooffice #commercialcleaning #janitorial https://t.co/kAgFA3qXEZ",
+            "lang": "en",
+            "created_at": "2021-09-15T15:00:51.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "33971020",
+            "source": "Twitter for Android",
+            "entities": {
+                "hashtags": [
+                    {
+                        "start": 19,
+                        "end": 32,
+                        "tag": "BackToOffice"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 17,
+                        "username": "WithDaughters",
+                        "id": "741399732292071425"
+                    },
+                    {
+                        "start": 87,
+                        "end": 98,
+                        "username": "RoArquette",
+                        "id": "3148736402"
+                    },
+                    {
+                        "start": 99,
+                        "end": 108,
+                        "username": "paimadhu",
+                        "id": "3419251203"
+                    },
+                    {
+                        "start": 109,
+                        "end": 125,
+                        "username": "AodhanORiordain",
+                        "id": "120117254"
+                    },
+                    {
+                        "start": 126,
+                        "end": 135,
+                        "username": "peppapig",
+                        "id": "440741351"
+                    }
+                ]
+            },
+            "id": "1438143493252296709",
+            "text": "RT @WithDaughters: #BackToOffice \uD83D\uDE02 \n\nIs this the best back to the office video ever? \n\n@RoArquette @paimadhu @AodhanORiordain @peppapig @NY…",
+            "lang": "en",
+            "created_at": "2021-09-15T14:11:42.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437185457092243456"
+                }
+            ]
+        },
+        {
+            "author_id": "60838339",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 215,
+                        "end": 238,
+                        "url": "https://t.co/CnfSYIT2Tq",
+                        "expanded_url": "https://hr.economictimes.indiatimes.com/news/trends/global-big-banks-plot-back-to-office-plans-as-vaccines-roll-out/86228200",
+                        "display_url": "hr.economictimes.indiatimes.com/news/trends/gl…"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 64,
+                        "end": 77,
+                        "tag": "BackToOffice"
+                    },
+                    {
+                        "start": 78,
+                        "end": 93,
+                        "tag": "GlobalBigBanks"
+                    },
+                    {
+                        "start": 94,
+                        "end": 102,
+                        "tag": "Covid19"
+                    },
+                    {
+                        "start": 103,
+                        "end": 120,
+                        "tag": "CovidVaccination"
+                    },
+                    {
+                        "start": 121,
+                        "end": 132,
+                        "tag": "WallStreet"
+                    },
+                    {
+                        "start": 133,
+                        "end": 154,
+                        "tag": "GoldmanSachsGroupInc"
+                    },
+                    {
+                        "start": 155,
+                        "end": 169,
+                        "tag": "MorganStanley"
+                    },
+                    {
+                        "start": 170,
+                        "end": 183,
+                        "tag": "DeutscheBank"
+                    },
+                    {
+                        "start": 184,
+                        "end": 198,
+                        "tag": "SoutheastAsia"
+                    },
+                    {
+                        "start": 199,
+                        "end": 213,
+                        "tag": "International"
+                    }
+                ]
+            },
+            "source": "ETRetail.com",
+            "id": "1438140652999434245",
+            "text": "Global big banks plot back-to-office plans as vaccines roll out #BackToOffice #GlobalBigBanks #Covid19 #CovidVaccination #WallStreet #GoldmanSachsGroupInc #MorganStanley #DeutscheBank #SoutheastAsia #International  https://t.co/CnfSYIT2Tq",
+            "lang": "en",
+            "created_at": "2021-09-15T14:00:25.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "3438031576",
+            "attachments": {
+                "media_keys": [
+                    "3_1438133002916278272"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 85,
+                        "end": 108,
+                        "url": "https://t.co/NYyfRICVDK",
+                        "expanded_url": "https://buff.ly/3EdtxP3",
+                        "display_url": "buff.ly/3EdtxP3"
+                    },
+                    {
+                        "start": 155,
+                        "end": 178,
+                        "url": "https://t.co/Re2OX0FVYS",
+                        "expanded_url": "https://twitter.com/future_tonic/status/1438133005776736261/photo/1",
+                        "display_url": "pic.twitter.com/Re2OX0FVYS"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 127,
+                        "end": 140,
+                        "tag": "BacktoOffice"
+                    },
+                    {
+                        "start": 141,
+                        "end": 154,
+                        "tag": "futureofwork"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 113,
+                        "end": 126,
+                        "username": "BBC_Worklife",
+                        "id": "1392163634"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 58,
+                        "end": 68,
+                        "probability": 0.9962,
+                        "type": "Person",
+                        "normalized_text": "Kate Morgan"
+                    }
+                ]
+            },
+            "source": "Buffer",
+            "id": "1438133005776736261",
+            "text": "What happens when your office has changed for the worse?  Kate Morgan reports here - https://t.co/NYyfRICVDK via @BBC_Worklife #BacktoOffice #futureofwork https://t.co/Re2OX0FVYS",
+            "lang": "en",
+            "created_at": "2021-09-15T13:30:02.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1309521",
+            "source": "Twitter Web App",
+            "entities": {
+                "hashtags": [
+                    {
+                        "start": 19,
+                        "end": 32,
+                        "tag": "BackToOffice"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 17,
+                        "username": "WithDaughters",
+                        "id": "741399732292071425"
+                    },
+                    {
+                        "start": 87,
+                        "end": 98,
+                        "username": "RoArquette",
+                        "id": "3148736402"
+                    },
+                    {
+                        "start": 99,
+                        "end": 108,
+                        "username": "paimadhu",
+                        "id": "3419251203"
+                    },
+                    {
+                        "start": 109,
+                        "end": 125,
+                        "username": "AodhanORiordain",
+                        "id": "120117254"
+                    },
+                    {
+                        "start": 126,
+                        "end": 135,
+                        "username": "peppapig",
+                        "id": "440741351"
+                    }
+                ]
+            },
+            "id": "1438129727831674880",
+            "text": "RT @WithDaughters: #BackToOffice \uD83D\uDE02 \n\nIs this the best back to the office video ever? \n\n@RoArquette @paimadhu @AodhanORiordain @peppapig @NY…",
+            "lang": "en",
+            "created_at": "2021-09-15T13:17:00.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437185457092243456"
+                }
+            ]
+        },
+        {
+            "author_id": "264249587",
+            "attachments": {
+                "media_keys": [
+                    "3_1438125416548601857"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 130,
+                        "end": 153,
+                        "url": "https://t.co/USTkiPchIz",
+                        "expanded_url": "https://minuteman.com",
+                        "display_url": "minuteman.com",
+                        "status": 200,
+                        "title": "Printing, Copying, Graphic Design, Signs & Banners, Promotional Products | Minuteman Press",
+                        "description": "Minuteman Press International is the #1 rated printing franchise meeting your custom design, print, marketing, and mailing needs. Support local business today!",
+                        "unwound_url": "https://minuteman.com"
+                    },
+                    {
+                        "start": 275,
+                        "end": 298,
+                        "url": "https://t.co/AnzrS90BPk",
+                        "expanded_url": "https://twitter.com/MinutemanIntl/status/1438125525076168708/photo/1",
+                        "display_url": "pic.twitter.com/AnzrS90BPk"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 155,
+                        "end": 162,
+                        "tag": "idcard"
+                    },
+                    {
+                        "start": 163,
+                        "end": 174,
+                        "tag": "backtowork"
+                    },
+                    {
+                        "start": 175,
+                        "end": 190,
+                        "tag": "backtobusiness"
+                    },
+                    {
+                        "start": 191,
+                        "end": 204,
+                        "tag": "backtooffice"
+                    },
+                    {
+                        "start": 205,
+                        "end": 214,
+                        "tag": "namecard"
+                    },
+                    {
+                        "start": 215,
+                        "end": 224,
+                        "tag": "workwear"
+                    },
+                    {
+                        "start": 225,
+                        "end": 234,
+                        "tag": "printing"
+                    },
+                    {
+                        "start": 235,
+                        "end": 245,
+                        "tag": "employees"
+                    },
+                    {
+                        "start": 246,
+                        "end": 258,
+                        "tag": "welcomeback"
+                    },
+                    {
+                        "start": 259,
+                        "end": 274,
+                        "tag": "minutemanpress"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1438125525076168708",
+            "text": "Give your employees a fresh start with custom ID badges, cards, and name tags and welcome them back to the office. Get started at https://t.co/USTkiPchIz\n\n#idcard #backtowork #backtobusiness #backtooffice #namecard #workwear #printing #employees #welcomeback #minutemanpress https://t.co/AnzrS90BPk",
+            "lang": "en",
+            "created_at": "2021-09-15T13:00:18.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1422918038710456322",
+            "attachments": {
+                "poll_ids": [
+                    "1438105522192871426"
+                ]
+            },
+            "source": "Twitter Web App",
+            "entities": {
+                "hashtags": [
+                    {
+                        "start": 134,
+                        "end": 143,
+                        "tag": "pandemic"
+                    },
+                    {
+                        "start": 153,
+                        "end": 162,
+                        "tag": "polltime"
+                    },
+                    {
+                        "start": 163,
+                        "end": 182,
+                        "tag": "COVID19Vaccination"
+                    },
+                    {
+                        "start": 184,
+                        "end": 197,
+                        "tag": "backtooffice"
+                    },
+                    {
+                        "start": 198,
+                        "end": 211,
+                        "tag": "backtonormal"
+                    },
+                    {
+                        "start": 212,
+                        "end": 220,
+                        "tag": "COVID19"
+                    },
+                    {
+                        "start": 221,
+                        "end": 232,
+                        "tag": "MindMilieu"
+                    },
+                    {
+                        "start": 233,
+                        "end": 257,
+                        "tag": "Design_Develop_Maintain"
+                    },
+                    {
+                        "start": 258,
+                        "end": 278,
+                        "tag": "AutomationSolutions"
+                    }
+                ]
+            },
+            "id": "1438105524789125121",
+            "text": "Are you ready to combat The Virus?As world is getting vaccinated what you think are you prepared to make a comeback to the old world? #pandemic ending? \n#polltime #COVID19Vaccination  #backtooffice #backtonormal #COVID19 #MindMilieu #Design_Develop_Maintain #AutomationSolutions",
+            "lang": "en",
+            "created_at": "2021-09-15T11:40:50.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "410889034",
+            "source": "Twitter for iPhone",
+            "id": "1438092487457849346",
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 15,
+                        "username": "Vimalsumbly",
+                        "id": "410889034"
+                    }
+                ]
+            },
+            "text": "RT @Vimalsumbly: It is an overwhelming feeling to meet someone, especially a colleague , after a long time (about 18 months).\n\n#BackToOffic…",
+            "lang": "en",
+            "created_at": "2021-09-15T10:49:02.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437820989430124544"
+                }
+            ]
+        },
+        {
+            "author_id": "2213084613",
+            "source": "Twitter Web App",
+            "id": "1438080378015735809",
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 18,
+                        "username": "BackToOfficeSA",
+                        "id": "1399335164610854914"
+                    }
+                ]
+            },
+            "text": "RT @BackToOfficeSA: Over the past two years the way we've worked has changed. While some companies delay their plans for returning to the o…",
+            "lang": "en",
+            "created_at": "2021-09-15T10:00:55.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437687562261438464"
+                }
+            ]
+        },
+        {
+            "author_id": "1247522742842224650",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 246,
+                        "end": 269,
+                        "url": "https://t.co/WOPftu8Q4M",
+                        "expanded_url": "https://hr.economictimes.indiatimes.com/news/industry/wells-fargo-pushes-back-return-to-office-date-to-november-1/86225088",
+                        "display_url": "hr.economictimes.indiatimes.com/news/industry/…"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 0,
+                        "end": 13,
+                        "tag": "Backtooffice"
+                    },
+                    {
+                        "start": 206,
+                        "end": 218,
+                        "tag": "workculture"
+                    },
+                    {
+                        "start": 219,
+                        "end": 229,
+                        "tag": "employees"
+                    },
+                    {
+                        "start": 230,
+                        "end": 243,
+                        "tag": "industrynews"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 16,
+                        "end": 27,
+                        "username": "WellsFargo",
+                        "id": "1178011"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1438064826425643014",
+            "text": "#Backtooffice | @WellsFargo's operations and contact center employees will start returning to office over several weeks beginning Nov. 1, followed by business support and enterprise functions in December.\n\n#workculture #employees #industrynews \n\nhttps://t.co/WOPftu8Q4M",
+            "lang": "en",
+            "created_at": "2021-09-15T08:59:07.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "931571148915118080",
+            "attachments": {
+                "media_keys": [
+                    "3_1437862595608911877"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 177,
+                        "end": 200,
+                        "url": "https://t.co/RUydGcOfUJ",
+                        "expanded_url": "https://twitter.com/brezachsolution/status/1437862901855965191/photo/1",
+                        "display_url": "pic.twitter.com/RUydGcOfUJ"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 82,
+                        "end": 88,
+                        "tag": "style"
+                    },
+                    {
+                        "start": 89,
+                        "end": 96,
+                        "tag": "office"
+                    },
+                    {
+                        "start": 97,
+                        "end": 113,
+                        "tag": "postcovidoffice"
+                    },
+                    {
+                        "start": 114,
+                        "end": 133,
+                        "tag": "evolvingworkspaces"
+                    },
+                    {
+                        "start": 134,
+                        "end": 145,
+                        "tag": "backtowork"
+                    },
+                    {
+                        "start": 146,
+                        "end": 159,
+                        "tag": "BackToOffice"
+                    },
+                    {
+                        "start": 160,
+                        "end": 176,
+                        "tag": "officefurniture"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 52,
+                        "end": 62,
+                        "username": "bouty_com",
+                        "id": "286680290"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437862901855965191",
+            "text": "Our offices are evolving! Bring in the Evolution by @bouty_com and lead the trend #style #office #postcovidoffice #evolvingworkspaces #backtowork #BackToOffice #officefurniture https://t.co/RUydGcOfUJ",
+            "lang": "en",
+            "created_at": "2021-09-14T19:36:44.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1437332734335229953",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 111,
+                        "end": 134,
+                        "url": "https://t.co/nSSRW3DsAy",
+                        "expanded_url": "https://hrmhandbook.cz/blog/2021/kancelare-navrat/",
+                        "display_url": "hrmhandbook.cz/blog/2021/kanc…"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 135,
+                        "end": 148,
+                        "tag": "BackToSchool"
+                    },
+                    {
+                        "start": 149,
+                        "end": 162,
+                        "tag": "backtooffice"
+                    },
+                    {
+                        "start": 163,
+                        "end": 169,
+                        "tag": "prace"
+                    },
+                    {
+                        "start": 170,
+                        "end": 188,
+                        "tag": "zpatkydokancelare"
+                    },
+                    {
+                        "start": 189,
+                        "end": 192,
+                        "tag": "HR"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437822393100165123",
+            "text": "Všichni chceme děti zpátky do školy, ale když dojde na nás, tak zpátky do kanceláře nechceme. Není to paradox? https://t.co/nSSRW3DsAy #BackToSchool #backtooffice #prace #zpatkydokancelare #HR",
+            "lang": "cs",
+            "created_at": "2021-09-14T16:55:46.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "58491253",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 175,
+                        "end": 198,
+                        "url": "https://t.co/2Cf9MBIrps",
+                        "expanded_url": "https://bit.ly/3nyGo8K",
+                        "display_url": "bit.ly/3nyGo8K"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 199,
+                        "end": 212,
+                        "tag": "BacktoOffice"
+                    },
+                    {
+                        "start": 213,
+                        "end": 227,
+                        "tag": "EmploymentLaw"
+                    },
+                    {
+                        "start": 228,
+                        "end": 236,
+                        "tag": "Covid19"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 157,
+                        "end": 164,
+                        "username": "Forbes",
+                        "id": "91478624"
+                    }
+                ]
+            },
+            "source": "Sprout Social",
+            "id": "1437822102292340743",
+            "text": "As more employers are turning to vaccine mandates, employment attorney Chase Hattaway noes the importance of having and communicating clear policies in this @Forbes  article. https://t.co/2Cf9MBIrps #BacktoOffice #EmploymentLaw #Covid19",
+            "lang": "en",
+            "created_at": "2021-09-14T16:54:37.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "410889034",
+            "attachments": {
+                "media_keys": [
+                    "3_1437820978264936450"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 159,
+                        "end": 182,
+                        "url": "https://t.co/pN5LmQrN2Q",
+                        "expanded_url": "https://twitter.com/Vimalsumbly/status/1437820989430124544/photo/1",
+                        "display_url": "pic.twitter.com/pN5LmQrN2Q"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 110,
+                        "end": 123,
+                        "tag": "BackToOffice"
+                    },
+                    {
+                        "start": 125,
+                        "end": 134,
+                        "tag": "staysafe"
+                    },
+                    {
+                        "start": 135,
+                        "end": 144,
+                        "tag": "wearmask"
+                    },
+                    {
+                        "start": 146,
+                        "end": 158,
+                        "tag": "REHQChennai"
+                    }
+                ]
+            },
+            "source": "Twitter for iPhone",
+            "id": "1437820989430124544",
+            "text": "It is an overwhelming feeling to meet someone, especially a colleague , after a long time (about 18 months).\n\n#BackToOffice \n#staysafe\n#wearmask \n#REHQChennai https://t.co/pN5LmQrN2Q",
+            "lang": "en",
+            "created_at": "2021-09-14T16:50:11.000Z",
+            "possibly_sensitive": false,
+            "geo": {
+                "place_id": "07d9df0162487001"
+            }
+        },
+        {
+            "author_id": "15340995",
+            "source": "Twitter for Android",
+            "entities": {
+                "hashtags": [
+                    {
+                        "start": 261,
+                        "end": 274,
+                        "tag": "backtooffice"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 199,
+                        "end": 204,
+                        "probability": 0.9892,
+                        "type": "Place",
+                        "normalized_text": "Mumbai"
+                    }
+                ]
+            },
+            "id": "1437810736844181505",
+            "text": "Yesterday I went to a physical office space for 1st time in 586 days. Took me 30 min to just figure out how does one get ready for work, another 40 to make it happen. (In 30 I used be out of door in Mumbai).Still forgot ID card, charger n notebook!! felt great #backtooffice",
+            "lang": "en",
+            "created_at": "2021-09-14T16:09:27.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1383409097660276743",
+            "attachments": {
+                "media_keys": [
+                    "3_1437673927858434050"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 27,
+                        "end": 50,
+                        "url": "https://t.co/S2W2l57qso",
+                        "expanded_url": "https://twitter.com/Zeno_73/status/1437673948934819843/photo/1",
+                        "display_url": "pic.twitter.com/S2W2l57qso"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 13,
+                        "end": 26,
+                        "tag": "BackToOffice"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 11,
+                        "username": "Zeno_73",
+                        "id": "1341514822731575298"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437786918532620299",
+            "text": "RT @Zeno_73: #BackToOffice https://t.co/S2W2l57qso",
+            "lang": "und",
+            "created_at": "2021-09-14T14:34:48.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437673948934819843"
+                }
+            ]
+        },
+        {
+            "author_id": "1863324974",
+            "attachments": {
+                "media_keys": [
+                    "3_1437785084069912584"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 279,
+                        "end": 302,
+                        "url": "https://t.co/yuiNqOzXGP",
+                        "expanded_url": "https://twitter.com/amatimontagnani/status/1437785085651177477/photo/1",
+                        "display_url": "pic.twitter.com/yuiNqOzXGP"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 24,
+                        "end": 40,
+                        "tag": "SuperSalone2021"
+                    },
+                    {
+                        "start": 43,
+                        "end": 50,
+                        "tag": "Milano"
+                    },
+                    {
+                        "start": 87,
+                        "end": 100,
+                        "tag": "BACKTOOFFICE"
+                    },
+                    {
+                        "start": 128,
+                        "end": 144,
+                        "tag": "PROPELLEROFFICE"
+                    },
+                    {
+                        "start": 179,
+                        "end": 192,
+                        "tag": "Smartworking"
+                    },
+                    {
+                        "start": 199,
+                        "end": 206,
+                        "tag": "lavoro"
+                    },
+                    {
+                        "start": 210,
+                        "end": 219,
+                        "tag": "presenza"
+                    },
+                    {
+                        "start": 232,
+                        "end": 247,
+                        "tag": "Collaborazione"
+                    },
+                    {
+                        "start": 270,
+                        "end": 277,
+                        "tag": "valore"
+                    }
+                ]
+            },
+            "source": "Hootsuite Inc.",
+            "id": "1437785085651177477",
+            "text": "Si è appena concluso il #SuperSalone2021 a #Milano.\nUno dei temi principali è stato il #BACKTOOFFICE. Coniato un nuovo termine: #PROPELLEROFFICE, racchiude e mixa il meglio dello #Smartworking e del #lavoro in #presenza. Obiettivo? #Collaborazione per creare e produrre #valore. https://t.co/yuiNqOzXGP",
+            "lang": "it",
+            "created_at": "2021-09-14T14:27:31.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "698643861967659008",
+            "source": "Twitter Web App",
+            "id": "1437763872983814147",
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 12,
+                        "username": "DevyceUK",
+                        "id": "1214311202408427520"
+                    }
+                ]
+            },
+            "text": "RT @DevyceUK: Finally back at the office! \uD83D\uDC4F\n\nWe are navigating a hybrid of working from home and working at the office to make sure everyon…",
+            "lang": "en",
+            "created_at": "2021-09-14T13:03:14.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437717544429932548"
+                }
+            ]
+        },
+        {
+            "author_id": "2785875051",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 77,
+                        "end": 100,
+                        "url": "https://t.co/kgy0L2yyYK",
+                        "expanded_url": "https://twitter.com/jcmeister/status/1435963536283418624",
+                        "display_url": "twitter.com/jcmeister/stat…"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 47,
+                        "end": 62,
+                        "tag": "ReturntoOffice"
+                    },
+                    {
+                        "start": 63,
+                        "end": 76,
+                        "tag": "BacktoOffice"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 28,
+                        "end": 38,
+                        "username": "jcmeister",
+                        "id": "16226069"
+                    },
+                    {
+                        "start": 39,
+                        "end": 46,
+                        "username": "Forbes",
+                        "id": "91478624"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 20,
+                        "end": 25,
+                        "probability": 0.8325,
+                        "type": "Person",
+                        "normalized_text": "Jeanne"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437754644067926019",
+            "text": "Thanks for sharing, Jeanne! @jcmeister @forbes #ReturntoOffice #BacktoOffice https://t.co/kgy0L2yyYK",
+            "lang": "en",
+            "created_at": "2021-09-14T12:26:33.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "quoted",
+                    "id": "1435963536283418624"
+                }
+            ]
+        },
+        {
+            "author_id": "842782558190485504",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 214,
+                        "end": 237,
+                        "url": "https://t.co/Df49uWXgI6",
+                        "expanded_url": "https://bit.ly/3tzdAxI",
+                        "display_url": "bit.ly/3tzdAxI"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 239,
+                        "end": 251,
+                        "tag": "weworkindia"
+                    },
+                    {
+                        "start": 252,
+                        "end": 265,
+                        "tag": "BackToOffice"
+                    },
+                    {
+                        "start": 266,
+                        "end": 278,
+                        "tag": "SafetyFirst"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 104,
+                        "end": 117,
+                        "username": "arnavsgusain",
+                        "id": "114404013"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 71,
+                        "end": 82,
+                        "probability": 0.9071,
+                        "type": "Person",
+                        "normalized_text": "Priti Shetty"
+                    },
+                    {
+                        "start": 161,
+                        "end": 165,
+                        "probability": 0.5582,
+                        "type": "Place",
+                        "normalized_text": "India"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437748452776022017",
+            "text": "Post pandemic, offices will have to undergo massive changes. Read what Priti Shetty, Head of People and @arnavsgusain, Head of Product, RE &amp; Procurement, WeWork India, have to say about evolving office spaces: https://t.co/Df49uWXgI6\n\n#weworkindia #BackToOffice #SafetyFirst",
+            "lang": "en",
+            "created_at": "2021-09-14T12:01:57.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1409843922856296456",
+            "attachments": {
+                "media_keys": [
+                    "7_1437740545263214596"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 52,
+                        "end": 75,
+                        "url": "https://t.co/0ydIGXYavU",
+                        "expanded_url": "https://twitter.com/dodig_ana/status/1437741062513102857/video/1",
+                        "display_url": "pic.twitter.com/0ydIGXYavU"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 38,
+                        "end": 51,
+                        "tag": "backtooffice"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437741062513102857",
+            "text": "Very realistic, but also quite sweet\uD83D\uDE0A #backtooffice https://t.co/0ydIGXYavU",
+            "lang": "en",
+            "created_at": "2021-09-14T11:32:35.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "11694442",
+            "attachments": {
+                "media_keys": [
+                    "3_1437731454239260672"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 98,
+                        "end": 121,
+                        "url": "https://t.co/wxaghpq8rj",
+                        "expanded_url": "https://twitter.com/tokuyuki/status/1437731462380494853/photo/1",
+                        "display_url": "pic.twitter.com/wxaghpq8rj"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 39,
+                        "end": 52,
+                        "tag": "backtooffice"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 20,
+                        "end": 21,
+                        "probability": 0.8423,
+                        "type": "Place",
+                        "normalized_text": "日本"
+                    }
+                ]
+            },
+            "source": "Twitter for iPhone",
+            "id": "1437731462380494853",
+            "text": "30年以上も会社勤め、しかもその2/3は日本で痛勤してきたので、一年半ぶりの #backtooffice 初日もなんて事ない。しかしPodcastを聞く時間にはなるが、中々もったいないなこの時間 https://t.co/wxaghpq8rj",
+            "lang": "ja",
+            "created_at": "2021-09-14T10:54:27.000Z",
+            "possibly_sensitive": false,
+            "geo": {
+                "place_id": "01a9a39529b27f36"
+            }
+        },
+        {
+            "author_id": "1422042240759877633",
+            "attachments": {
+                "media_keys": [
+                    "3_1435713018797731848"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 95,
+                        "end": 118,
+                        "url": "https://t.co/jfXNmDbCNo",
+                        "expanded_url": "https://twitter.com/DojoitApp/status/1435713020357980161/photo/1",
+                        "display_url": "pic.twitter.com/jfXNmDbCNo"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 41,
+                        "end": 54,
+                        "tag": "futureofwork"
+                    },
+                    {
+                        "start": 55,
+                        "end": 66,
+                        "tag": "remotework"
+                    },
+                    {
+                        "start": 67,
+                        "end": 80,
+                        "tag": "workfromhome"
+                    },
+                    {
+                        "start": 81,
+                        "end": 94,
+                        "tag": "backtooffice"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 13,
+                        "username": "DojoitApp",
+                        "id": "1299475743169155072"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437727965987545091",
+            "text": "RT @DojoitApp: Which would you prefer? \n\n#futureofwork #remotework #workfromhome #backtooffice https://t.co/jfXNmDbCNo",
+            "lang": "en",
+            "created_at": "2021-09-14T10:40:33.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1435713020357980161"
+                }
+            ]
+        },
+        {
+            "author_id": "1214311202408427520",
+            "attachments": {
+                "media_keys": [
+                    "3_1437717532484513796"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 273,
+                        "end": 296,
+                        "url": "https://t.co/dh2Sn2fWuw",
+                        "expanded_url": "https://twitter.com/DevyceUK/status/1437717544429932548/photo/1",
+                        "display_url": "pic.twitter.com/dh2Sn2fWuw"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 229,
+                        "end": 240,
+                        "tag": "hybridwork"
+                    },
+                    {
+                        "start": 241,
+                        "end": 258,
+                        "tag": "workfromanywhere"
+                    },
+                    {
+                        "start": 259,
+                        "end": 272,
+                        "tag": "backtooffice"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437717544429932548",
+            "text": "Finally back at the office! \uD83D\uDC4F\n\nWe are navigating a hybrid of working from home and working at the office to make sure everyone feels comfortable, safe and connected once again! \n\nHow do you feel about going back to the office? \n\n#hybridwork #workfromanywhere #backtooffice https://t.co/dh2Sn2fWuw",
+            "lang": "en",
+            "created_at": "2021-09-14T09:59:08.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "925069044423823360",
+            "source": "Twitter for iPhone",
+            "id": "1437706325853622273",
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 14,
+                        "username": "NestorUpHQ",
+                        "id": "1088439142994845697"
+                    }
+                ]
+            },
+            "text": "RT @NestorUpHQ: Shaping a culture of belonging in a hybrid setting might be challenging. Create context for collaborative work independentl…",
+            "lang": "en",
+            "created_at": "2021-09-14T09:14:34.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437685521782906880"
+                }
+            ]
+        },
+        {
+            "author_id": "3345229889",
+            "attachments": {
+                "media_keys": [
+                    "3_1437695238122967046"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 73,
+                        "end": 96,
+                        "url": "https://t.co/0b6g94hfeR",
+                        "expanded_url": "http://www.ccgaleon.com",
+                        "display_url": "ccgaleon.com"
+                    },
+                    {
+                        "start": 189,
+                        "end": 212,
+                        "url": "https://t.co/8Gl9BZGYCI",
+                        "expanded_url": "https://twitter.com/GALEONOUTLET/status/1437695255000887300/photo/1",
+                        "display_url": "pic.twitter.com/8Gl9BZGYCI"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 41,
+                        "end": 53,
+                        "tag": "FiftyOutlet"
+                    },
+                    {
+                        "start": 56,
+                        "end": 69,
+                        "tag": "GaleónOutlet"
+                    },
+                    {
+                        "start": 99,
+                        "end": 111,
+                        "tag": "multimarcas"
+                    },
+                    {
+                        "start": 112,
+                        "end": 119,
+                        "tag": "outlet"
+                    },
+                    {
+                        "start": 120,
+                        "end": 128,
+                        "tag": "premium"
+                    },
+                    {
+                        "start": 129,
+                        "end": 139,
+                        "tag": "september"
+                    },
+                    {
+                        "start": 140,
+                        "end": 153,
+                        "tag": "backtooffice"
+                    },
+                    {
+                        "start": 154,
+                        "end": 162,
+                        "tag": "fashion"
+                    },
+                    {
+                        "start": 163,
+                        "end": 169,
+                        "tag": "smart"
+                    },
+                    {
+                        "start": 170,
+                        "end": 179,
+                        "tag": "shopping"
+                    },
+                    {
+                        "start": 180,
+                        "end": 188,
+                        "tag": "newpost"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437695255000887300",
+            "text": "¡Hey martes! ¿que te parece este look? \uD83E\uDD70\n#FiftyOutlet \n\uD83D\uDCCD#GaleónOutlet  \n\nhttps://t.co/0b6g94hfeR\n\n #multimarcas #outlet #premium #september #backtooffice #fashion #smart #shopping #newpost https://t.co/8Gl9BZGYCI",
+            "lang": "es",
+            "created_at": "2021-09-14T08:30:34.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "40193786",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 113,
+                        "end": 136,
+                        "url": "https://t.co/YGkKJTJF8X",
+                        "expanded_url": "https://porkbun.com/event/backtooffice",
+                        "display_url": "porkbun.com/event/backtoof…"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 11,
+                        "username": "Porkbun",
+                        "id": "3078121844"
+                    }
+                ]
+            },
+            "source": "Twitter for Android",
+            "id": "1437694725088288768",
+            "text": "RT @Porkbun: Back to... your designated corner of the living room? Things are complicated. Domains shouldn't be. https://t.co/YGkKJTJF8X ht…",
+            "lang": "en",
+            "created_at": "2021-09-14T08:28:28.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1436037721663881217"
+                }
+            ]
+        },
+        {
+            "author_id": "1261722080418181120",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 42,
+                        "end": 65,
+                        "url": "https://t.co/QHiPutPM44",
+                        "expanded_url": "https://youtu.be/e1g0r_KZGzw",
+                        "display_url": "youtu.be/e1g0r_KZGzw"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 80,
+                        "end": 93,
+                        "tag": "BackToOffice"
+                    },
+                    {
+                        "start": 94,
+                        "end": 107,
+                        "tag": "BackToSchool"
+                    },
+                    {
+                        "start": 108,
+                        "end": 128,
+                        "tag": "ingrammicroproducts"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 70,
+                        "end": 78,
+                        "username": "YouTube",
+                        "id": "10228272"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437692766293790720",
+            "text": "Nuevas mochilas y maletines ECO hasta 17\" https://t.co/QHiPutPM44 via @YouTube \n#BackToOffice #BackToSchool #ingrammicroproducts",
+            "lang": "es",
+            "created_at": "2021-09-14T08:20:41.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1043015087542349826",
+            "source": "Twitter Web App",
+            "id": "1437691714035232778",
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 14,
+                        "username": "NestorUpHQ",
+                        "id": "1088439142994845697"
+                    }
+                ]
+            },
+            "text": "RT @NestorUpHQ: Shaping a culture of belonging in a hybrid setting might be challenging. Create context for collaborative work independentl…",
+            "lang": "en",
+            "created_at": "2021-09-14T08:16:30.000Z",
+            "possibly_sensitive": false,
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437685521782906880"
+                }
+            ]
+        },
+        {
+            "author_id": "1399335164610854914",
+            "attachments": {
+                "media_keys": [
+                    "3_1435597302555623427"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 239,
+                        "end": 262,
+                        "url": "https://t.co/9O17mvhm3v",
+                        "expanded_url": "https://on.wsj.com/3kmv5gw",
+                        "display_url": "on.wsj.com/3kmv5gw"
+                    },
+                    {
+                        "start": 278,
+                        "end": 301,
+                        "url": "https://t.co/jxH0lkqxyJ",
+                        "expanded_url": "https://twitter.com/BackToOfficeSA/status/1437687562261438464/photo/1",
+                        "display_url": "pic.twitter.com/jxH0lkqxyJ"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 264,
+                        "end": 277,
+                        "tag": "BackToOffice"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437687562261438464",
+            "text": "Over the past two years the way we've worked has changed. While some companies delay their plans for returning to the office, others are looking to co-working spaces to help get the job done. \n\nRead more from The Wall Street Journal here: https://t.co/9O17mvhm3v \n#BackToOffice https://t.co/jxH0lkqxyJ",
+            "lang": "en",
+            "created_at": "2021-09-14T08:00:00.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1088439142994845697",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 236,
+                        "end": 259,
+                        "url": "https://t.co/TiHt5SQiBt",
+                        "expanded_url": "https://bit.ly/39a0a1C",
+                        "display_url": "bit.ly/39a0a1C"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 159,
+                        "end": 174,
+                        "tag": "companyculture"
+                    },
+                    {
+                        "start": 175,
+                        "end": 183,
+                        "tag": "culture"
+                    },
+                    {
+                        "start": 184,
+                        "end": 195,
+                        "tag": "remotework"
+                    },
+                    {
+                        "start": 196,
+                        "end": 207,
+                        "tag": "hybridwork"
+                    },
+                    {
+                        "start": 208,
+                        "end": 221,
+                        "tag": "backtooffice"
+                    },
+                    {
+                        "start": 222,
+                        "end": 235,
+                        "tag": "futureofwork"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437685521782906880",
+            "text": "Shaping a culture of belonging in a hybrid setting might be challenging. Create context for collaborative work independently of where the work itself is done.\n#companyculture #culture #remotework #hybridwork #backtooffice #futureofwork\nhttps://t.co/TiHt5SQiBt",
+            "lang": "en",
+            "created_at": "2021-09-14T07:51:53.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "36315542",
+            "attachments": {
+                "media_keys": [
+                    "3_1437679891303043072"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 66,
+                        "end": 89,
+                        "url": "https://t.co/0wAkqKH9eg",
+                        "expanded_url": "https://twitter.com/ericbergasa/status/1437679908730327041/photo/1",
+                        "display_url": "pic.twitter.com/0wAkqKH9eg"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 44,
+                        "end": 57,
+                        "tag": "backtooffice"
+                    },
+                    {
+                        "start": 58,
+                        "end": 65,
+                        "tag": "madrid"
+                    }
+                ]
+            },
+            "source": "Twitter for iPhone",
+            "id": "1437679908730327041",
+            "text": "9:30am. 30’ en carretera para avanzar 2 km. #backtooffice #madrid https://t.co/0wAkqKH9eg",
+            "lang": "es",
+            "created_at": "2021-09-14T07:29:35.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1247522742842224650",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 235,
+                        "end": 258,
+                        "url": "https://t.co/EiPVmR59Mt",
+                        "expanded_url": "https://hr.economictimes.indiatimes.com/news/industry/telangana-pushes-for-work-from-office-in-it-firms/86191129",
+                        "display_url": "hr.economictimes.indiatimes.com/news/industry/…"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 0,
+                        "end": 13,
+                        "tag": "BackToOffice"
+                    },
+                    {
+                        "start": 180,
+                        "end": 189,
+                        "tag": "ITSector"
+                    },
+                    {
+                        "start": 190,
+                        "end": 200,
+                        "tag": "Telangana"
+                    },
+                    {
+                        "start": 201,
+                        "end": 217,
+                        "tag": "OfficeReopening"
+                    },
+                    {
+                        "start": 218,
+                        "end": 233,
+                        "tag": "WorkFromOffice"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 141,
+                        "end": 149,
+                        "probability": 0.9897,
+                        "type": "Place",
+                        "normalized_text": "Hyderabad"
+                    }
+                ]
+            },
+            "source": "Twitter Web App",
+            "id": "1437678751484026893",
+            "text": "#BackToOffice | In a fresh push to get people back in office, the state health department on Monday urged the managements of IT companies in Hyderabad to resume work from office.\n\n#ITSector #Telangana #OfficeReopening #WorkFromOffice\n\nhttps://t.co/EiPVmR59Mt",
+            "lang": "en",
+            "created_at": "2021-09-14T07:24:59.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1341514822731575298",
+            "attachments": {
+                "media_keys": [
+                    "3_1437673927858434050"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 14,
+                        "end": 37,
+                        "url": "https://t.co/S2W2l57qso",
+                        "expanded_url": "https://twitter.com/Zeno_73/status/1437673948934819843/photo/1",
+                        "display_url": "pic.twitter.com/S2W2l57qso"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 0,
+                        "end": 13,
+                        "tag": "BackToOffice"
+                    }
+                ]
+            },
+            "source": "Twitter for iPhone",
+            "id": "1437673948934819843",
+            "text": "#BackToOffice https://t.co/S2W2l57qso",
+            "lang": "und",
+            "created_at": "2021-09-14T07:05:54.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "49012629",
+            "source": "Twitter Web App",
+            "entities": {
+                "hashtags": [
+                    {
+                        "start": 34,
+                        "end": 47,
+                        "tag": "backtooffice"
+                    }
+                ]
+            },
+            "id": "1437661201857761285",
+            "text": "What are you trying to prove with #backtooffice? \n\nWhy ask employees to commute for 2 hours to have zoom calls from an office?\n\nAt a time a disabling (if not deadly) virus is circulating amongst the young &amp; old?\n\nWhile vaccines are failing against the new variants?\n\nWho are you?",
+            "lang": "en",
+            "created_at": "2021-09-14T06:15:15.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1392426738932621318",
+            "attachments": {
+                "poll_ids": [
+                    "1437656712018759685"
+                ]
+            },
+            "source": "Twitter Web App",
+            "entities": {
+                "hashtags": [
+                    {
+                        "start": 0,
+                        "end": 13,
+                        "tag": "WorkFromHome"
+                    },
+                    {
+                        "start": 23,
+                        "end": 27,
+                        "tag": "TCS"
+                    },
+                    {
+                        "start": 28,
+                        "end": 34,
+                        "tag": "Wipro"
+                    },
+                    {
+                        "start": 35,
+                        "end": 43,
+                        "tag": "Infosys"
+                    },
+                    {
+                        "start": 54,
+                        "end": 67,
+                        "tag": "BackToOffice"
+                    },
+                    {
+                        "start": 71,
+                        "end": 77,
+                        "tag": "India"
+                    },
+                    {
+                        "start": 103,
+                        "end": 122,
+                        "tag": "workfromhomepeople"
+                    },
+                    {
+                        "start": 123,
+                        "end": 139,
+                        "tag": "workingfromhome"
+                    },
+                    {
+                        "start": 140,
+                        "end": 160,
+                        "tag": "workfromhomemomlife"
+                    },
+                    {
+                        "start": 161,
+                        "end": 178,
+                        "tag": "workfromhomemoms"
+                    },
+                    {
+                        "start": 179,
+                        "end": 201,
+                        "tag": "workfromhomelifestyle"
+                    },
+                    {
+                        "start": 202,
+                        "end": 215,
+                        "tag": "polloftheday"
+                    },
+                    {
+                        "start": 216,
+                        "end": 232,
+                        "tag": "workfromhomemom"
+                    },
+                    {
+                        "start": 233,
+                        "end": 249,
+                        "tag": "workfromhomejob"
+                    },
+                    {
+                        "start": 250,
+                        "end": 267,
+                        "tag": "workfromhomelife"
+                    }
+                ]
+            },
+            "id": "1437656713394413579",
+            "text": "#WorkFromHome to End - #TCS #Wipro #Infosys announced #BackToOffice In #India\nWhat works best for you?\n#workfromhomepeople #workingfromhome #workfromhomemomlife #workfromhomemoms #workfromhomelifestyle #polloftheday\n#workfromhomemom #workfromhomejob #workfromhomelife\nsrc News18",
+            "lang": "en",
+            "created_at": "2021-09-14T05:57:25.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "908601002097393664",
+            "attachments": {
+                "media_keys": [
+                    "3_1437635447035936769"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 195,
+                        "end": 218,
+                        "url": "https://t.co/UQzaAiFVa5",
+                        "expanded_url": "http://www.v5global.com",
+                        "display_url": "v5global.com"
+                    },
+                    {
+                        "start": 258,
+                        "end": 281,
+                        "url": "https://t.co/jp3J9FhTu9",
+                        "expanded_url": "https://twitter.com/v5globals/status/1437635450684989440/photo/1",
+                        "display_url": "pic.twitter.com/jp3J9FhTu9"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 220,
+                        "end": 235,
+                        "tag": "EmployeeHealth"
+                    },
+                    {
+                        "start": 236,
+                        "end": 243,
+                        "tag": "Safety"
+                    },
+                    {
+                        "start": 244,
+                        "end": 257,
+                        "tag": "BackToOffice"
+                    }
+                ]
+            },
+            "source": "SocialPilot.co",
+            "id": "1437635450684989440",
+            "text": "We surveyed professionals about return to office plans, the majority of workers say they will be required to wear masks at work. What else is your firm mandating to keep everyone safe?\n\nVisit at https://t.co/UQzaAiFVa5\n\n#EmployeeHealth #Safety #BackToOffice https://t.co/jp3J9FhTu9",
+            "lang": "en",
+            "created_at": "2021-09-14T04:32:56.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1306491205883064320",
+            "attachments": {
+                "media_keys": [
+                    "3_1437635447031730177"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 195,
+                        "end": 218,
+                        "url": "https://t.co/0hNNnovs0A",
+                        "expanded_url": "http://www.innov.in",
+                        "display_url": "innov.in"
+                    },
+                    {
+                        "start": 258,
+                        "end": 281,
+                        "url": "https://t.co/exFODLzmXa",
+                        "expanded_url": "https://twitter.com/Innovsource2004/status/1437635450555052033/photo/1",
+                        "display_url": "pic.twitter.com/exFODLzmXa"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 220,
+                        "end": 235,
+                        "tag": "EmployeeHealth"
+                    },
+                    {
+                        "start": 236,
+                        "end": 243,
+                        "tag": "Safety"
+                    },
+                    {
+                        "start": 244,
+                        "end": 257,
+                        "tag": "BackToOffice"
+                    }
+                ]
+            },
+            "source": "SocialPilot.co",
+            "id": "1437635450555052033",
+            "text": "We surveyed professionals about return to office plans, the majority of workers say they will be required to wear masks at work. What else is your firm mandating to keep everyone safe?\n\nVisit at https://t.co/0hNNnovs0A\n\n#EmployeeHealth #Safety #BackToOffice https://t.co/exFODLzmXa",
+            "lang": "en",
+            "created_at": "2021-09-14T04:32:56.000Z",
+            "possibly_sensitive": false
+        },
+        {
+            "author_id": "1306124699299053568",
+            "attachments": {
+                "media_keys": [
+                    "3_1437635447065296899"
+                ]
+            },
+            "entities": {
+                "urls": [
+                    {
+                        "start": 195,
+                        "end": 218,
+                        "url": "https://t.co/iiZQkyEB2l",
+                        "expanded_url": "https://v5global.com/v5-global-cornucopia/",
+                        "display_url": "v5global.com/v5-global-corn…"
+                    },
+                    {
+                        "start": 258,
+                        "end": 281,
+                        "url": "https://t.co/kxzjLL8Jsn",
+                        "expanded_url": "https://twitter.com/cornucopia_v5/status/1437635450542379009/photo/1",
+                        "display_url": "pic.twitter.com/kxzjLL8Jsn"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 220,
+                        "end": 235,
+                        "tag": "EmployeeHealth"
+                    },
+                    {
+                        "start": 236,
+                        "end": 243,
+                        "tag": "Safety"
+                    },
+                    {
+                        "start": 244,
+                        "end": 257,
+                        "tag": "BackToOffice"
+                    }
+                ]
+            },
+            "source": "SocialPilot.co",
+            "id": "1437635450542379009",
+            "text": "We surveyed professionals about return to office plans, the majority of workers say they will be required to wear masks at work. What else is your firm mandating to keep everyone safe?\n\nVisit at https://t.co/iiZQkyEB2l\n\n#EmployeeHealth #Safety #BackToOffice https://t.co/kxzjLL8Jsn",
+            "lang": "en",
+            "created_at": "2021-09-14T04:32:56.000Z",
+            "possibly_sensitive": false
+        }
+    ],
+    "meta": {
+        "newest_id": "1438243362012688389",
+        "oldest_id": "1437635450542379009",
+        "result_count": 50,
+        "next_token": "b26v89c19zqg8o3fpdp96xwte44o35zhw3sipgiyjfywt"
+    }
+}

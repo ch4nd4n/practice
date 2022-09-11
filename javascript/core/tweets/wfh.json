@@ -1,0 +1,1871 @@
+{
+    "data": [
+        {
+            "created_at": "2021-09-15T21:14:23.000Z",
+            "lang": "und",
+            "id": "1438249863892791298",
+            "author_id": "1132449756888756224",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437463551040364544"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 15,
+                        "username": "martinhoyes",
+                        "id": "780292093839220736"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 17,
+                        "end": 21,
+                        "tag": "csr"
+                    },
+                    {
+                        "start": 22,
+                        "end": 37,
+                        "tag": "sustainability"
+                    },
+                    {
+                        "start": 38,
+                        "end": 42,
+                        "tag": "adp"
+                    },
+                    {
+                        "start": 43,
+                        "end": 51,
+                        "tag": "corpgov"
+                    },
+                    {
+                        "start": 52,
+                        "end": 61,
+                        "tag": "orgchart"
+                    },
+                    {
+                        "start": 62,
+                        "end": 80,
+                        "tag": "workforceplanning"
+                    },
+                    {
+                        "start": 81,
+                        "end": 90,
+                        "tag": "startups"
+                    },
+                    {
+                        "start": 91,
+                        "end": 110,
+                        "tag": "workforceanalytics"
+                    },
+                    {
+                        "start": 111,
+                        "end": 122,
+                        "tag": "upskilling"
+                    },
+                    {
+                        "start": 123,
+                        "end": 133,
+                        "tag": "diversity"
+                    },
+                    {
+                        "start": 134,
+                        "end": 138,
+                        "tag": "WFH"
+                    }
+                ]
+            },
+            "text": "RT @martinhoyes: #csr #sustainability #adp #corpgov #orgchart #workforceplanning #startups #workforceanalytics #upskilling #diversity #WFH…",
+            "source": "Twitter Web App",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:14:13.000Z",
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 20,
+                        "end": 22,
+                        "probability": 0.5243,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 15,
+                        "username": "RivkahBrown",
+                        "id": "585482512"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249822142664704",
+            "author_id": "41595672",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437807520710643717"
+                }
+            ],
+            "text": "RT @RivkahBrown: If WFH is a bonus, commuting is work. Unpaid work.",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:14:03.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 90,
+                        "end": 113,
+                        "url": "https://t.co/uevEvG89CT",
+                        "expanded_url": "https://twitter.com/msamuelOfficial/status/1438149120900874242/photo/1",
+                        "display_url": "pic.twitter.com/uevEvG89CT"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 41,
+                        "end": 43,
+                        "probability": 0.3081,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 19,
+                        "username": "msamuelOfficial",
+                        "id": "1352501334499618817"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249781520830464",
+            "author_id": "1241331510965202944",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438149120900874242"
+                }
+            ],
+            "text": "RT @msamuelOfficial: Funniest part about WFH is “going to the office” with morning wood \uD83D\uDE02 https://t.co/uevEvG89CT",
+            "source": "Twitter for Android",
+            "attachments": {
+                "media_keys": [
+                    "3_1438149116496912393"
+                ]
+            },
+            "possibly_sensitive": true
+        },
+        {
+            "created_at": "2021-09-15T21:13:24.000Z",
+            "lang": "en",
+            "id": "1438249614042271744",
+            "author_id": "1026635630569086981",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437867813108994048"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 9,
+                        "username": "jhong",
+                        "id": "1058971"
+                    }
+                ]
+            },
+            "text": "RT @jhong: Expect more hugely successful startups founded by people in their late 30s, 40s, and even 50s, as WFH enables parent founders to…",
+            "source": "Twitter Web App",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:13:06.000Z",
+            "lang": "und",
+            "id": "1438249539626885120",
+            "author_id": "1132449756888756224",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438244756820090880"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 15,
+                        "username": "martinhoyes",
+                        "id": "780292093839220736"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 17,
+                        "end": 21,
+                        "tag": "csr"
+                    },
+                    {
+                        "start": 22,
+                        "end": 37,
+                        "tag": "sustainability"
+                    },
+                    {
+                        "start": 38,
+                        "end": 42,
+                        "tag": "adp"
+                    },
+                    {
+                        "start": 43,
+                        "end": 51,
+                        "tag": "corpgov"
+                    },
+                    {
+                        "start": 52,
+                        "end": 64,
+                        "tag": "sustainable"
+                    },
+                    {
+                        "start": 65,
+                        "end": 81,
+                        "tag": "PeopleAnalytics"
+                    },
+                    {
+                        "start": 82,
+                        "end": 100,
+                        "tag": "workforceplanning"
+                    },
+                    {
+                        "start": 101,
+                        "end": 110,
+                        "tag": "startups"
+                    },
+                    {
+                        "start": 111,
+                        "end": 123,
+                        "tag": "hrcommunity"
+                    },
+                    {
+                        "start": 124,
+                        "end": 135,
+                        "tag": "upskilling"
+                    }
+                ]
+            },
+            "text": "RT @martinhoyes: #csr #sustainability #adp #corpgov #sustainable #PeopleAnalytics #workforceplanning #startups #hrcommunity #upskilling #di…",
+            "source": "Twitter Web App",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:13:05.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 90,
+                        "end": 113,
+                        "url": "https://t.co/uevEvG89CT",
+                        "expanded_url": "https://twitter.com/msamuelOfficial/status/1438149120900874242/photo/1",
+                        "display_url": "pic.twitter.com/uevEvG89CT"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 41,
+                        "end": 43,
+                        "probability": 0.3081,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 19,
+                        "username": "msamuelOfficial",
+                        "id": "1352501334499618817"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249536116428801",
+            "author_id": "1260387931858010117",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438149120900874242"
+                }
+            ],
+            "text": "RT @msamuelOfficial: Funniest part about WFH is “going to the office” with morning wood \uD83D\uDE02 https://t.co/uevEvG89CT",
+            "source": "Twitter for iPhone",
+            "attachments": {
+                "media_keys": [
+                    "3_1438149116496912393"
+                ]
+            },
+            "possibly_sensitive": true
+        },
+        {
+            "created_at": "2021-09-15T21:13:03.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 90,
+                        "end": 113,
+                        "url": "https://t.co/2ZpF7QzPKG",
+                        "expanded_url": "https://buff.ly/3kwEwKy",
+                        "display_url": "buff.ly/3kwEwKy",
+                        "images": [
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1437446581473660928/7zn50Pwi?format=jpg&name=orig",
+                                "width": 533,
+                                "height": 399
+                            },
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1437446581473660928/7zn50Pwi?format=jpg&name=150x150",
+                                "width": 150,
+                                "height": 150
+                            }
+                        ],
+                        "status": 200,
+                        "title": "The remote work argument has already been won by startups",
+                        "description": "Welcome back to The TechCrunch Exchange, a weekly startups-and-markets newsletter for your weekend enjoyment.",
+                        "unwound_url": "https://techcrunch.com/2021/08/28/the-remote-work-argument-has-already-been-won-by-startups/"
+                    },
+                    {
+                        "start": 139,
+                        "end": 162,
+                        "url": "https://t.co/knLOMByow3",
+                        "expanded_url": "https://twitter.com/BenZviGroup/status/1438249526452801538/photo/1",
+                        "display_url": "pic.twitter.com/knLOMByow3"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 118,
+                        "end": 129,
+                        "username": "TechCrunch",
+                        "id": "816653"
+                    },
+                    {
+                        "start": 133,
+                        "end": 138,
+                        "username": "alex",
+                        "id": "7380362"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 59,
+                        "end": 63,
+                        "tag": "wfh"
+                    },
+                    {
+                        "start": 64,
+                        "end": 77,
+                        "tag": "FutureOfWork"
+                    },
+                    {
+                        "start": 78,
+                        "end": 89,
+                        "tag": "Management"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249526452801538",
+            "author_id": "879278528168153088",
+            "text": "The remote work argument has already been won by startups.\n#wfh #FutureOfWork #Management\nhttps://t.co/2ZpF7QzPKG via @TechCrunch by @alex https://t.co/knLOMByow3",
+            "source": "Buffer",
+            "attachments": {
+                "media_keys": [
+                    "3_1438249522736533509"
+                ]
+            },
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:13:02.000Z",
+            "lang": "en",
+            "id": "1438249525525684224",
+            "author_id": "284062488",
+            "text": "To keep myself awake while on break, I clean the house. Wfh has its perks too!",
+            "source": "Twitter for Android",
+            "possibly_sensitive": false
+        },
+        {
+            "in_reply_to_user_id": "2239772227",
+            "created_at": "2021-09-15T21:12:40.000Z",
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 0,
+                        "end": 16,
+                        "probability": 0.522,
+                        "type": "Product",
+                        "normalized_text": "Superior Iron Man"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249431070031873",
+            "author_id": "2239772227",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438249429232930816"
+                }
+            ],
+            "text": "Superior Iron Man was the first comic skin that was really marketed outside of launch as being this glorious comic book masterpiece, sadly it was still reusing assets with a different helmet but everyone gave it a pass because WFH and more.",
+            "source": "Twitter for Android",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:12:31.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 90,
+                        "end": 113,
+                        "url": "https://t.co/uevEvG89CT",
+                        "expanded_url": "https://twitter.com/msamuelOfficial/status/1438149120900874242/photo/1",
+                        "display_url": "pic.twitter.com/uevEvG89CT"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 41,
+                        "end": 43,
+                        "probability": 0.3081,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 19,
+                        "username": "msamuelOfficial",
+                        "id": "1352501334499618817"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249392050429952",
+            "author_id": "921180449245925376",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438149120900874242"
+                }
+            ],
+            "text": "RT @msamuelOfficial: Funniest part about WFH is “going to the office” with morning wood \uD83D\uDE02 https://t.co/uevEvG89CT",
+            "source": "Twitter for iPad",
+            "attachments": {
+                "media_keys": [
+                    "3_1438149116496912393"
+                ]
+            },
+            "possibly_sensitive": true
+        },
+        {
+            "created_at": "2021-09-15T21:12:21.000Z",
+            "lang": "en",
+            "id": "1438249350686285824",
+            "author_id": "1280228727729926144",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438246403793465346"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 9,
+                        "username": "SIEPR",
+                        "id": "3341083694"
+                    },
+                    {
+                        "start": 88,
+                        "end": 95,
+                        "username": "Forbes",
+                        "id": "91478624"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 53,
+                        "end": 64,
+                        "tag": "remotework"
+                    }
+                ]
+            },
+            "text": "RT @SIEPR: As companies seek the optimal balance b/w #remotework &amp; filling offices, @Forbes asks: Should we embrace WFH 100%, or is a hybri…",
+            "source": "Twitter",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:12:11.000Z",
+            "lang": "en",
+            "id": "1438249309137481731",
+            "author_id": "1093655010",
+            "text": "WFH for a few hours at my parents house today and had my music going. About 15 mins into a Hood jam the old man looks up and says I don’t know what band this is but this is really good. Did not expect that at all",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:11:47.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 90,
+                        "end": 113,
+                        "url": "https://t.co/uevEvG89CT",
+                        "expanded_url": "https://twitter.com/msamuelOfficial/status/1438149120900874242/photo/1",
+                        "display_url": "pic.twitter.com/uevEvG89CT"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 41,
+                        "end": 43,
+                        "probability": 0.3081,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 19,
+                        "username": "msamuelOfficial",
+                        "id": "1352501334499618817"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249210005102601",
+            "author_id": "1362763899301294082",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438149120900874242"
+                }
+            ],
+            "text": "RT @msamuelOfficial: Funniest part about WFH is “going to the office” with morning wood \uD83D\uDE02 https://t.co/uevEvG89CT",
+            "source": "Twitter for iPhone",
+            "attachments": {
+                "media_keys": [
+                    "3_1438149116496912393"
+                ]
+            },
+            "possibly_sensitive": true
+        },
+        {
+            "created_at": "2021-09-15T21:11:43.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 90,
+                        "end": 113,
+                        "url": "https://t.co/uevEvG89CT",
+                        "expanded_url": "https://twitter.com/msamuelOfficial/status/1438149120900874242/photo/1",
+                        "display_url": "pic.twitter.com/uevEvG89CT"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 41,
+                        "end": 43,
+                        "probability": 0.3081,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 19,
+                        "username": "msamuelOfficial",
+                        "id": "1352501334499618817"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249190488936454",
+            "author_id": "1211498013559930881",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438149120900874242"
+                }
+            ],
+            "text": "RT @msamuelOfficial: Funniest part about WFH is “going to the office” with morning wood \uD83D\uDE02 https://t.co/uevEvG89CT",
+            "source": "Twitter for iPhone",
+            "attachments": {
+                "media_keys": [
+                    "3_1438149116496912393"
+                ]
+            },
+            "possibly_sensitive": true
+        },
+        {
+            "created_at": "2021-09-15T21:11:34.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 90,
+                        "end": 113,
+                        "url": "https://t.co/uevEvG89CT",
+                        "expanded_url": "https://twitter.com/msamuelOfficial/status/1438149120900874242/photo/1",
+                        "display_url": "pic.twitter.com/uevEvG89CT"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 41,
+                        "end": 43,
+                        "probability": 0.3081,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 19,
+                        "username": "msamuelOfficial",
+                        "id": "1352501334499618817"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249153621106697",
+            "author_id": "706261680918032384",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438149120900874242"
+                }
+            ],
+            "text": "RT @msamuelOfficial: Funniest part about WFH is “going to the office” with morning wood \uD83D\uDE02 https://t.co/uevEvG89CT",
+            "source": "Twitter for iPhone",
+            "attachments": {
+                "media_keys": [
+                    "3_1438149116496912393"
+                ]
+            },
+            "possibly_sensitive": true
+        },
+        {
+            "created_at": "2021-09-15T21:11:27.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 198,
+                        "end": 221,
+                        "url": "https://t.co/kecduUGb32",
+                        "expanded_url": "https://twitter.com/teamhighglobal_/status/1438246246473293825",
+                        "display_url": "twitter.com/teamhighglobal…"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 181,
+                        "end": 197,
+                        "username": "TeamHighGlobal_",
+                        "id": "1360127525251391488"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249125791813639",
+            "author_id": "833223929011527680",
+            "referenced_tweets": [
+                {
+                    "type": "quoted",
+                    "id": "1438246246473293825"
+                }
+            ],
+            "text": "I cannot tell you how excited we are to bring you WFH 95. So much time and effort from everyone involved. This will truly be something you don’t want to miss. SUNDAY 9/19 - 5pm EST @TeamHighGlobal_ https://t.co/kecduUGb32",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:11:17.000Z",
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 75,
+                        "end": 92,
+                        "probability": 0.3524,
+                        "type": "Product",
+                        "normalized_text": "Baccarat Rouge 540"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249082372431875",
+            "author_id": "195869416",
+            "text": "D&amp;G light blue was my fav scent for 3 years, then it was Daisy for day and Baccarat Rouge 540 for night.\n\nNow I’m obsessed with Angels Share. Lol day, night, WFH, beach lol I even wore it bed. My husband was like so… you’re addicted \uD83D\uDE02",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:11:16.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 90,
+                        "end": 113,
+                        "url": "https://t.co/uevEvG89CT",
+                        "expanded_url": "https://twitter.com/msamuelOfficial/status/1438149120900874242/photo/1",
+                        "display_url": "pic.twitter.com/uevEvG89CT"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 41,
+                        "end": 43,
+                        "probability": 0.3081,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 19,
+                        "username": "msamuelOfficial",
+                        "id": "1352501334499618817"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249078916202497",
+            "author_id": "1076380168459972608",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438149120900874242"
+                }
+            ],
+            "text": "RT @msamuelOfficial: Funniest part about WFH is “going to the office” with morning wood \uD83D\uDE02 https://t.co/uevEvG89CT",
+            "source": "Twitter Web App",
+            "attachments": {
+                "media_keys": [
+                    "3_1438149116496912393"
+                ]
+            },
+            "possibly_sensitive": true
+        },
+        {
+            "created_at": "2021-09-15T21:11:10.000Z",
+            "lang": "en",
+            "id": "1438249055247872008",
+            "author_id": "1378741737569550339",
+            "text": "Back in the City tomorrow, WFH is nearly over. I can feel it \uD83D\uDE14",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:11:07.000Z",
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 20,
+                        "end": 22,
+                        "probability": 0.5243,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 15,
+                        "username": "RivkahBrown",
+                        "id": "585482512"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438249040072871944",
+            "author_id": "804656467185897472",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437807520710643717"
+                }
+            ],
+            "text": "RT @RivkahBrown: If WFH is a bonus, commuting is work. Unpaid work.",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "in_reply_to_user_id": "14125938",
+            "created_at": "2021-09-15T21:10:41.000Z",
+            "lang": "en",
+            "id": "1438248931264118784",
+            "author_id": "178957043",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438248192588480516"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 9,
+                        "username": "schachin",
+                        "id": "14125938"
+                    }
+                ]
+            },
+            "text": "@schachin I think if I transition to WFH I'll definitely stop wearing button ups and slacks, but definitely change into something haha",
+            "source": "Twitter Web App",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:10:35.000Z",
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 246,
+                        "end": 253,
+                        "probability": 0.5715,
+                        "type": "Organization",
+                        "normalized_text": "Ubereats"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 266,
+                        "end": 278,
+                        "tag": "lanimumbles"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438248905494482948",
+            "author_id": "1310426899945062401",
+            "text": "I don't know if anyone has noticed my absence but I'm officially back online and posting.\nI was really struggling with my ADD and having a hard time adjusting to WFH and managing my business. My partner helped put me on a schedule where i can do Ubereats and my art #lanimumbles",
+            "source": "Twitter for Android",
+            "possibly_sensitive": false
+        },
+        {
+            "in_reply_to_user_id": "14812037",
+            "created_at": "2021-09-15T21:10:22.000Z",
+            "lang": "en",
+            "id": "1438248852587520007",
+            "author_id": "747238125462663168",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438230030493097984"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 14,
+                        "username": "chris_steller",
+                        "id": "14812037"
+                    }
+                ]
+            },
+            "text": "@chris_steller Nice Outside WFH Station Kind of Afternoon tho.",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "in_reply_to_user_id": "1465459795",
+            "created_at": "2021-09-15T21:09:56.000Z",
+            "lang": "en",
+            "id": "1438248742839209984",
+            "author_id": "178957043",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438247800676909056"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 9,
+                        "username": "DaksAhoy",
+                        "id": "1465459795"
+                    }
+                ]
+            },
+            "text": "@DaksAhoy Just something to feel like I'm going to be productive. If I transition to WFH (hopefully soon), I am planning on doing the same.",
+            "source": "Twitter Web App",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:09:50.000Z",
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 20,
+                        "end": 22,
+                        "probability": 0.5243,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 15,
+                        "username": "RivkahBrown",
+                        "id": "585482512"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438248719036698627",
+            "author_id": "319150371",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437807520710643717"
+                }
+            ],
+            "text": "RT @RivkahBrown: If WFH is a bonus, commuting is work. Unpaid work.",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:09:37.000Z",
+            "lang": "en",
+            "id": "1438248663273332739",
+            "author_id": "735838129115004928",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1371497228930592769"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 17,
+                        "username": "EllaHughesXXX",
+                        "id": "700344220394131456"
+                    }
+                ]
+            },
+            "text": "RT @EllaHughesXXX: Taking a slut break, currently half way through filming customs ..... WFH is difficult when 1 person has a ‘normal’ job…",
+            "source": "Twitter for Android",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:09:08.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 71,
+                        "end": 94,
+                        "url": "https://t.co/cbjHmcFMEU",
+                        "expanded_url": "https://hubs.li/H0WNDpX0",
+                        "display_url": "hubs.li/H0WNDpX0",
+                        "images": [
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1438248545769992193/ZPUbcMUz?format=jpg&name=orig",
+                                "width": 770,
+                                "height": 578
+                            },
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1438248545769992193/ZPUbcMUz?format=jpg&name=150x150",
+                                "width": 150,
+                                "height": 150
+                            }
+                        ],
+                        "status": 200,
+                        "title": "WFH or in-person? Learn about these 4 challenges facing remote workers",
+                        "description": "If you're evaluating whether you should work remotely, it's wise to weigh how challenges might impact your role, career options and mental health.",
+                        "unwound_url": "https://www.techrepublic.com/article/wfh-or-in-person-learn-about-these-4-challenges-facing-remote-workers/?utm_content=179006820&utm_medium=social&utm_source=twitter&hss_channel=tw-4083531"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 98,
+                        "end": 111,
+                        "username": "TechRepublic",
+                        "id": "6486602"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 112,
+                        "end": 116,
+                        "tag": "WFH"
+                    },
+                    {
+                        "start": 117,
+                        "end": 128,
+                        "tag": "remotework"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438248541948989441",
+            "author_id": "4083531",
+            "text": "WFH or in-person? Learn about these 4 challenges facing remote workers https://t.co/cbjHmcFMEU by @TechRepublic #WFH #remotework",
+            "source": "HubSpot",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:09:01.000Z",
+            "lang": "th",
+            "id": "1438248512005697536",
+            "author_id": "815849309304340481",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437754310746513414"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 14,
+                        "username": "Maebaan101",
+                        "id": "1437430124245250049"
+                    }
+                ]
+            },
+            "text": "RT @Maebaan101: ตั้งใจมาแชร์สำหรับ The beginner ไม่ว่าจะคุณแม่บ้านหรือคุณพ่อบ้านที่ wfh กันมากขึ้น และรู้สึกว่างานบ้านคือภาระและน่าเบื่อ ห…",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:08:59.000Z",
+            "lang": "en",
+            "id": "1438248503659180040",
+            "author_id": "1435482994605756418",
+            "text": "one whiny post and then i’ll go back to screaming but i really hate how much of a mental struggle it has become to go to work like i just want to cry every day when i have to go but there aren’t any accessible solutions so i don’t know what to do \uD83E\uDD72 i wish i could wfh.",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "in_reply_to_user_id": "936256020875276288",
+            "created_at": "2021-09-15T21:08:37.000Z",
+            "lang": "en",
+            "id": "1438248413099929605",
+            "author_id": "329851425",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438232739354923014"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 13,
+                        "username": "CorporateBae",
+                        "id": "936256020875276288"
+                    }
+                ]
+            },
+            "text": "@CorporateBae Any WFH asking for a friend",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:08:30.000Z",
+            "lang": "en",
+            "id": "1438248381697167360",
+            "author_id": "983518878172106753",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438152341656588293"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 15,
+                        "username": "bunnyxmusic",
+                        "id": "1132652233550716928"
+                    }
+                ]
+            },
+            "text": "RT @bunnyxmusic: Back at work after 1.5 years of WFH and holding a pen like “what IS it?!”",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "in_reply_to_user_id": "17377853",
+            "created_at": "2021-09-15T21:08:29.000Z",
+            "lang": "en",
+            "id": "1438248379524403200",
+            "author_id": "178957043",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438247682514948098"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 16,
+                        "username": "MrLoganThompson",
+                        "id": "17377853"
+                    }
+                ]
+            },
+            "text": "@MrLoganThompson I can definitely see that. If I'm able to transition to WFH, I am definitely planning on doing the same thing.",
+            "source": "Twitter Web App",
+            "possibly_sensitive": false
+        },
+        {
+            "in_reply_to_user_id": "181147462",
+            "created_at": "2021-09-15T21:08:22.000Z",
+            "lang": "en",
+            "id": "1438248347316359169",
+            "author_id": "17224922",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438108666738081796"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 11,
+                        "username": "thejimmalo",
+                        "id": "181147462"
+                    }
+                ]
+            },
+            "text": "@thejimmalo Yes but you can wfh. Oh you were already doing that?",
+            "source": "Twitter Web App",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:08:14.000Z",
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 20,
+                        "end": 21,
+                        "probability": 0.4068,
+                        "type": "Organization",
+                        "normalized_text": "EA"
+                    },
+                    {
+                        "start": 37,
+                        "end": 47,
+                        "probability": 0.3085,
+                        "type": "Other",
+                        "normalized_text": "Battlefield"
+                    },
+                    {
+                        "start": 83,
+                        "end": 85,
+                        "probability": 0.3968,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 18,
+                        "username": "GerberKawasaki",
+                        "id": "349249475"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438248313690595329",
+            "author_id": "113160777",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438236150578040833"
+                }
+            ],
+            "text": "RT @GerberKawasaki: EA is NOT moving Battlefield to next year. They also admit the WFH is the issue but will have the game out before thank…",
+            "source": "Twitter Web App",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:07:49.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 37,
+                        "end": 60,
+                        "url": "https://t.co/IB6aERe7Vn",
+                        "expanded_url": "https://twitter.com/taimoorze/status/1438034746404073472/video/1",
+                        "display_url": "pic.twitter.com/IB6aERe7Vn"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 14,
+                        "username": "sugar_kaka",
+                        "id": "932705338704449537"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438248209382576130",
+            "author_id": "148004658",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438156017800343552"
+                }
+            ],
+            "text": "RT @sugar_kaka: pakistanis doing WFH https://t.co/IB6aERe7Vn",
+            "source": "Twitter for iPhone",
+            "attachments": {
+                "media_keys": [
+                    "7_1438034552564457472"
+                ]
+            },
+            "possibly_sensitive": false
+        },
+        {
+            "in_reply_to_user_id": "35787166",
+            "created_at": "2021-09-15T21:07:45.000Z",
+            "lang": "en",
+            "id": "1438248192521510916",
+            "author_id": "58885226",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438245371528900609"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 11,
+                        "username": "NICKIMINAJ",
+                        "id": "35787166"
+                    }
+                ]
+            },
+            "text": "@NICKIMINAJ Exactly. Say there are possible side effects. Say 1 in 100 people may suffer. I have had one vaccine plus I wfh, not going to large events or on a plane, wear masks indoors in crowds. I think that makes me a good enough citizen. Better than someone double jabbed flying everywhere",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:06:48.000Z",
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 20,
+                        "end": 22,
+                        "probability": 0.5243,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 15,
+                        "username": "RivkahBrown",
+                        "id": "585482512"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438247956776464386",
+            "author_id": "2711526871",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1437807520710643717"
+                }
+            ],
+            "text": "RT @RivkahBrown: If WFH is a bonus, commuting is work. Unpaid work.",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:06:39.000Z",
+            "lang": "th",
+            "id": "1438247916800397313",
+            "author_id": "1010933302809714688",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1429830984568954881"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 18,
+                        "username": "100beautyitems",
+                        "id": "3168749897"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 78,
+                        "end": 89,
+                        "tag": "ทีมปวดหลัง"
+                    }
+                ]
+            },
+            "text": "RT @100beautyitems: ต้องรีรัน Item ที่ตำแล้วรู้สึกคุ้มสุด ✨ ปีนึงยังไม่ยวบเลย #ทีมปวดหลัง คนถามเยอะมากเรื่องเก้าอี้ทำงาน นี่ว่าเก้าอี้แค่ส่…",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "in_reply_to_user_id": "961480981348737024",
+            "created_at": "2021-09-15T21:06:36.000Z",
+            "lang": "tl",
+            "id": "1438247903420551168",
+            "author_id": "299501298",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438246489575198721"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 11,
+                        "username": "hotchinitu",
+                        "id": "961480981348737024"
+                    }
+                ]
+            },
+            "text": "@hotchinitu pag OT sa oi haha \uD83E\uDD23\uD83E\uDD23 unsa namay chika sa wfh?",
+            "source": "Twitter for Android",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:06:35.000Z",
+            "lang": "en",
+            "id": "1438247900610449413",
+            "author_id": "1314164146934513665",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438172660526026754"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 14,
+                        "username": "myhashcode",
+                        "id": "1319930714284937217"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 35,
+                        "end": 53,
+                        "tag": "softwaredeveloper"
+                    },
+                    {
+                        "start": 54,
+                        "end": 72,
+                        "tag": "reactjsdevelopers"
+                    },
+                    {
+                        "start": 73,
+                        "end": 92,
+                        "tag": "mernstackdeveloper"
+                    },
+                    {
+                        "start": 117,
+                        "end": 127,
+                        "tag": "jobforyou"
+                    },
+                    {
+                        "start": 128,
+                        "end": 135,
+                        "tag": "hiring"
+                    }
+                ]
+            },
+            "text": "RT @myhashcode: Immediately Hiring #softwaredeveloper #reactjsdevelopers #mernstackdeveloper\nconnect@myhashcode.com\n\n#jobforyou #hiring #de…",
+            "source": "Twitter",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:06:29.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 90,
+                        "end": 113,
+                        "url": "https://t.co/uevEvG89CT",
+                        "expanded_url": "https://twitter.com/msamuelOfficial/status/1438149120900874242/photo/1",
+                        "display_url": "pic.twitter.com/uevEvG89CT"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 41,
+                        "end": 43,
+                        "probability": 0.3081,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 19,
+                        "username": "msamuelOfficial",
+                        "id": "1352501334499618817"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438247875868119040",
+            "author_id": "1078873333377130497",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438149120900874242"
+                }
+            ],
+            "text": "RT @msamuelOfficial: Funniest part about WFH is “going to the office” with morning wood \uD83D\uDE02 https://t.co/uevEvG89CT",
+            "source": "Twitter Web App",
+            "attachments": {
+                "media_keys": [
+                    "3_1438149116496912393"
+                ]
+            },
+            "possibly_sensitive": true
+        },
+        {
+            "in_reply_to_user_id": "178957043",
+            "created_at": "2021-09-15T21:06:17.000Z",
+            "lang": "en",
+            "id": "1438247826979528713",
+            "author_id": "269323051",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438246788352249856"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 16,
+                        "username": "RunWanderWonder",
+                        "id": "178957043"
+                    }
+                ]
+            },
+            "text": "@RunWanderWonder Our lil house sticks to the \"go to the office\" routine. Found out the pajama, more chill way was becoming detrimental for us.\n\nGet up, exercise, take dog, get showered, dress in real clothes for the day. \n\nThat change to jammies makes it easier to wfh &amp; creates a boundary.",
+            "source": "Twitter Web App",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:06:09.000Z",
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 45,
+                        "end": 51,
+                        "probability": 0.9181,
+                        "type": "Person",
+                        "normalized_text": "Johnson"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 17,
+                        "username": "Kevin_Maguire",
+                        "id": "60886384"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438247789847273472",
+            "author_id": "166516872",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438007876400947202"
+                }
+            ],
+            "text": "RT @Kevin_Maguire: Fatal irresponsibility if Johnson lets bodies pile up again when Sage advises “relatively light set of measures” - masks…",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:06:00.000Z",
+            "lang": "th",
+            "id": "1438247752366841860",
+            "author_id": "1010933302809714688",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1429825315648409603"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 18,
+                        "username": "100beautyitems",
+                        "id": "3168749897"
+                    }
+                ]
+            },
+            "text": "RT @100beautyitems: \uD83D\uDCCC เธรด ; รวมไอเท็มโต๊ะทำงาน WFH หลังใช้งานมา 1 ปี คือคุ้มค่าทุกสิ่งอย่าง✨\uD83D\uDC69\uD83C\uDFFB‍\uD83D\uDCBB เซฟหลัง เซฟคอบ่าไหล่ \uD83E\uDEC2  ขอให้คนที่ผ่านมาเ…",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:05:47.000Z",
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 21,
+                        "end": 29,
+                        "probability": 0.4167,
+                        "type": "Place",
+                        "normalized_text": "Hollywood"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 13,
+                        "username": "CDWGWAGov",
+                        "id": "828774937640841216"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 82,
+                        "end": 92,
+                        "tag": "Transform"
+                    },
+                    {
+                        "start": 93,
+                        "end": 97,
+                        "tag": "WFH"
+                    },
+                    {
+                        "start": 98,
+                        "end": 110,
+                        "tag": "Contactless"
+                    },
+                    {
+                        "start": 111,
+                        "end": 116,
+                        "tag": "Tech"
+                    },
+                    {
+                        "start": 117,
+                        "end": 124,
+                        "tag": "Remote"
+                    },
+                    {
+                        "start": 125,
+                        "end": 139,
+                        "tag": "Collaboration"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438247697832714240",
+            "author_id": "1139186989733990401",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438247121312903168"
+                }
+            ],
+            "text": "RT @CDWGWAGov: Can a Hollywood-Backed VR Company Make Science Labs More Effective #Transform #WFH #Contactless #Tech #Remote #Collaboration…",
+            "source": "Coding My Love",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:05:29.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 264,
+                        "end": 287,
+                        "url": "https://t.co/RaqLVDBgxW",
+                        "expanded_url": "https://twitter.com/TBrad_3/status/1438247623220240387/photo/1",
+                        "display_url": "pic.twitter.com/RaqLVDBgxW"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "probability": 0.8362,
+                        "type": "Person",
+                        "normalized_text": "Tita"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 201,
+                        "end": 213,
+                        "tag": "latinxpitch"
+                    },
+                    {
+                        "start": 214,
+                        "end": 217,
+                        "tag": "PB"
+                    },
+                    {
+                        "start": 218,
+                        "end": 222,
+                        "tag": "Art"
+                    },
+                    {
+                        "start": 223,
+                        "end": 241,
+                        "tag": "AuthorIllustrator"
+                    },
+                    {
+                        "start": 242,
+                        "end": 246,
+                        "tag": "WFH"
+                    },
+                    {
+                        "start": 247,
+                        "end": 255,
+                        "tag": "Agented"
+                    },
+                    {
+                        "start": 256,
+                        "end": 263,
+                        "tag": "series"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438247623220240387",
+            "author_id": "110735194",
+            "text": "Tita is a brave little girl that isn't scared of anything except bugs - especially flies. It's not until she starts to understand nature that she realizes even bugs can be beautiful and worth saving. \n#latinxpitch #PB #Art #AuthorIllustrator #WFH #Agented #series https://t.co/RaqLVDBgxW",
+            "source": "Twitter Web App",
+            "attachments": {
+                "media_keys": [
+                    "3_1438247456509210629"
+                ]
+            },
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:05:06.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 90,
+                        "end": 113,
+                        "url": "https://t.co/uevEvG89CT",
+                        "expanded_url": "https://twitter.com/msamuelOfficial/status/1438149120900874242/photo/1",
+                        "display_url": "pic.twitter.com/uevEvG89CT"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 41,
+                        "end": 43,
+                        "probability": 0.3081,
+                        "type": "Organization",
+                        "normalized_text": "WFH"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 19,
+                        "username": "msamuelOfficial",
+                        "id": "1352501334499618817"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438247528076562434",
+            "author_id": "1207527177505427458",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438149120900874242"
+                }
+            ],
+            "text": "RT @msamuelOfficial: Funniest part about WFH is “going to the office” with morning wood \uD83D\uDE02 https://t.co/uevEvG89CT",
+            "source": "Twitter for Android",
+            "attachments": {
+                "media_keys": [
+                    "3_1438149116496912393"
+                ]
+            },
+            "possibly_sensitive": true
+        },
+        {
+            "created_at": "2021-09-15T21:04:29.000Z",
+            "entities": {
+                "urls": [
+                    {
+                        "start": 69,
+                        "end": 92,
+                        "url": "https://t.co/H0CiSf6J4O",
+                        "expanded_url": "https://jobs.lever.co/jagex/3bb241e8-fc34-4728-ba97-0105fc808d97?lever-via=sIbD4v2naZ",
+                        "display_url": "jobs.lever.co/jagex/3bb241e8…",
+                        "images": [
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1438122549595021312/Mjcka_9U?format=jpg&name=orig",
+                                "width": 1000,
+                                "height": 1000
+                            },
+                            {
+                                "url": "https://pbs.twimg.com/news_img/1438122549595021312/Mjcka_9U?format=jpg&name=150x150",
+                                "width": 150,
+                                "height": 150
+                            }
+                        ],
+                        "status": 200,
+                        "title": "Jagex - Character Artist",
+                        "description": "Overview We have welcomed over 285 million players to RuneScape’s world of enthralling fantasy and, together with our team of passionate game creators, our community helps to shape how our games evolve. From casting votes on future game content, to interacting with the studio teams in live streams and in chat, we also join in person at our celebrated fan convention, RuneFest. Together with our players, we are a united Jagex tribe. Together we are building deep and engaging multiplayer gaming experiences for players everywhere. How you can contribute This is a fantastic opportunity for a Character Artist looking for a varied and challenging role that encourages creative input, teamwork, and personal development. The successful applicant will join an experienced team of artists, working on our flagship PC and soon to be Mobile title RuneScape. You will be responsible for creating a wide variety of character assets to fit into RuneScape’s medieval fantastical world. You wi",
+                        "unwound_url": "https://jobs.lever.co/jagex/3bb241e8-fc34-4728-ba97-0105fc808d97?lever-via=sIbD4v2naZ"
+                    }
+                ],
+                "annotations": [
+                    {
+                        "start": 106,
+                        "end": 107,
+                        "probability": 0.8607,
+                        "type": "Place",
+                        "normalized_text": "UK"
+                    }
+                ],
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 13,
+                        "username": "aparaitre",
+                        "id": "2316019165"
+                    }
+                ]
+            },
+            "lang": "en",
+            "id": "1438247370383319045",
+            "author_id": "549538781",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438122543244845063"
+                }
+            ],
+            "text": "RT @aparaitre: Hey! Character artist position opened on our team :)  https://t.co/H0CiSf6J4O \n\nFull time, UK only remote (sponsorship possi…",
+            "source": "Twitter for Android",
+            "possibly_sensitive": false
+        },
+        {
+            "in_reply_to_user_id": "218999041",
+            "created_at": "2021-09-15T21:04:07.000Z",
+            "lang": "en",
+            "id": "1438247281661300746",
+            "author_id": "783728525748559872",
+            "referenced_tweets": [
+                {
+                    "type": "replied_to",
+                    "id": "1438244961338761228"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 0,
+                        "end": 10,
+                        "username": "d_feldman",
+                        "id": "218999041"
+                    }
+                ]
+            },
+            "text": "@d_feldman midday walks? yes, they're baller -- totally changed the dynamic of WFH life for me since the pandy \n\n(can't speak for rock em sock ems)",
+            "source": "Twitter Web App",
+            "possibly_sensitive": false
+        },
+        {
+            "created_at": "2021-09-15T21:04:03.000Z",
+            "lang": "en",
+            "id": "1438247264632205313",
+            "author_id": "1112416839240302592",
+            "referenced_tweets": [
+                {
+                    "type": "retweeted",
+                    "id": "1438232281806778371"
+                }
+            ],
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 17,
+                        "username": "nicolecardoza",
+                        "id": "82663693"
+                    },
+                    {
+                        "start": 72,
+                        "end": 86,
+                        "username": "ARDTakeAction",
+                        "id": "1294105791431970816"
+                    }
+                ]
+            },
+            "text": "RT @nicolecardoza: HIRING! FT, remote assistant editor to write for the @ARDTakeAction. Salary starts at $70k with unlimited vacations, ben…",
+            "source": "Twitter for iPhone",
+            "possibly_sensitive": false
+        }
+    ],
+    "meta": {
+        "newest_id": "1438249863892791298",
+        "oldest_id": "1438247264632205313",
+        "result_count": 50,
+        "next_token": "b26v89c19zqg8o3fpdp9lv05lah99xq7c623tswtapr3x"
+    }
+}
