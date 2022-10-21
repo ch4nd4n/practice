@@ -1,0 +1,14 @@
+lockfileVersion: 5.4
+
+specifiers:
+  ulid: ^2.3.0
+
+dependencies:
+  ulid: 2.3.0
+
+packages:
+
+  /ulid/2.3.0:
+    resolution: {integrity: sha512-keqHubrlpvT6G2wH0OEfSW4mquYRcbe/J8NMmveoQOjUqmo+hXtO+ORCpWhdbZ7k72UtY61BL7haGxW6enBnjw==}
+    hasBin: true
+    dev: false
