@@ -66,3 +66,5 @@ dist/
 _site/
 
 .ipynb_checkpoints
+
+yarn.lock
