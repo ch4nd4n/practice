@@ -64,3 +64,5 @@ ch_01/dist/
 .mvn
 dist/
 _site/
+
+.ipynb_checkpoints
