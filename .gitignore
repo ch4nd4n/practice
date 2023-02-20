@@ -68,3 +68,5 @@ _site/
 .ipynb_checkpoints
 
 yarn.lock
+
+nodejs/reveal.js/
