@@ -17,5 +17,5 @@ test('find factorial of 3', () => {
 })
 
 test('find factorial of 10', () => {
-    expect(factorial(20)).toBe(6);
+    expect(factorial(20)).toBe(2432902008176640000);
 })

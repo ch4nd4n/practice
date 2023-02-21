@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "debug": "^4.3.4",
     "jest": "^27.0.6"
   }
 }
