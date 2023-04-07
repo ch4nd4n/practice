@@ -3,7 +3,12 @@
  */
 
 const headerRegex = /^#{1,6}\s+/;
+const listItemRegex = /^-\s+/;
 
+function toListItem(markdown) {
+  const result = markdown.match(listItemRegex);
+  return null;
+}
 function toHtml(markdown) {
   // Check if the text starts with "# "
   const ary = markdown.split('\n');
