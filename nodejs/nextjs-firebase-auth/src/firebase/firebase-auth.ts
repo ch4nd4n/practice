@@ -22,6 +22,7 @@ function logout() {
 
 export default function useFirebaseAuth() {
   const [authUser, setAuthUser] = useState<User>();
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
@@ -30,9 +31,10 @@ export default function useFirebaseAuth() {
       } else {
         setAuthUser(undefined);
       }
+      setIsLoading(false);
     });
     return () => unsubscribe();
   }, []);
 
-  return { authUser, googleLogin, logout };
+  return { authUser, googleLogin, isLoading, logout };
 }

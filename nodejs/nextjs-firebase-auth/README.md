@@ -16,23 +16,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Create Next.js App
 
-Create a nextjs app, I am using the following
+Let's create a Next.js app called nextjs-firebase-auth. We'll use the following command to set it up:
 
 ```sh
 yarn create next-app --typescript --eslint
 ```
 
-Calling the app `nextjs-firebase-auth`
+Once it's done, we can navigate to the app directory using cd nextjs-firebase-auth and open up the default Next.js page by visiting http://localhost:3000.
 
-```sh
-cd nextjs-firebase-auth
-```
-
-open http://localhost:3000
-
-This shows up default Next.js page
-
-To start off clean slate Update `index.tsx`
+To start fresh, let's update index.tsx and set up a basic login page. We can do this by adding the following code:
 
 ```tsx
 export default function Home() {
@@ -44,23 +36,24 @@ export default function Home() {
 }
 ```
 
+Now, if we visit http://localhost:3000, we should see our new login page.
+
 ## Firebase emulator
 
-I am using firebase emulator to for faster. Check if you got firebase installed
+To speed up development, I am using the Firebase emulator. You can check if you have Firebase installed by running:
 
 ```sh
 firebase --version
 ```
 
-Next configure firebase emulator, create a folder to store firebase emulator config etc. Read up here
-
+Next, I'll configure the Firebase emulator by creating a folder to store the emulator configuration data. You can read more about this process
 https://firebase.google.com/docs/emulator-suite/install_and_configure
 
 ```sh
 firebase emulators:start --import=./.emulator-data --export-on-exit
 ```
 
-visit http://127.0.0.1:4000/auth
+Once the emulator is running, you can visit http://127.0.0.1:4000/auth to access the authentication emulator.
 
 ## Adding Firebase
 
@@ -111,7 +104,7 @@ createFirebaseApp function that checks if there are any existing Firebase
 apps before creating a new one. This function can be used to ensure that only one Firebase app
 instance is created in an application that requires Firebase services.
 
-create src/firebase/firebase-auth.ts
+create `src/firebase/firebase-auth.ts`
 
 ```ts
 import { useEffect, useState } from "react";
@@ -189,3 +182,64 @@ export default function Home() {
 ```
 
 This marks the completion of a very basic client side Firebase authentication.
+
+## Redirect user if not logged in
+
+Sometimes, we want to send users back to the homepage if they're not logged in. Here's how you can do it:
+
+1. Make a loading screen while Firebase checks if the user is logged in.
+2. Create a dashboard page and check if the user is logged in using useEffect.
+3. If they're not logged in, redirect them back to the homepage.
+
+```tsx
+import LoginButton from "@/components/login-button";
+import useFirebaseAuth from "@/firebase/firebase-auth";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+
+export default function Dashboard() {
+  const { authUser, isLoading } = useFirebaseAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!isLoading) {
+      if (!authUser) {
+        router.push("/");
+      }
+    }
+  }, [authUser, router, isLoading]);
+  return (
+    <>
+      <h1>Dashboard</h1>
+      <LoginButton />
+    </>
+  );
+}
+```
+
+Update `firebase-auth.ts` refer to the following
+
+```diff
+@@ -22,6 +22,7 @@ function logout() {
+
+ export default function useFirebaseAuth() {
+   const [authUser, setAuthUser] = useState<User>();
++  const [isLoading, setIsLoading] = useState(true);
+
+   useEffect(() => {
+     const unsubscribe = auth.onAuthStateChanged((authUser) => {
+@@ -30,9 +31,10 @@ export default function useFirebaseAuth() {
+       } else {
+         setAuthUser(undefined);
+       }
++      setIsLoading(false);
+     });
+     return () => unsubscribe();
+   }, []);
+
+-  return { authUser, googleLogin, logout };
++  return { authUser, googleLogin, isLoading, logout };
+ }
+```
+
+If you are not logged in and try to visit `/dashboard` it will throw you back to index page
