@@ -243,3 +243,50 @@ Update `firebase-auth.ts` refer to the following
 ```
 
 If you are not logged in and try to visit `/dashboard` it will throw you back to index page
+
+## Hooking in Firebase emulator
+
+In order to hook up the emulator, the connectAuthEmulator function is being called with the Firebase Authentication object and the host for the emulator. The emulator host is defined in the .env.local file with the variable name NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_HOST.
+
+This allows for the app to use the Firebase Authentication emulator when running locally, instead of the actual Firebase service. This can be useful for testing purposes and can speed up development by avoiding network latency. The .env.local file needs to be created with the appropriate values, and the app may require a restart for the changes to take effect.
+
+Update `firebase-auth.ts` refer to the following patch.
+
+```diff
+ import { useEffect, useState } from "react";
+ import {
++  connectAuthEmulator,
+   getAuth,
+   GoogleAuthProvider,
+   signInWithPopup,
+@@ -12,6 +13,13 @@ const app = createFirebaseApp();
+ const auth = getAuth(app);
+ const googleProvider = new GoogleAuthProvider();
+
++if (process.env.NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_HOST) {
++  connectAuthEmulator(
++    auth,
++    process.env.NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_HOST
++  );
++}
++
+ export function googleLogin() {
+   return signInWithPopup(auth, googleProvider);
+ }
+```
+
+Add following `.env.local`
+
+```sh
+NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_HOST=http://localhost:9099
+```
+
+The code changes described in the previous code block are intended to hook in the Firebase emulator in a Next.js app for authentication. After making these changes, the app should be restarted to pick up the new configuration.
+
+Once the app is restarted with the updated configuration, refreshing the page will allow the app to authenticate against the local emulator instead of the production Firebase environment. This means that you can test the authentication flow in a local environment without affecting any data or users in the production environment.
+
+With the emulator running, you can also create new users or sign in with existing ones using Google sign-in, and view the accounts created. This allows you to test the app's behavior with different user scenarios in a controlled environment.
+
+To disable the emulator, you can comment out or remove the following line from your .env.local file `NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_HOST`
+
+This environment variable is used to configure your Firebase client to use the local emulator instead of the real Firebase authentication service. By removing it, your app will default to using the real Firebase service.

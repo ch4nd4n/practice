@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import {
+  connectAuthEmulator,
   getAuth,
   GoogleAuthProvider,
   signInWithPopup,
@@ -11,6 +12,13 @@ import { createFirebaseApp } from "./client-app";
 const app = createFirebaseApp();
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
+
+if (process.env.NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_HOST) {
+  connectAuthEmulator(
+    auth,
+    process.env.NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_HOST
+  );
+}
 
 export function googleLogin() {
   return signInWithPopup(auth, googleProvider);
