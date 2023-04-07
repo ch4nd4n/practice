@@ -290,3 +290,9 @@ With the emulator running, you can also create new users or sign in with existin
 To disable the emulator, you can comment out or remove the following line from your .env.local file `NEXT_PUBLIC_FIREBASE_AUTH_EMULATOR_HOST`
 
 This environment variable is used to configure your Firebase client to use the local emulator instead of the real Firebase authentication service. By removing it, your app will default to using the real Firebase service.
+
+### Firebase Admin
+
+```sh
+yarn add firebase-admin
+```
