@@ -1,23 +1,37 @@
-import LoginButton from "@/components/login-button";
-import useFirebaseAuth from "@/firebase/firebase-auth";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { getFirebaseUser } from "@/middleware/firebase";
+import { NextPageContext } from "next";
+import qs from "querystring";
+import { User } from "firebase/auth";
 
-export default function Dashboard() {
-  const { authUser, isLoading } = useFirebaseAuth();
-  const router = useRouter();
-
-  useEffect(() => {
-    if (!isLoading) {
-      if (!authUser) {
-        router.push("/");
-      }
-    }
-  }, [authUser, router, isLoading]);
+export default function Dashboard(user: User) {
   return (
     <>
       <h1>Dashboard</h1>
-      <LoginButton />
+      <p>Logged in as {user.email}</p>
     </>
   );
+}
+
+export async function getServerSideProps(context: NextPageContext) {
+  const cookies = qs.decode(context.req?.headers?.cookie ?? "");
+  if (cookies && cookies.token) {
+    const token = getStringValue(cookies?.token);
+    const user = await getFirebaseUser(token);
+    return {
+      props: user,
+    };
+  }
+  return {
+    redirect: {
+      destination: "/",
+      permanent: false,
+    },
+  };
+}
+
+function getStringValue(value: string | string[]): string {
+  if (Array.isArray(value)) {
+    return value[0];
+  }
+  return value;
 }

@@ -33,9 +33,9 @@ export default function useFirebaseAuth() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((authUser) => {
-      if (authUser) {
-        setAuthUser(authUser);
+    const unsubscribe = auth.onAuthStateChanged((usr) => {
+      if (usr) {
+        setAuthUser(usr);
       } else {
         setAuthUser(undefined);
       }
@@ -44,5 +44,5 @@ export default function useFirebaseAuth() {
     return () => unsubscribe();
   }, []);
 
-  return { authUser, googleLogin, isLoading, logout };
+  return { auth, authUser, googleLogin, isLoading, logout };
 }

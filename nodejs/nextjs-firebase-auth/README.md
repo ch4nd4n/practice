@@ -22,9 +22,12 @@ Let's create a Next.js app called nextjs-firebase-auth. We'll use the following 
 yarn create next-app --typescript --eslint
 ```
 
+> Follow the onscreen instruction. At the point of writing this `app` folder is beta feature.
+> I am not using it in this article.
+
 Once it's done, we can navigate to the app directory using cd nextjs-firebase-auth and open up the default Next.js page by visiting http://localhost:3000.
 
-To start fresh, let's update index.tsx and set up a basic login page. We can do this by adding the following code:
+To start fresh, let's update `index.tsx` and set up a basic login page. We can do this by adding the following code:
 
 ```tsx
 export default function Home() {
@@ -36,24 +39,7 @@ export default function Home() {
 }
 ```
 
-Now, if we visit http://localhost:3000, we should see our new login page.
-
-## Firebase emulator
-
-To speed up development, I am using the Firebase emulator. You can check if you have Firebase installed by running:
-
-```sh
-firebase --version
-```
-
-Next, I'll configure the Firebase emulator by creating a folder to store the emulator configuration data. You can read more about this process
-https://firebase.google.com/docs/emulator-suite/install_and_configure
-
-```sh
-firebase emulators:start --import=./.emulator-data --export-on-exit
-```
-
-Once the emulator is running, you can visit http://127.0.0.1:4000/auth to access the authentication emulator.
+Now, if we visit http://localhost:3000, we should see our new home page with login thing.
 
 ## Adding Firebase
 
@@ -243,6 +229,23 @@ Update `firebase-auth.ts` refer to the following
 ```
 
 If you are not logged in and try to visit `/dashboard` it will throw you back to index page
+
+## Firebase emulator
+
+To speed up development, I am using the Firebase emulator. You can check if you have Firebase installed by running:
+
+```sh
+firebase --version
+```
+
+Next, I'll configure the Firebase emulator by creating a folder to store the emulator configuration data. You can read more about this process
+https://firebase.google.com/docs/emulator-suite/install_and_configure
+
+```sh
+firebase emulators:start --import=./.emulator-data --export-on-exit
+```
+
+Once the emulator is running, you can visit http://127.0.0.1:4000/auth to access the authentication emulator.
 
 ## Hooking in Firebase emulator
 
