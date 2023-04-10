@@ -14,12 +14,17 @@ export default function Dashboard(user: User) {
 
 export async function getServerSideProps(context: NextPageContext) {
   const cookies = qs.decode(context.req?.headers?.cookie ?? "");
-  if (cookies && cookies.token) {
-    const token = getStringValue(cookies?.token);
-    const user = await getFirebaseUser(token);
-    return {
-      props: user,
-    };
+  try {
+    if (cookies && cookies.token) {
+      const token = getStringValue(cookies?.token);
+      const user = await getFirebaseUser(token);
+      console.log({ user });
+      return {
+        props: user,
+      };
+    }
+  } catch (error) {
+    console.error({ error });
   }
   return {
     redirect: {

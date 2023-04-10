@@ -11,13 +11,6 @@ if (getApps().length <= 0) {
   });
 }
 
-export async function getFirebaseUser(token: string) {
-  try {
-    const decoded = await admin.auth().verifyIdToken(token);
-    return decoded;
-  } catch (error) {
-    console.log({ error });
-    console.log({ err: "invalid token" });
-  }
-  return null;
+export function getFirebaseUser(token: string) {
+  return admin.auth().verifyIdToken(token);
 }
