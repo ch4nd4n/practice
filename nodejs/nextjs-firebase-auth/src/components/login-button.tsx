@@ -1,14 +1,25 @@
-import useFirebaseAuth from "@/firebase/firebase-auth";
+import useFirebaseAuth, {
+  recaptcha,
+  signInWithPhone,
+} from "@/firebase/firebase-auth";
+import { PhoneAuthentication } from "./phone-signin";
+import { useEffect } from "react";
 
 export default function LoginButton() {
-  const { authUser, googleLogin, logout } = useFirebaseAuth();
+  useEffect(() => {
+    if (window) {
+      // @ts-ignore
+      window.recaptchaVerifier = recaptcha(() => {});
+    }
+  }, []);
+  const { authUser, logout } = useFirebaseAuth();
   if (authUser) {
     return (
       <div>
-        <span>logged in as {authUser.displayName}</span>
+        <span>logged in as {authUser.displayName ?? authUser.phoneNumber}</span>
         <button onClick={logout}>Logout</button>
       </div>
     );
   }
-  return <button onClick={googleLogin}>Google Login</button>;
+  return <PhoneAuthentication />;
 }
