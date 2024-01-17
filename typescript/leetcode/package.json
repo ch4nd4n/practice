@@ -5,10 +5,13 @@
   "license": "MIT",
   "scripts": {
     "lint": "lint",
+    "jest": "jest",
     "start": "node dist/1_two_sum",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "test": "jest"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.11",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.40.1",
     "eslint": "^8.0.1",
@@ -16,6 +19,8 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
-    "typescript": "*"
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3"
   }
 }

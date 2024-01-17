@@ -1,0 +1,16 @@
+const { integer, sqliteTable, text } = require("drizzle-orm/sqlite-core");
+
+const mutualFundData = sqliteTable("mutual_fund_data", {
+  scheme_code: integer("scheme_code"),
+  scheme_name: text("scheme_name").notNull(),
+  isin_div_payout: text('isin_div_payout').notNull(),
+  isin_div_reinvestment: text('isin_div_reinvestment').notNull(),
+  net_asset_value: text('net_asset_value'),
+  repurchase_price: text('repurchase_price'),
+  sale_price: text('sale_price'),
+  date: text('date').notNull()
+});
+
+module.exports = {
+  mutualFundData,
+};
