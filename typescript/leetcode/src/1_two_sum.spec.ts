@@ -14,6 +14,6 @@ describe("twosum", () => {
     const nums = [-2, 7, -11, 15];
     const target = 4;
     const result = twoSum(nums, target);
-    expect(result).toEqual([1, 2]);
+    expect(result).toEqual([2, 3]);
   });
 });

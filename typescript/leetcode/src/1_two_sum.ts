@@ -6,7 +6,7 @@ export function twoSum(nums: number[], target: number) {
     for (let j = i + 1; j < nums.length; j++) {
       const currentSubNum = nums[j];
       if (currentSubNum === diff) {
-        targetArray.push(currentNumber, currentSubNum);
+        targetArray.push(i, j);
       }
       break;
     }
@@ -18,4 +18,3 @@ export function twoSum(nums: number[], target: number) {
 }
 
 const result = twoSum([1, 2, 3, 4], 7);
-console.log({ result });
