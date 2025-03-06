@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@chandan/core": ["packages/core/src/index.ts"]
+      "@chandan/core": ["packages/core/src/index.ts"],
+      "@chandan/core-ui": ["packages/core-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
