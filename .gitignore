@@ -70,3 +70,5 @@ _site/
 yarn.lock
 
 nodejs/reveal.js/
+.nx
+
