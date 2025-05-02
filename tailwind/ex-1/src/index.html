@@ -1,56 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../dist/output.css" rel="stylesheet">
-</head>
-
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+  <body>
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
     <div>
-        <h1>
-            Container
-        </h1>
-        <div class="container mx-auto">
-            <h1>
-                Hello
-            </h1>
-            <div>
-                <button>Button with no style</button>
-
-            </div>
-            <div>
-                <button class="border">Button</button>
-            </div>
+      <h1>Container</h1>
+      <div class="container mx-auto">
+        <h1 class="underline">Hello</h1>
+        <div>
+          <button>Button with no style</button>
         </div>
-        <div class="container mx-auto">
-            Columns!
-            <div class="columns-2">
-                <img class="w-full object-cover rounded-lg"
-                    src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2952&amp;q=80">
-                <img class="w-full object-cover rounded-lg"
-                    src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2952&amp;q=80">
-            </div>
-            <figure>
-                <img src="https://images.unsplash.com/photo-1671394507023-76c50b824053?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-                    alt="Image description">
-                <figcaption>Photo by John Doe on Unsplash</figcaption>
-            </figure>
+        <div>
+          <button class="border">Button</button>
         </div>
-        <div class="container mx-auto">
-            <img id="d1"
-                src="data:image/jpg;base64, /9j/2wBDACAWGBwYFCAcGhwkIiAmMFA0MCwsMGJGSjpQdGZ6eHJmcG6AkLicgIiuim5woNqirr7EztDOfJri8uDI8LjKzsb/2wBDASIkJDAqMF40NF7GhHCExsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsb/wAARCABVAIADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAgMEBQAB/8QAMBAAAgIBAwMCBQQABwAAAAAAAQIAEQMSITEEIkETURQyYXGBBSMzkSRCUmJyoeH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AM9hdEG5f0i6DubBUGZ7CgN5f0m5T6LCIPVdKQCyDtO5HtJunOzC6rgTWyAupAPiZOVRgz2DqHmVKnCSpA5v2lqsdHaJJ043sHYy1ANJsxgTqP3TfvKCuocyZ3AyH3hLlPqKCeZIvMpCkHiIyA0FFEESnPe4BoiSlzosUGPMKYqxMmHp1s/eSsGyO7A0pG09x9yhfFTzvU/7ZAvpdsl77DaOZ01lnBsDiT4BqybEgCUZMYsMTY8yRWVkKdo58RWL02Y9m/uTG9Q6N8qaakv+TmiTJGk8UJV0rAOpB8UR7SRrlXT6E066ogyTQX5CZl9R6aatJ1FjuZpgqnTdoJWplArRJFAnaNQsTtjCkqWXnaVY+sxMKDaT7NB6fGpUZAxBEZlwYciMzKLHkbGCASGctYqoGqsgqTtiZG/ac/aeDOVNZE/raBxY72CTJzRUgePMW+QZG/aBLeW4qNw5PRBGoEEWwI5lVBppBN+9QMuosF0mvFQFyK2QkatF9u0Zp31Ek1wDtJE9ESM5HJNijG5GI5224k2Ls6gam077mVZgpFqbF8xBP8ho8xTKU2Pgxq1uTsQYDBmu7Mk8B2qORWbSyjizJADYlWNyg08kHeBaQyNn6O07dvMy9BqyePEPL1AZNC6lrxJ1Dst6tohZjcAqF88yoMvptZ8zP6f+XuH5j9RDEVzxJGHSG0tRPuOZJkwls4Usf/IT5T6mnGAfv5nD1Gd2QdwG0CF8fw4OkEgnkwFAzkDewP7jQzMw1rTeduRB6dCufUFNXUiPFsNqoRjnUd9xJwWpgvmDdKBqP1iy8YXk9xKMjI2JbJsbERJoEXzPCxG3i4ENMFu9rjA7FdQ2IM9KM+I+N9otVK7E8xCnImLIqhXNjx9feeBUAFsb52iFLUFrc7z0ZTe/mBMyuhNFWF+ai8eFSbxtqP8ApOxguW4Iqp4jlG1CKGFdclhao+TGvmFAKO6tzEs2qz5JgqD+YJ6uxB/MowbdwuxEFPpsY1LA/FQIny91EAEnkxo6nEjUTR94v0fVoFjv4hHpdCP3AE/KZRKOkw4cqu6NYv8Aqe5+jQJYu/pB/TDl1kMgC1uamlNssjqejcZA2NSQBvA6XF6jZFIvaxNhvlP2mb+nn/FP/wAYJQnTqFUMv3ismAaKXFuCf6lpMEmIYAsjniEuM+eTGrjOzCj5Ih6Qo53rn2mWiXFkXvtuYCKDYv6x4Q0R/wB+8EIFY77SRYXx9blAxU52nqYwdQriUKoKgn2kk5x7faF6diNPO0bjxljLFpHTnRnDMe1eblvxGJ+O4faEmFFG4swwoHAAmpBSfiUUUuNyPos9GbIeMLfkxtCeyBDZMxB/bAFe8h/TifiWv2M0n+Q/aZnQGuor3BkWmTFMYbRT8yCUADee0Ck6dMtgyGl2AnaLo3OnSBuJQPzDb5qnTpISIDKkQKNp06agFPJ06IdOudOkgZTWNj9Jl9CT8Sv5nToUtQxbCdOkH//Z"
-                alt="Antler!" class="w-full" />
+      </div>
+      <div class="container mx-auto">
+        Columns!
+        <div class="columns-2">
+          <img
+            class="w-full object-cover rounded-lg"
+            src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2952&amp;q=80"
+          />
+          <img
+            class="w-full object-cover rounded-lg"
+            src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2952&amp;q=80"
+          />
         </div>
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1671394507023-76c50b824053?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+            alt="Image description"
+          />
+          <figcaption>Photo by John Doe on Unsplash</figcaption>
+        </figure>
+      </div>
+      <div class="container mx-auto">
+        <img
+          id="d1"
+          src="data:image/jpg;base64, /9j/2wBDACAWGBwYFCAcGhwkIiAmMFA0MCwsMGJGSjpQdGZ6eHJmcG6AkLicgIiuim5woNqirr7EztDOfJri8uDI8LjKzsb/2wBDASIkJDAqMF40NF7GhHCExsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsb/wAARCABVAIADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAgMEBQAB/8QAMBAAAgIBAwMCBQQABwAAAAAAAQIAEQMSITEEIkETURQyYXGBBSMzkSRCUmJyoeH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/AM9hdEG5f0i6DubBUGZ7CgN5f0m5T6LCIPVdKQCyDtO5HtJunOzC6rgTWyAupAPiZOVRgz2DqHmVKnCSpA5v2lqsdHaJJ043sHYy1ANJsxgTqP3TfvKCuocyZ3AyH3hLlPqKCeZIvMpCkHiIyA0FFEESnPe4BoiSlzosUGPMKYqxMmHp1s/eSsGyO7A0pG09x9yhfFTzvU/7ZAvpdsl77DaOZ01lnBsDiT4BqybEgCUZMYsMTY8yRWVkKdo58RWL02Y9m/uTG9Q6N8qaakv+TmiTJGk8UJV0rAOpB8UR7SRrlXT6E066ogyTQX5CZl9R6aatJ1FjuZpgqnTdoJWplArRJFAnaNQsTtjCkqWXnaVY+sxMKDaT7NB6fGpUZAxBEZlwYciMzKLHkbGCASGctYqoGqsgqTtiZG/ac/aeDOVNZE/raBxY72CTJzRUgePMW+QZG/aBLeW4qNw5PRBGoEEWwI5lVBppBN+9QMuosF0mvFQFyK2QkatF9u0Zp31Ek1wDtJE9ESM5HJNijG5GI5224k2Ls6gam077mVZgpFqbF8xBP8ho8xTKU2Pgxq1uTsQYDBmu7Mk8B2qORWbSyjizJADYlWNyg08kHeBaQyNn6O07dvMy9BqyePEPL1AZNC6lrxJ1Dst6tohZjcAqF88yoMvptZ8zP6f+XuH5j9RDEVzxJGHSG0tRPuOZJkwls4Usf/IT5T6mnGAfv5nD1Gd2QdwG0CF8fw4OkEgnkwFAzkDewP7jQzMw1rTeduRB6dCufUFNXUiPFsNqoRjnUd9xJwWpgvmDdKBqP1iy8YXk9xKMjI2JbJsbERJoEXzPCxG3i4ENMFu9rjA7FdQ2IM9KM+I+N9otVK7E8xCnImLIqhXNjx9feeBUAFsb52iFLUFrc7z0ZTe/mBMyuhNFWF+ai8eFSbxtqP8ApOxguW4Iqp4jlG1CKGFdclhao+TGvmFAKO6tzEs2qz5JgqD+YJ6uxB/MowbdwuxEFPpsY1LA/FQIny91EAEnkxo6nEjUTR94v0fVoFjv4hHpdCP3AE/KZRKOkw4cqu6NYv8Aqe5+jQJYu/pB/TDl1kMgC1uamlNssjqejcZA2NSQBvA6XF6jZFIvaxNhvlP2mb+nn/FP/wAYJQnTqFUMv3ismAaKXFuCf6lpMEmIYAsjniEuM+eTGrjOzCj5Ih6Qo53rn2mWiXFkXvtuYCKDYv6x4Q0R/wB+8EIFY77SRYXx9blAxU52nqYwdQriUKoKgn2kk5x7faF6diNPO0bjxljLFpHTnRnDMe1eblvxGJ+O4faEmFFG4swwoHAAmpBSfiUUUuNyPos9GbIeMLfkxtCeyBDZMxB/bAFe8h/TifiWv2M0n+Q/aZnQGuor3BkWmTFMYbRT8yCUADee0Ck6dMtgyGl2AnaLo3OnSBuJQPzDb5qnTpISIDKkQKNp06agFPJ06IdOudOkgZTWNj9Jl9CT8Sv5nToUtQxbCdOkH//Z"
+          alt="Antler!"
+          class="w-full"
+        />
+      </div>
     </div>
     <script>
-        const d1 = document.getElementById('d1');
-        d1.src = 'https://images.unsplash.com/photo-1671394507023-76c50b824053?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
+      const d1 = document.getElementById("d1");
+      d1.src =
+        "https://images.unsplash.com/photo-1671394507023-76c50b824053?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80";
     </script>
-</body>
-
+  </body>
 </html>

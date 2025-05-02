@@ -1,61 +1,55 @@
-import * as fs from 'fs';
-import * as XLSX from 'xlsx';
+import { readXlsxFile, processSheet } from './xlsx-utils';
 
 /**
- * Reads an XLSX file and returns the data from all sheets.
- * @param fileName - The name of the XLSX file to read.
- * @returns An object where each key is the sheet name and the value is the sheet data.
+ * Main function to handle CLI arguments and call relevant functions.
  */
-function readXlsxFile(fileName: string): Record<string, any[]> {
-  if (!fs.existsSync(fileName)) {
-    throw new Error(`File not found: ${fileName}`);
+function main() {
+  const args = process.argv.slice(2); // Get CLI arguments
+  console.log({ args });
+  if (args.length < 1) {
+    console.error('Usage: node main.js <command> [options]');
+    console.error('Commands:');
+    console.error(
+      '  read-xlsx <fileName> - Reads an XLSX file and prints its data.'
+    );
+    console.error(
+      '  process-sheet <fileName> <sheetName> - Processes a specific sheet.'
+    );
+    process.exit(1);
   }
 
-  // Read the file
-  const workbook = XLSX.readFile(fileName);
-
-  // Extract data from all sheets
-  const sheetsData: Record<string, any[]> = {};
-  workbook.SheetNames.forEach((sheetName) => {
-    const sheet = workbook.Sheets[sheetName];
-    sheetsData[sheetName] = XLSX.utils.sheet_to_json(sheet);
-  });
-
-  return sheetsData;
-}
-
-// Example usage
-const fileName =
-  '/Users/chandan/Downloads/all-schemes-monthly-portfolio---as-on-28th-february-2023.xlsx'; // Replace with your file path
-try {
-  const data = readXlsxFile(fileName);
-  //   console.log('Data from XLSX file:', data);
-  // open a specific sheet
-  const sheetData = data['SMEEF'];
-  // iterate over the data rows 1 to 10
-
-  sheetData.forEach((row, index) => {
-    // console.log(row);
-    // iterate over the columns
-    const startIndex = 0;
-    const endIndex = 15;
-    if (index >= startIndex && index < endIndex) {
-      console.log({ row });
-      console.log(row[`__EMPTY_2`]);
-      console.log(row[`__EMPTY_3`]);
-
-      //   console.log({ index });
-      //   Object.keys(row).forEach((key, colIdx) => {
-      //     const val = row[key];
-      //     console.log({ key, colIdx, val });
-      //     if (val == 'SCHEME NAME :') {
-      //       console.log(row[0], row[1], row[2]);
-      //       console.log('SCHEME NAME :', row[colIdx]);
-      //       console.log('SCHEME NAME :', row[colIdx + 1]);
-      //     }
-      //   });
+  const command = args[0];
+  switch (command) {
+    case 'read-xlsx': {
+      const fileName = args[1];
+      if (!fileName) {
+        console.error('Error: Missing fileName argument.');
+        process.exit(1);
+      }
+      try {
+        const data = readXlsxFile(fileName);
+        console.log('Data from XLSX file:', data);
+      } catch (error) {
+        console.error('Error reading XLSX file:', error.message);
+      }
+      break;
     }
-  });
-} catch (error) {
-  console.error('Error reading XLSX file:', error.message);
+    case 'process-sheet': {
+      const fileName = args[1];
+      const sheetName = args[2];
+      if (!fileName || !sheetName) {
+        console.error('Error: Missing fileName or sheetName argument.');
+        process.exit(1);
+      }
+      processSheet(fileName, sheetName);
+      break;
+    }
+    default:
+      console.error(`Unknown command: ${command}`);
+      console.error('Usage: node main.js <command> [options]');
+      process.exit(1);
+  }
 }
+
+// Call the main function
+main();
