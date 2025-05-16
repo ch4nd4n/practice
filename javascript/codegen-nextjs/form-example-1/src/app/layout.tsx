@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { AppWindow, Cloud } from "lucide-react"; // Import icons
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +24,40 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-full`}
       >
-        {children}
+        <header className="border-b">
+          <div className="container mx-auto px-4 h-16 flex items-center">
+            <a
+              href="/"
+              className="flex items-center gap-2 text-lg font-semibold"
+            >
+              <AppWindow className="h-6 w-6 text-primary" />
+              <span>MyApp</span>
+            </a>
+            {/* You can add navigation links here if needed */}
+          </div>
+        </header>
+
+        <main className="flex-grow container mx-auto px-4 py-8">
+          {children}
+        </main>
+
+        <footer className="border-t">
+          <div className="container mx-auto px-4 h-16 flex items-center justify-center gap-6">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-muted-foreground hover:text-foreground"
+            >
+              <Cloud className="h-5 w-5" />
+            </a>
+          </div>
+        </footer>
       </body>
     </html>
   );
