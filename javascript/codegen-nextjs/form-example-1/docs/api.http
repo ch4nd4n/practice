@@ -1,0 +1,31 @@
+### Test successful login
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "password123"
+}
+
+### Test failed login
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email": "wrong@example.com",
+    "password": "wrongpassword"
+}
+
+### Test invalid request (missing password)
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email": "test@example.com"
+}
+
+### Test with empty body
+POST http://localhost:3000/api/login
+Content-Type: application/json
+
+{}

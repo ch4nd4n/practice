@@ -1,6 +1,6 @@
-"use client"; // Add this directive to make it a Client Component
+"use client";
 
-import { Button } from "@/components/ui/button"; // Import the custom Button component
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -8,7 +8,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"; // Import Card components
+} from "@/components/ui/card";
 
 export default function Home() {
   const handleButtonClick = () => {
@@ -17,13 +17,11 @@ export default function Home() {
 
   return (
     <main className="flex items-center justify-center h-screen">
-      {/* Set a fixed width for the card */}
       <Card className="w-96">
         <CardHeader>
           <CardTitle>Card Title</CardTitle>
           <CardDescription>This is a description for the card.</CardDescription>
         </CardHeader>
-        {/* Center the button within CardContent. CardContent's default px-6 still applies. */}
         <CardContent className="flex justify-center">
           <Button onClick={handleButtonClick}>hello world</Button>
         </CardContent>

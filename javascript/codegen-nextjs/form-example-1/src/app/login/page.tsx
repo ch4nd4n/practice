@@ -2,13 +2,11 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -21,12 +19,10 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-  CardFooter,
 } from "@/components/ui/card";
 import { LoginSchema, LoginInput } from "@/lib/schemas"; // Import your schema
 
 export default function LoginPage() {
-  // 1. Define your form.
   const form = useForm<LoginInput>({
     resolver: zodResolver(LoginSchema),
     defaultValues: {
@@ -35,10 +31,7 @@ export default function LoginPage() {
     },
   });
 
-  // 2. Define a submit handler.
   function onSubmit(values: LoginInput) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     console.log(values);
     alert(
       `Login attempt with: \nEmail: ${
