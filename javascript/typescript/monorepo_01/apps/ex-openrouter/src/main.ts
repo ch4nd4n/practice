@@ -1,55 +1,39 @@
-console.log('Hello World');
-import OpenAI from 'openai';
-
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
-
-const openai = new OpenAI({
-  baseURL: 'https://openrouter.ai/api/v1',
-  apiKey: OPENROUTER_API_KEY,
-  maxRetries: 1000,
-  defaultHeaders: {
-    'HTTP-Referer': '<YOUR_SITE_URL>', // Optional. Site URL for rankings on openrouter.ai.
-    'X-Title': '<YOUR_SITE_NAME>', // Optional. Site title for rankings on openrouter.ai.
-  },
-});
-
-async function main() {
-  const completion = await openai.chat.completions.create({
-    model: 'google/gemini-2.5-pro-exp-03-25:free',
-    messages: [
-      {
-        role: 'user',
-        content: 'What is the meaning of life?',
-      },
-    ],
-  });
-
-  console.log({ completion: JSON.stringify(completion) });
-  console.log(completion.choices[0].message);
+import { callGemini } from './lib/ai-wrapper';
+const pancardContext = `From the pan card image get me the detail in JSON format. Include confidence score of image is pan card 
+  JSON format example:
+  {
+  "confidence": 0.95,
+  "document_type": "pan_card",
+  "fields": {
+    "name": "ARUN BARGESH",
+    "pan_number": "FFMPB8641J",
+    "date_of_birth": "02/04/1995"
+  }
 }
+`;
 
-async function getGemini() {
-  const apiKey = process.env.GEMINI_API_KEY;
-  const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        contents: [
-          {
-            parts: [{ text: 'Explain how AI works' }],
-          },
-        ],
-      }),
+const aadhaarContext = `From the aadhaar card image get me the detail in JSON format. 
+Include confidence score of image is a valid card 
+  JSON format example:
+  {
+  "confidence": 0.95,
+  "document_type": "aadhaar_card",
+  "fields": {
+      "name": "ARUN BARGESH",
+      "hindi_name": "अरूण बर्गेश",
+      "gender": "MALE",
+      "aadhaar_number": "FFMPB8641J",
+      "dob": "02/04/1995",
+      "issue_date": "02/04/1995",
+      "vid": "123456789"
     }
-  );
-  const data = await response.json();
-  console.log({ data: JSON.stringify(data) });
 }
-
-// main();
-
-getGemini();
+`;
+const args = process.argv.slice(2);
+if (args.length < 1) {
+  console.log('Usage: node main.js <user_text> <user_image>');
+  process.exit(1);
+}
+const userImage = args[0];
+console.log({ userText: aadhaarContext, userImage, args });
+callGemini(aadhaarContext, userImage);

@@ -1,9 +1,10 @@
+import { fetchAndExtractIframeSrc } from './html-util';
 import { readXlsxFile, processSheet } from './xlsx-utils';
 
 /**
  * Main function to handle CLI arguments and call relevant functions.
  */
-function main() {
+async function main() {
   const args = process.argv.slice(2); // Get CLI arguments
   console.log({ args });
   if (args.length < 1) {
@@ -42,6 +43,14 @@ function main() {
         process.exit(1);
       }
       processSheet(fileName, sheetName);
+      break;
+    }
+    case 'sebi-pdf-download': {
+      const url = args[1];
+      const savePdfPath = args[2];
+      console.log({ url, savePdfPath });
+      const pdfUrl = await fetchAndExtractIframeSrc(url, savePdfPath);
+      console.log(pdfUrl);
       break;
     }
     default:

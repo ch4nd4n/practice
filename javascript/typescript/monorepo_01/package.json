@@ -38,6 +38,7 @@
   },
   "nx": {},
   "dependencies": {
+    "@google/genai": "^0.12.0",
     "axios": "^1.6.0",
     "node-html-parser": "^7.0.1",
     "openai": "^4.91.0",
