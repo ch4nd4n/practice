@@ -13,7 +13,7 @@ const MOCK_IMAGES = [
     { id: 10, url: 'https://picsum.photos/id/47/300/200', title: 'Ocean' },
 ];
 
-export function ImageGallery() {
+export function ImageGalleryV2() {
     const [filter, setFilter] = useState('');
     const [displayedImages, setDisplayedImages] = useState(MOCK_IMAGES);
 
@@ -26,6 +26,7 @@ export function ImageGallery() {
     };
 
     const handleKeyUp = (e) => {
+        setFilter(e.target.value)
         if (e.key === 'Enter') {
             handleSearch();
         }
@@ -33,7 +34,7 @@ export function ImageGallery() {
 
     return (
         <div className="gallery-holder">
-            <h2>Image Gallery</h2>
+            <h2>Image Gallery V2</h2>
 
             <div className="gallery-controls">
                 <input
