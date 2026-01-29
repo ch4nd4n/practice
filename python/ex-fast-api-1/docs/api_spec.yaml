@@ -1,0 +1,138 @@
+openapi: 3.0.0
+info:
+  title: TODO API
+  description: A RESTful API for managing tasks with audit metadata and future extensibility.
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:8000
+    description: Local development server
+
+components:
+  schemas:
+    TodoBase:
+      type: object
+      required:
+        - title
+        - created_by
+      properties:
+        title:
+          type: string
+          maxLength: 255
+          example: "Buy groceries"
+        description:
+          type: string
+          nullable: true
+          example: "Milk, eggs, and bread"
+        is_completed:
+          type: boolean
+          default: false
+        created_by:
+          type: string
+          format: uuid
+          example: "550e8400-e29b-41d4-a716-446655440000"
+
+    TodoCreate:
+      allOf:
+        - $ref: "#/components/schemas/TodoBase"
+
+    TodoUpdate:
+      type: object
+      properties:
+        title:
+          type: string
+          maxLength: 255
+        description:
+          type: string
+          nullable: true
+        is_completed:
+          type: boolean
+
+    TodoResponse:
+      allOf:
+        - $ref: "#/components/schemas/TodoBase"
+        - type: object
+          properties:
+            id:
+              type: integer
+              example: 1
+            created_at:
+              type: string
+              format: date-time
+            updated_at:
+              type: string
+              format: date-time
+
+paths:
+  /todos/:
+    get:
+      summary: List all tasks
+      responses:
+        "200":
+          description: A list of tasks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TodoResponse"
+    post:
+      summary: Create a new task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TodoCreate"
+      responses:
+        "201":
+          description: Task created successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TodoResponse"
+        "422":
+          description: Validation Error
+
+  /todos/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+    get:
+      summary: Get task details
+      responses:
+        "200":
+          description: Task details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TodoResponse"
+        "404":
+          description: Task not found
+    put:
+      summary: Update a task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TodoUpdate"
+      responses:
+        "200":
+          description: Task updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TodoResponse"
+        "404":
+          description: Task not found
+    delete:
+      summary: Delete a task
+      responses:
+        "204":
+          description: Task deleted successfully
+        "404":
+          description: Task not found

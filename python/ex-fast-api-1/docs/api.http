@@ -1,0 +1,9 @@
+POST http://localhost:8000/todos
+
+{
+    "title": "hello",
+    "created_by": "chandan"
+}
+
+
+GET http://localhost:8000/todos
