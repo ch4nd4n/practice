@@ -1,0 +1,100 @@
+openapi: 3.0.3
+info:
+  title: Multi-Tenant Todo API
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Local development server
+
+components:
+  securitySchemes:
+    supabaseAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    Tenant:
+      type: object
+      required: [id, name]
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string }
+        created_at: { type: string, format: date-time }
+
+    User:
+      type: object
+      required: [id, email, role, tenant_id]
+      properties:
+        id: { type: string, format: uuid }
+        email: { type: string, format: email }
+        role:
+          { type: string, enum: [SUPER_ADMIN, TENANT_ADMIN, EDITOR, VIEWER] }
+        tenant_id: { type: string, format: uuid }
+
+    Todo:
+      type: object
+      required: [id, title, completed, user_id, tenant_id]
+      properties:
+        id: { type: string, format: uuid }
+        title: { type: string }
+        completed: { type: boolean }
+        user_id: { type: string, format: uuid }
+        tenant_id: { type: string, format: uuid }
+
+paths:
+  /tenants:
+    post:
+      summary: Create a new tenant (Super Admin only)
+      security: [{ supabaseAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name]
+              properties:
+                name: { type: string }
+      responses:
+        "201":
+          description: Tenant created
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Tenant" }
+        "403": { description: Forbidden }
+
+  /todos:
+    get:
+      summary: List todos for the current tenant
+      security: [{ supabaseAuth: [] }]
+      responses:
+        "200":
+          description: List of todos
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/Todo" }
+    post:
+      summary: Create a todo
+      security: [{ supabaseAuth: [] }]
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [title]
+              properties:
+                title: { type: string }
+                user_id:
+                  {
+                    type: string,
+                    format: uuid,
+                    description: "Optional: Target user ID (Admin/Editor only)",
+                  }
+      responses:
+        "201":
+          description: Todo created
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Todo" }
