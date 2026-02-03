@@ -1,119 +1,132 @@
-# **Developer Environment Setup**
+# Developer Environment Setup
 
-## **Prerequisites**
+## Prerequisites
 
-* **Operating System**: macOS (Intel or Apple Silicon).  
-* **Node.js**: Managed via `nvm`.  
-* **Python**: 3.12+ managed via `uv`.  
-* **Package Managers**: `pnpm` (Frontend) and `uv` (Backend).  
-* **Docker & Docker Compose**: For local infrastructure orchestration.
+- **Operating System**: macOS (Intel or Apple Silicon)
+- **Node.js**: Managed via `nvm`
+- **Python**: 3.12+ managed via `uv`
+- **Package Managers**: `pnpm` (Frontend) and `uv` (Backend)
+- **Docker & Docker Compose**: For local infrastructure orchestration
 
-## **1\. Global Tooling Setup**
+## 1. Global Tooling Setup
 
-### **NVM (Node Version Manager)**
+### NVM (Node Version Manager)
 
 Used to manage Node.js versions.
 
-* **Install**: Follow instructions at [nvm-sh/nvm](https://github.com/nvm-sh/nvm).
+- **Install**: Follow instructions at [nvm-sh/nvm](https://github.com/nvm-sh/nvm)
 
-**Usage**:  
+**Usage**:
+
+```bash
 nvm install 20
-
 nvm use 20
+```
 
-* 
+### pnpm
 
-### **pnpm**
+**Install**:
 
-**Install**:  
-npm install \-g pnpm
+```bash
+npm install -g pnpm
+```
 
-*   
-* **Commands**:  
-  * `pnpm install`: Install dependencies.  
-  * `pnpm dev`: Start Vite development server.
+**Commands**:
 
-### **uv**
+- `pnpm install`: Install dependencies
+- `pnpm dev`: Start Vite development server
 
-**Install**:  
-curl \-LsSf \[https://astral.sh/uv/install.sh\](https://astral.sh/uv/install.sh) | sh
+### uv
 
-*   
-* **Commands**:  
-  * `uv sync`: Install and sync dependencies.  
-  * `uv run <cmd>`: Run command in virtual environment.
+**Install**:
 
-## **2\. Infrastructure (Docker Compose)**
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+**Commands**:
+
+- `uv sync`: Install and sync dependencies
+- `uv run <cmd>`: Run command in virtual environment
+
+## 2. Infrastructure (Docker Compose)
 
 Run the local database and management tools from the root directory.
 
-**Start Services**:  
-docker-compose up \-d
+**Start Services**:
 
-1.   
-2. **Services Included**:  
-   * **Postgres**: Accessible at `localhost:5432`.  
-   * **pgAdmin** (Optional): UI for database management at `localhost:5050`.
+```bash
+docker compose up -d
+```
 
-## **3\. Backend Setup (FastAPI)**
+**Services Included**:
+
+- **Postgres**: Accessible at `localhost:5432`
+- **pgAdmin** (Optional): UI for database management at `localhost:5050`
+
+## 3. Backend Setup (FastAPI)
 
 Navigate to `/backend`.
 
-**Initialize**:  
-uv sync
+1. **Initialize**:
 
-1. 
+   ```bash
+   uv sync
+   ```
 
-**Environment Configuration**: Create `.env`. The application is database-agnostic; point to a local Docker container or a remote Supabase DB.  
-\# For Local Docker
+2. **Environment Configuration**: Create `.env`. The application is database-agnostic; point to a local Docker container or a remote Supabase DB.
 
-DATABASE\_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/app\_db
+   ```bash
+   # For Local Docker
+   DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/app_db
 
-\# For Supabase DB
+   # For Supabase DB
+   # DATABASE_URL=postgresql+asyncpg://postgres:[PASSWORD]@db.[REF].supabase.co:5432/postgres
 
-\# DATABASE\_URL=postgresql+asyncpg://postgres:\[PASSWORD\]@db.\[REF\].supabase.co:5432/postgres
+   SUPABASE_JWT_SECRET=your_supabase_project_jwt_secret
+   ```
 
-SUPABASE\_JWT\_SECRET=your\_supabase\_project\_jwt\_secret
+3. **Migrations**:
 
-2. 
+   ```bash
+   uv run alembic upgrade head
+   ```
 
-**Migrations**:  
-uv run alembic upgrade head
+4. **Run Server**:
 
-3. 
+   ```bash
+   uv run uvicorn src.main:app --reload
+   ```
 
-**Run Server**:  
-uv run fastapi dev src/main.py
-
-4. 
-
-## **4\. Frontend Setup (React/Vite)**
+## 4. Frontend Setup (React/Vite)
 
 Navigate to `/frontend`.
 
-**Install**:  
-pnpm install
+1. **Install**:
 
-1. 
+   ```bash
+   pnpm install
+   ```
 
-**Environment Configuration**: Create `.env`.  
-VITE\_API\_URL=http://localhost:8000
+2. **Environment Configuration**: Create `.env`.
 
-VITE\_SUPABASE\_URL=https://\[PROJECT\_ID\].supabase.co
+   ```bash
+   VITE_API_URL=http://localhost:8000
+   VITE_SUPABASE_URL=https://[PROJECT_ID].supabase.co
+   VITE_SUPABASE_ANON_KEY=your_anon_key
+   ```
 
-VITE\_SUPABASE\_ANON\_KEY=your\_anon\_key
+3. **Run**:
 
-2. 
+   ```bash
+   pnpm dev
+   ```
 
-**Run**:  
-pnpm dev
-
-3. 
-
-## **5\. API Client Generation**
+## 5. API Client Generation
 
 When `specs/openapi.yaml` changes, regenerate the frontend client:
 
+```bash
 cd frontend
-
 pnpm run generate-client
+```

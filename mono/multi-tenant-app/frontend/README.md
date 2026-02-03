@@ -1,17 +1,16 @@
+# Frontend: React & Vite
 
-# **Frontend: React & Vite**
+## Setup
 
-## **Setup**
-
-1. `npm install`.  
+1. Run `pnpm install`.
 2. Configure `.env` with `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`.
 
-## **Development Flow**
+## Development Flow
 
-* **Run**: `npm run dev`.  
-* **E2E Tests**: `npx playwright test`.
+- **Run**: `pnpm dev`
+- **E2E Tests**: `pnpm exec playwright test`
 
-## **Rules**
+## Rules
 
-* Use generated API clients from the backend spec.  
-* All routes protected by Supabase Auth guards.
+- Use generated API clients from the backend spec.
+- All routes protected by Supabase Auth guards.
