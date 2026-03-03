@@ -1,3 +1,5 @@
+# README
+
 npx tailwindcss init
 
 Edit `tailwind.config.js` with following
@@ -35,7 +37,7 @@ Create HTML file
 </html>
 ```
 
-https://tailwindcss.com/docs/installation/tailwind-cli
+<https://tailwindcss.com/docs/installation/tailwind-cli>
 
 ```
 npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
