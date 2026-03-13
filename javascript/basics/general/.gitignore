@@ -1,0 +1,41 @@
+# Dependency directories
+node_modules/
+
+# pnpm artifacts
+.pnp.cjs
+.pnp.loader.mjs
+.pnp.js
+
+# Logs
+*.log
+pnpm-debug.log*
+
+# Other manager leftovers
+npm-debug.log*
+yarn-error.log*
+
+package-lock.json
+yarn.lock
+.pnpm-store/
+
+# Test output
+coverage/
+jest-coverage/
+test-results/
+*.lcov
+
+# OS/editor noise
+.DS_Store
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment files (keep secrets out of git)
+.env
+.env.local
+.env.*.local
+
+# Temp files
+/tmp/
+temp/
