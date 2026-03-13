@@ -1,4 +1,4 @@
-const lib = require("../is_palindrome"); // Fixed path
+const lib = require("../src/is_palindrome"); // Fixed path
 
 describe("is_palindrome", () => {
   it("should return false for negative numbers", () => {
