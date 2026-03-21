@@ -1,0 +1,646 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - link "Skip to content" [ref=e4] [cursor=pointer]:
+    - /url: "#skip-nav"
+  - generic [ref=e5]:
+    - banner [ref=e6]:
+      - generic [ref=e7]:
+        - link "Chandan Kumar - Back to home" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e9]: Chandan Kumar
+        - button "Activate Dark Mode" [ref=e10] [cursor=pointer]
+      - generic [ref=e12]:
+        - navigation [ref=e13]:
+          - link "Blog" [ref=e14] [cursor=pointer]:
+            - /url: /blog
+          - link "About" [ref=e15] [cursor=pointer]:
+            - /url: /about
+        - generic [ref=e16]:
+          - link "Twitter" [ref=e17] [cursor=pointer]:
+            - /url: https://twitter.com/ch4nd4n
+          - link "Instagram" [ref=e18] [cursor=pointer]:
+            - /url: https://www.instagram.com/ch4nd4n/
+    - generic [ref=e19]:
+      - heading "Migrating Data from CockroachDB to PostgreSQL" [level=2] [ref=e20]
+      - paragraph [ref=e21]:
+        - time [ref=e22]: 10 December, 2024
+        - text: —
+        - link "database migration" [ref=e23] [cursor=pointer]:
+          - /url: /tags/database-migration
+        - text: ","
+        - link "prisma" [ref=e24] [cursor=pointer]:
+          - /url: /tags/prisma
+        - text: ","
+        - link "cockroachdb" [ref=e25] [cursor=pointer]:
+          - /url: /tags/cockroachdb
+        - text: ","
+        - link "postgresql" [ref=e26] [cursor=pointer]:
+          - /url: /tags/postgresql
+        - text: —
+        - generic [ref=e27]: 2 min read
+      - generic [ref=e28]:
+        - heading "Migrating Data from CockroachDB to PostgreSQL" [level=3] [ref=e29]
+        - paragraph [ref=e30]:
+          - text: Had to migrate database recently, we’ll explore how to migrate data from
+          - strong [ref=e31]: CockroachDB
+          - text: to
+          - strong [ref=e32]: PostgreSQL
+          - text: using Prisma and custom scripts.
+        - paragraph [ref=e33]: This is one of different kind of issue that I worked on recently, While I can't share the entire source, I have abstracted pieces and put in here.
+        - 'heading "Step 1: Export Data from CockroachDB" [level=3] [ref=e34]'
+        - paragraph [ref=e35]:
+          - text: The first step is to export data from the existing CockroachDB database. This can be done using a custom shell script (
+          - code [ref=e36]: export-data.sh
+          - text: ) that uses the
+          - code [ref=e37]: \COPY
+          - text: command to extract table data into CSV files.
+        - paragraph [ref=e38]: "Run the script with the appropriate database URL:"
+        - generic [ref=e40]:
+          - text: bash
+          - button "Copy copy code to clipboard" [ref=e41] [cursor=pointer]:
+            - text: Copy
+            - generic [ref=e42]: copy code to clipboard
+          - code [ref=e43]:
+            - generic [ref=e44]:
+              - generic [ref=e45]: "1"
+              - generic [ref=e46]: DB_URL
+              - generic [ref=e47]: =
+              - generic [ref=e48]: "\"postgres://user:<hidden-password>@HOST_COCKROACH/database\""
+              - generic [ref=e49]: ./docker/export-data.sh
+        - paragraph [ref=e50]:
+          - text: I used the following
+          - code [ref=e51]: tables.txt
+          - text: file to list the tables to export, started off initially with putting all tables in the file but the script was getting littered with table names. More over could reused the same file for other scripts.
+        - generic [ref=e53]: tables.txt
+        - generic [ref=e55]:
+          - text: text
+          - 'button "Copy tables.txt: copy code to clipboard" [ref=e56] [cursor=pointer]':
+            - text: Copy
+            - generic [ref=e57]: "tables.txt: copy code to clipboard"
+          - code [ref=e58]:
+            - generic [ref=e59]:
+              - generic [ref=e60]: "1"
+              - generic [ref=e61]: accounts
+            - generic [ref=e62]:
+              - generic [ref=e63]: "2"
+              - generic [ref=e64]: users
+            - generic [ref=e65]:
+              - generic [ref=e66]: "3"
+              - generic [ref=e67]: foo
+            - generic [ref=e68]:
+              - generic [ref=e69]: "4"
+              - generic [ref=e70]: bar
+        - paragraph [ref=e71]:
+          - text: Refer to the following
+          - code [ref=e72]: export-data.sh
+          - text: script for the full implementation. This script exports data for all specified tables into CSV files, ready to be imported into the new database.
+        - generic [ref=e74]: export-data.sh
+        - generic [ref=e76]:
+          - text: bash
+          - 'button "Copy export-data.sh: copy code to clipboard" [ref=e77] [cursor=pointer]':
+            - text: Copy
+            - generic [ref=e78]: "export-data.sh: copy code to clipboard"
+          - code [ref=e79]:
+            - generic [ref=e80]:
+              - generic [ref=e81]: "1"
+              - generic [ref=e82]: "#!/bin/bash"
+            - generic [ref=e84]: "2"
+            - generic [ref=e85]:
+              - generic [ref=e86]: "3"
+              - generic [ref=e87]: "# Ensure DB_URL is set"
+            - generic [ref=e88]:
+              - generic [ref=e89]: "4"
+              - generic [ref=e90]: if
+              - generic [ref=e92]: "["
+              - generic [ref=e93]: "["
+              - generic [ref=e94]: "-z"
+              - generic [ref=e95]: "\""
+              - generic [ref=e96]: $DB_URL
+              - generic [ref=e97]: "\""
+              - generic [ref=e99]: "]"
+              - generic [ref=e100]: "]"
+              - generic [ref=e101]: ;
+              - generic [ref=e103]: then
+            - generic [ref=e104]:
+              - generic [ref=e105]: "5"
+              - generic [ref=e107]: echo
+              - generic [ref=e109]: "\"Error: DB_URL environment variable is not set.\""
+            - generic [ref=e110]:
+              - generic [ref=e111]: "6"
+              - generic [ref=e113]: exit
+              - generic [ref=e115]: "1"
+            - generic [ref=e116]:
+              - generic [ref=e117]: "7"
+              - generic [ref=e118]: fi
+            - generic [ref=e120]: "8"
+            - generic [ref=e121]:
+              - generic [ref=e122]: "9"
+              - generic [ref=e123]: "# Path to the tables list file"
+            - generic [ref=e124]:
+              - generic [ref=e125]: "10"
+              - generic [ref=e126]: TABLES_FILE
+              - generic [ref=e127]: =
+              - generic [ref=e128]: "\"./tables.txt\""
+            - generic [ref=e130]: "11"
+            - generic [ref=e131]:
+              - generic [ref=e132]: "12"
+              - generic [ref=e133]: "# Check if the tables file exists"
+            - generic [ref=e134]:
+              - generic [ref=e135]: "13"
+              - generic [ref=e136]: if
+              - generic [ref=e138]: "["
+              - generic [ref=e139]: "["
+              - generic [ref=e141]: "!"
+              - generic [ref=e142]: "-f"
+              - generic [ref=e143]: "\""
+              - generic [ref=e144]: $TABLES_FILE
+              - generic [ref=e145]: "\""
+              - generic [ref=e147]: "]"
+              - generic [ref=e148]: "]"
+              - generic [ref=e149]: ;
+              - generic [ref=e151]: then
+            - generic [ref=e152]:
+              - generic [ref=e153]: "14"
+              - generic [ref=e155]: echo
+              - generic [ref=e157]: "\"Error: Tables list file ("
+              - generic [ref=e158]: "${TABLES_FILE}"
+              - generic [ref=e159]: ) not found."
+            - generic [ref=e160]:
+              - generic [ref=e161]: "15"
+              - generic [ref=e163]: exit
+              - generic [ref=e165]: "1"
+            - generic [ref=e166]:
+              - generic [ref=e167]: "16"
+              - generic [ref=e168]: fi
+            - generic [ref=e170]: "17"
+            - generic [ref=e171]:
+              - generic [ref=e172]: "18"
+              - generic [ref=e173]: "# Directory to store the CSV files"
+            - generic [ref=e174]:
+              - generic [ref=e175]: "19"
+              - generic [ref=e176]: EXPORT_DIR
+              - generic [ref=e177]: =
+              - generic [ref=e178]: "\"./data/\""
+            - generic [ref=e179]:
+              - generic [ref=e180]: "20"
+              - generic [ref=e181]: mkdir
+              - generic [ref=e182]: "-p"
+              - generic [ref=e183]: "\""
+              - generic [ref=e184]: $EXPORT_DIR
+              - generic [ref=e185]: "\""
+            - generic [ref=e187]: "21"
+            - generic [ref=e188]:
+              - generic [ref=e189]: "22"
+              - generic [ref=e190]: "# Loop through tables and export them"
+            - generic [ref=e191]:
+              - generic [ref=e192]: "23"
+              - generic [ref=e193]: while
+              - generic [ref=e195]: IFS
+              - generic [ref=e196]: =
+              - generic [ref=e198]: read
+              - generic [ref=e199]: "-r table"
+              - generic [ref=e200]: ;
+              - generic [ref=e202]: do
+            - generic [ref=e203]:
+              - generic [ref=e204]: "24"
+              - generic [ref=e206]: CSV_FILE
+              - generic [ref=e207]: =
+              - generic [ref=e208]: "\""
+              - generic [ref=e209]: "${EXPORT_DIR}"
+              - generic [ref=e210]: /
+              - generic [ref=e211]: "${table}"
+              - generic [ref=e212]: .csv"
+            - generic [ref=e214]: "25"
+            - generic [ref=e215]:
+              - generic [ref=e216]: "26"
+              - generic [ref=e218]: echo
+              - generic [ref=e220]: "\"Exporting"
+              - generic [ref=e221]: "${table}"
+              - generic [ref=e222]: to
+              - generic [ref=e223]: "${CSV_FILE}"
+              - generic [ref=e224]: ..."
+            - generic [ref=e225]:
+              - generic [ref=e226]: "27"
+              - generic [ref=e227]: psql
+              - generic [ref=e228]: "\""
+              - generic [ref=e229]: $DB_URL
+              - generic [ref=e230]: "\""
+              - generic [ref=e232]: <<
+              - generic [ref=e233]: EOF
+            - generic [ref=e234]:
+              - generic [ref=e235]: "28"
+              - generic [ref=e236]: \COPY
+              - generic [ref=e237]: "${table}"
+              - generic [ref=e238]: TO '
+              - generic [ref=e239]: "${CSV_FILE}"
+              - generic [ref=e240]: "' WITH CSV HEADER DELIMITER ',';"
+            - generic [ref=e241]:
+              - generic [ref=e242]: "29"
+              - generic [ref=e243]: EOF
+            - generic [ref=e244]:
+              - generic [ref=e245]: "30"
+              - generic [ref=e247]: if
+              - generic [ref=e249]: "["
+              - generic [ref=e250]: "["
+              - generic [ref=e252]: $?
+              - generic [ref=e253]: "-ne"
+              - generic [ref=e254]: "0"
+              - generic [ref=e256]: "]"
+              - generic [ref=e257]: "]"
+              - generic [ref=e258]: ;
+              - generic [ref=e260]: then
+            - generic [ref=e261]:
+              - generic [ref=e262]: "31"
+              - generic [ref=e264]: echo
+              - generic [ref=e266]: "\"Failed to export"
+              - generic [ref=e267]: "${table}"
+              - generic [ref=e268]: . Continuing with next table..."
+            - generic [ref=e269]:
+              - generic [ref=e270]: "32"
+              - generic [ref=e272]: continue
+            - generic [ref=e273]:
+              - generic [ref=e274]: "33"
+              - generic [ref=e276]: fi
+            - generic [ref=e277]:
+              - generic [ref=e278]: "34"
+              - generic [ref=e280]: echo
+              - generic [ref=e282]: "\""
+              - generic [ref=e283]: "${table}"
+              - generic [ref=e284]: exported successfully."
+            - generic [ref=e285]:
+              - generic [ref=e286]: "35"
+              - generic [ref=e287]: done
+              - generic [ref=e289]: <
+              - generic [ref=e291]: "\""
+              - generic [ref=e292]: $TABLES_FILE
+              - generic [ref=e293]: "\""
+            - generic [ref=e295]: "36"
+            - generic [ref=e296]:
+              - generic [ref=e297]: "37"
+              - generic [ref=e298]: echo
+              - generic [ref=e300]: "\"All tables exported.\""
+        - separator [ref=e301]
+        - 'heading "Step 2: Set Up Tables in PostgreSQL" [level=3] [ref=e302]'
+        - paragraph [ref=e303]: "To prepare the new database, follow these steps:"
+        - heading "2.1 Pull Existing Schema" [level=4] [ref=e304]:
+          - strong [ref=e305]: 2.1 Pull Existing Schema
+        - paragraph [ref=e306]:
+          - text: Use Prisma's
+          - code [ref=e307]: prisma db pull
+          - text: command to introspect the current database schema. Ensure the
+          - code [ref=e308]: schema.prisma
+          - text: file is set to the appropriate provider (e.g.,
+          - code [ref=e309]: postgresql
+          - text: or
+          - code [ref=e310]: cockroachdb
+          - text: "):"
+        - generic [ref=e312]:
+          - text: bash
+          - button "Copy copy code to clipboard" [ref=e313] [cursor=pointer]:
+            - text: Copy
+            - generic [ref=e314]: copy code to clipboard
+          - code [ref=e315]:
+            - generic [ref=e316]:
+              - generic [ref=e317]: "1"
+              - generic [ref=e318]: npx prisma db pull
+        - heading "2.2 Apply Schema to the New Database" [level=4] [ref=e319]:
+          - strong [ref=e320]: 2.2 Apply Schema to the New Database
+        - paragraph [ref=e321]: "If you're migrating to a clean database, use Prisma’s migration tools to set up the schema. You might need to recreate migration files to reflect the updated schema:"
+        - generic [ref=e323]:
+          - text: bash
+          - button "Copy copy code to clipboard" [ref=e324] [cursor=pointer]:
+            - text: Copy
+            - generic [ref=e325]: copy code to clipboard
+          - code [ref=e326]:
+            - generic [ref=e327]:
+              - generic [ref=e328]: "1"
+              - generic [ref=e329]: npx prisma migrate dev
+        - paragraph [ref=e330]: This command generates migration files and applies them to the target PostgreSQL database.
+        - separator [ref=e331]
+        - 'heading "Step 3: Import Data into PostgreSQL" [level=3] [ref=e332]'
+        - paragraph [ref=e333]:
+          - text: Once the schema is ready, you can import the exported data into PostgreSQL using the
+          - code [ref=e334]: import-data.sh
+          - text: script. This script reads the CSV files and uses the
+          - code [ref=e335]: \COPY
+          - text: "command to import the data:"
+        - generic [ref=e337]:
+          - text: bash
+          - button "Copy copy code to clipboard" [ref=e338] [cursor=pointer]:
+            - text: Copy
+            - generic [ref=e339]: copy code to clipboard
+          - code [ref=e340]:
+            - generic [ref=e341]:
+              - generic [ref=e342]: "1"
+              - generic [ref=e343]: DB_URL
+              - generic [ref=e344]: =
+              - generic [ref=e345]: "\"postgres://user:<hidden-password>@localhost/dev\""
+              - generic [ref=e346]: ./docker/import-data.sh
+        - paragraph [ref=e347]: The script maps the data in the CSV files to their corresponding tables in the PostgreSQL database.
+        - generic [ref=e349]: import-data.sh
+        - generic [ref=e351]:
+          - text: bash
+          - 'button "Copy import-data.sh: copy code to clipboard" [ref=e352] [cursor=pointer]':
+            - text: Copy
+            - generic [ref=e353]: "import-data.sh: copy code to clipboard"
+          - code [ref=e354]:
+            - generic [ref=e355]:
+              - generic [ref=e356]: "1"
+              - generic [ref=e357]: "# Ensure DB_URL is set"
+            - generic [ref=e358]:
+              - generic [ref=e359]: "2"
+              - generic [ref=e360]: if
+              - generic [ref=e362]: "["
+              - generic [ref=e363]: "["
+              - generic [ref=e364]: "-z"
+              - generic [ref=e365]: "\""
+              - generic [ref=e366]: $DB_URL
+              - generic [ref=e367]: "\""
+              - generic [ref=e369]: "]"
+              - generic [ref=e370]: "]"
+              - generic [ref=e371]: ;
+              - generic [ref=e373]: then
+            - generic [ref=e374]:
+              - generic [ref=e375]: "3"
+              - generic [ref=e377]: echo
+              - generic [ref=e379]: "\"Error: DB_URL environment variable is not set.\""
+            - generic [ref=e380]:
+              - generic [ref=e381]: "4"
+              - generic [ref=e383]: exit
+              - generic [ref=e385]: "1"
+            - generic [ref=e386]:
+              - generic [ref=e387]: "5"
+              - generic [ref=e388]: fi
+            - generic [ref=e390]: "6"
+            - generic [ref=e391]:
+              - generic [ref=e392]: "7"
+              - generic [ref=e393]: "# Path to the tables list file"
+            - generic [ref=e394]:
+              - generic [ref=e395]: "8"
+              - generic [ref=e396]: TABLES_FILE
+              - generic [ref=e397]: =
+              - generic [ref=e398]: "\"./tables.txt\""
+            - generic [ref=e400]: "9"
+            - generic [ref=e401]:
+              - generic [ref=e402]: "10"
+              - generic [ref=e403]: "# Check if the tables file exists"
+            - generic [ref=e404]:
+              - generic [ref=e405]: "11"
+              - generic [ref=e406]: if
+              - generic [ref=e408]: "["
+              - generic [ref=e409]: "["
+              - generic [ref=e411]: "!"
+              - generic [ref=e412]: "-f"
+              - generic [ref=e413]: "\""
+              - generic [ref=e414]: $TABLES_FILE
+              - generic [ref=e415]: "\""
+              - generic [ref=e417]: "]"
+              - generic [ref=e418]: "]"
+              - generic [ref=e419]: ;
+              - generic [ref=e421]: then
+            - generic [ref=e422]:
+              - generic [ref=e423]: "12"
+              - generic [ref=e425]: echo
+              - generic [ref=e427]: "\"Error: Tables list file ("
+              - generic [ref=e428]: "${TABLES_FILE}"
+              - generic [ref=e429]: ) not found."
+            - generic [ref=e430]:
+              - generic [ref=e431]: "13"
+              - generic [ref=e433]: exit
+              - generic [ref=e435]: "1"
+            - generic [ref=e436]:
+              - generic [ref=e437]: "14"
+              - generic [ref=e438]: fi
+            - generic [ref=e440]: "15"
+            - generic [ref=e441]:
+              - generic [ref=e442]: "16"
+              - generic [ref=e443]: "# Directory containing the CSV files"
+            - generic [ref=e444]:
+              - generic [ref=e445]: "17"
+              - generic [ref=e446]: CSV_DIR
+              - generic [ref=e447]: =
+              - generic [ref=e448]: "\"./data\""
+            - generic [ref=e450]: "18"
+            - generic [ref=e451]:
+              - generic [ref=e452]: "19"
+              - generic [ref=e453]: "# Read tables from the file and import them"
+            - generic [ref=e454]:
+              - generic [ref=e455]: "20"
+              - generic [ref=e456]: while
+              - generic [ref=e458]: IFS
+              - generic [ref=e459]: =
+              - generic [ref=e461]: read
+              - generic [ref=e462]: "-r table"
+              - generic [ref=e463]: ;
+              - generic [ref=e465]: do
+            - generic [ref=e466]:
+              - generic [ref=e467]: "21"
+              - generic [ref=e469]: CSV_FILE
+              - generic [ref=e470]: =
+              - generic [ref=e471]: "\""
+              - generic [ref=e472]: "${CSV_DIR}"
+              - generic [ref=e473]: /
+              - generic [ref=e474]: "${table}"
+              - generic [ref=e475]: .csv"
+            - generic [ref=e476]:
+              - generic [ref=e477]: "22"
+              - generic [ref=e479]: echo
+              - generic [ref=e481]: "\"Importing"
+              - generic [ref=e482]: "${table}"
+              - generic [ref=e483]: from
+              - generic [ref=e484]: "${CSV_FILE}"
+              - generic [ref=e485]: ..."
+            - generic [ref=e486]:
+              - generic [ref=e487]: "23"
+              - generic [ref=e488]: psql
+              - generic [ref=e489]: "\""
+              - generic [ref=e490]: $DB_URL
+              - generic [ref=e491]: "\""
+              - generic [ref=e493]: <<
+              - generic [ref=e494]: EOF
+            - generic [ref=e495]:
+              - generic [ref=e496]: "24"
+              - generic [ref=e497]: \COPY
+              - generic [ref=e498]: "${table}"
+              - generic [ref=e499]: FROM '
+              - generic [ref=e500]: "${CSV_FILE}"
+              - generic [ref=e501]: "' WITH CSV HEADER DELIMITER ',';"
+            - generic [ref=e502]:
+              - generic [ref=e503]: "25"
+              - generic [ref=e504]: EOF
+            - generic [ref=e506]: "26"
+            - generic [ref=e507]:
+              - generic [ref=e508]: "27"
+              - generic [ref=e510]: if
+              - generic [ref=e512]: "["
+              - generic [ref=e513]: "["
+              - generic [ref=e515]: $?
+              - generic [ref=e516]: "-ne"
+              - generic [ref=e517]: "0"
+              - generic [ref=e519]: "]"
+              - generic [ref=e520]: "]"
+              - generic [ref=e521]: ;
+              - generic [ref=e523]: then
+            - generic [ref=e524]:
+              - generic [ref=e525]: "28"
+              - generic [ref=e527]: echo
+              - generic [ref=e529]: "\"Failed to import"
+              - generic [ref=e530]: "${table}"
+              - generic [ref=e531]: ."
+            - generic [ref=e532]:
+              - generic [ref=e533]: "29"
+              - generic [ref=e535]: else
+            - generic [ref=e536]:
+              - generic [ref=e537]: "30"
+              - generic [ref=e539]: echo
+              - generic [ref=e541]: "\""
+              - generic [ref=e542]: "${table}"
+              - generic [ref=e543]: imported successfully."
+            - generic [ref=e544]:
+              - generic [ref=e545]: "31"
+              - generic [ref=e547]: fi
+            - generic [ref=e548]:
+              - generic [ref=e549]: "32"
+              - generic [ref=e550]: done
+              - generic [ref=e552]: <
+              - generic [ref=e554]: "\""
+              - generic [ref=e555]: $TABLES_FILE
+              - generic [ref=e556]: "\""
+            - generic [ref=e558]: "33"
+            - generic [ref=e559]:
+              - generic [ref=e560]: "34"
+              - generic [ref=e561]: echo
+              - generic [ref=e563]: "\"All tables imported.\""
+        - separator [ref=e564]
+        - heading "Running PostgreSQL Locally with Docker Compose" [level=3] [ref=e565]
+        - paragraph [ref=e566]:
+          - text: If you need to set up a PostgreSQL instance locally for testing or development, you can use Docker Compose. Here’s an example
+          - code [ref=e567]: docker-compose.yml
+          - text: "file:"
+        - generic [ref=e569]:
+          - text: yaml
+          - button "Copy copy code to clipboard" [ref=e570] [cursor=pointer]:
+            - text: Copy
+            - generic [ref=e571]: copy code to clipboard
+          - code [ref=e572]:
+            - generic [ref=e573]:
+              - generic [ref=e574]: "1"
+              - generic [ref=e575]: version
+              - generic [ref=e576]: ":"
+              - generic [ref=e578]: "\"3.9\""
+            - generic [ref=e579]:
+              - generic [ref=e580]: "2"
+              - generic [ref=e581]: services
+              - generic [ref=e582]: ":"
+            - generic [ref=e583]:
+              - generic [ref=e584]: "3"
+              - generic [ref=e586]: postgres
+              - generic [ref=e587]: ":"
+            - generic [ref=e588]:
+              - generic [ref=e589]: "4"
+              - generic [ref=e591]: image
+              - generic [ref=e592]: ":"
+              - generic [ref=e593]: postgres
+              - generic [ref=e594]: ":"
+              - generic [ref=e595]: "15"
+            - generic [ref=e596]:
+              - generic [ref=e597]: "5"
+              - generic [ref=e599]: container_name
+              - generic [ref=e600]: ":"
+              - generic [ref=e601]: local
+              - generic [ref=e602]: "-"
+              - generic [ref=e603]: postgres
+            - generic [ref=e604]:
+              - generic [ref=e605]: "6"
+              - generic [ref=e607]: environment
+              - generic [ref=e608]: ":"
+            - generic [ref=e609]:
+              - generic [ref=e610]: "7"
+              - generic [ref=e612]: POSTGRES_USER
+              - generic [ref=e613]: ":"
+              - generic [ref=e614]: user
+            - generic [ref=e615]:
+              - generic [ref=e616]: "8"
+              - generic [ref=e618]: POSTGRES_PASSWORD
+              - generic [ref=e619]: ":"
+              - generic [ref=e620]: password
+            - generic [ref=e621]:
+              - generic [ref=e622]: "9"
+              - generic [ref=e624]: POSTGRES_DB
+              - generic [ref=e625]: ":"
+              - generic [ref=e626]: dev
+            - generic [ref=e627]:
+              - generic [ref=e628]: "10"
+              - generic [ref=e630]: ports
+              - generic [ref=e631]: ":"
+            - generic [ref=e632]:
+              - generic [ref=e633]: "11"
+              - generic [ref=e635]: "-"
+              - generic [ref=e637]: "\"5432:5432\""
+            - generic [ref=e638]:
+              - generic [ref=e639]: "12"
+              - generic [ref=e641]: volumes
+              - generic [ref=e642]: ":"
+            - generic [ref=e643]:
+              - generic [ref=e644]: "13"
+              - generic [ref=e646]: "-"
+              - generic [ref=e647]: ./postgres
+              - generic [ref=e648]: "-"
+              - generic [ref=e649]: data
+              - generic [ref=e650]: ":"
+              - generic [ref=e651]: /var/lib/postgresql/data
+            - generic [ref=e652]:
+              - generic [ref=e653]: "14"
+              - generic [ref=e655]: restart
+              - generic [ref=e656]: ":"
+              - generic [ref=e657]: always
+        - paragraph [ref=e658]: "Run the following command to start PostgreSQL locally:"
+        - generic [ref=e660]:
+          - text: bash
+          - button "Copy copy code to clipboard" [ref=e661] [cursor=pointer]:
+            - text: Copy
+            - generic [ref=e662]: copy code to clipboard
+          - code [ref=e663]:
+            - generic [ref=e664]:
+              - generic [ref=e665]: "1"
+              - generic [ref=e666]: docker-compose up -d
+        - paragraph [ref=e667]:
+          - text: This configuration mounts the database files to a directory on your host machine (
+          - code [ref=e668]: ./postgres-data
+          - text: ) and exposes the service on port 5432.
+        - separator [ref=e669]
+        - heading "Prisma’s Role in Simplifying the Process" [level=3] [ref=e670]
+        - paragraph [ref=e671]: "Prisma simplifies database migrations in several ways:"
+        - list [ref=e672]:
+          - listitem [ref=e673]:
+            - strong [ref=e674]: "Schema Management:"
+            - text: Prisma’s schema file ensures consistency across different databases.
+          - listitem [ref=e675]:
+            - strong [ref=e676]: "Easy Setup:"
+            - text: Commands like
+            - code [ref=e677]: prisma db pull
+            - text: and
+            - code [ref=e678]: prisma migrate dev
+            - text: eliminate the need for manual adjustments.
+          - listitem [ref=e679]:
+            - strong [ref=e680]: "Provider Flexibility:"
+            - text: Switching between CockroachDB and PostgreSQL is as simple as updating the
+            - code [ref=e681]: provider
+            - text: in the
+            - code [ref=e682]: schema.prisma
+            - text: file.
+        - separator [ref=e683]
+        - paragraph [ref=e684]: If you have to just migrate data from one database to another, dumping and importing data using CSV files is a straightforward approach. However, if you need to migrate more complex data structures or handle more complex relationships, Prisma can help simplify the process.
+        - blockquote [ref=e685]:
+          - paragraph [ref=e686]: "Note: Parts of this note is Generated using LLMs, so it might not be 100% accurate."
+        - generic [ref=e687]:
+          - heading "Comments" [level=3] [ref=e689]
+          - button "Leave a comment" [ref=e690]
+    - contentinfo [ref=e691]:
+      - generic [ref=e692]:
+        - img [ref=e694]
+        - text: Copyleft. WTH
+      - generic [ref=e697]: Theme by LekoArts
+```

@@ -1,0 +1,15 @@
+[project]
+name = "ex-voice-kokoro"
+version = "0.1.0"
+description = "Voice synthesis examples with lightweight TTS models"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "torchaudio",
+    "soundfile",
+    "kokoro",
+]
+
+[project.optional-dependencies]
+qwen = ["qwen-tts"]
+

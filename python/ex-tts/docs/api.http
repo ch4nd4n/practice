@@ -1,0 +1,9 @@
+# @name talk
+POST http://localhost:8880/v1/audio/speech
+Content-Type: application/json
+
+{
+    "model": "kokoro",
+    "input": "Testing the local API.",
+    "voice": "af_sky"
+}
