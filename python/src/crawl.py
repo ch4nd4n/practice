@@ -13,7 +13,7 @@ async def fetch_markdown(url):
         str: The Markdown content of the page, or None if an error occurs.
     """
     try:
-        async with AsyncWebCrawler(verbose=False) as crawler:
+        async with AsyncWebCrawler(verbose=True) as crawler:
             result = await crawler.arun(url=url)
             return result.markdown
     except Exception as e:

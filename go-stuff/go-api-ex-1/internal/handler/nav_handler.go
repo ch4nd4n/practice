@@ -67,13 +67,23 @@ func (h *NAVHandler) GetLatestNAV(c *gin.Context) {
 	c.JSON(http.StatusOK, nav)
 }
 
-// GetNAVHistory handles GET /api/v1/nav/:isin/history?from=YYYY-MM-DD&to=YYYY-MM-DD
+// GetNAVHistory handles GET /api/v1/nav/:isin/history
+// Query params:
+//   - from: Start date (YYYY-MM-DD)
+//   - to: End date (YYYY-MM-DD)
+//   - period: Shortcut (1Y, 6M, 3M, 1M, YTD, 1W)
+//   - interval: Aggregation (daily, weekly, monthly)
 func (h *NAVHandler) GetNAVHistory(c *gin.Context) {
 	isin := c.Param("isin")
 	from := c.Query("from")
 	to := c.Query("to")
+	period := c.Query("period")
+	interval := c.Query("interval")
 
-	history, err := h.service.GetNAVHistory(c.Request.Context(), isin, from, to)
+	// Validate: either period or from must be provided (or use defaults)
+	// period takes precedence over from/to
+
+	history, err := h.service.GetNAVHistory(c.Request.Context(), isin, from, to, period, interval)
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return

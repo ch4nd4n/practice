@@ -11,11 +11,22 @@ import (
 
 // NAVRecord represents a single NAV data entry
 type NAVRecord struct {
-	ISIN string    `json:"isin"`
-	Date time.Time `json:"date"`
-	NAV  float64   `json:"nav"`
-	Code string    `json:"code,omitempty"`
+	ISIN     string    `json:"isin"`
+	Date     time.Time `json:"date"`
+	NAV      float64   `json:"nav"`
+	PrevNAV  *float64  `json:"prev_nav,omitempty"`
+	Code     string    `json:"code,omitempty"`
 }
+
+// Interval type for aggregation
+type Interval string
+
+const (
+	IntervalDaily   Interval = "1d"
+	IntervalWeekly  Interval = "1w"
+	IntervalMonthly Interval = "1m"
+	IntervalYearly  Interval = "1y"
+)
 
 // NAVRepository handles database operations for NAV data
 type NAVRepository struct {
@@ -95,18 +106,74 @@ func (r *NAVRepository) GetByISIN(ctx context.Context, isin string, limit int) (
 	return records, rows.Err()
 }
 
-// GetByDateRange retrieves NAV records for an ISIN within a date range
-func (r *NAVRepository) GetByDateRange(ctx context.Context, isin string, from, to time.Time) ([]NAVRecord, error) {
-	query := `
-		SELECT isin, date, nav, code 
-		FROM nav_data 
-		WHERE isin = ? AND date BETWEEN ? AND ?
-		ORDER BY date DESC
-	`
+// GetByDateRangeWithInterval retrieves NAV records aggregated by interval
+func (r *NAVRepository) GetByDateRangeWithInterval(ctx context.Context, isin string, from, to time.Time, interval Interval) ([]NAVRecord, error) {
+	var query string
 
+	switch interval {
+	case IntervalWeekly:
+		query = `
+			SELECT isin, date_trunc('week', date) as period_date, 
+				   first(nav ORDER BY date DESC) as nav,
+				   first(code ORDER BY date DESC) as code
+			FROM nav_data 
+			WHERE isin = ? AND date BETWEEN ? AND ?
+			GROUP BY isin, period_date
+			ORDER BY period_date DESC
+		`
+	case IntervalMonthly:
+		query = `
+			SELECT isin, date_trunc('month', date) as period_date, 
+				   first(nav ORDER BY date DESC) as nav,
+				   first(code ORDER BY date DESC) as code
+			FROM nav_data 
+			WHERE isin = ? AND date BETWEEN ? AND ?
+			GROUP BY isin, period_date
+			ORDER BY period_date DESC
+		`
+	case IntervalYearly:
+		query = `
+			SELECT isin, date_trunc('year', date) as period_date, 
+				   first(nav ORDER BY date DESC) as nav,
+				   first(code ORDER BY date DESC) as code
+			FROM nav_data 
+			WHERE isin = ? AND date BETWEEN ? AND ?
+			GROUP BY isin, period_date
+			ORDER BY period_date DESC
+		`
+	default: // IntervalDaily or any other
+		query = `
+			SELECT isin, date, nav, code, 
+				   lag(nav) OVER (ORDER BY date) as prev_nav
+			FROM nav_data 
+			WHERE isin = ? AND date BETWEEN ? AND ?
+			ORDER BY date DESC
+		`
+		rows, err := r.db.QueryContext(ctx, query, isin, from, to)
+		if err != nil {
+			return nil, fmt.Errorf("query nav by date range with prev_nav: %w", err)
+		}
+		defer rows.Close()
+
+		var records []NAVRecord
+		for rows.Next() {
+			var rec NAVRecord
+			var prevNav sql.NullFloat64
+			if err := rows.Scan(&rec.ISIN, &rec.Date, &rec.NAV, &rec.Code, &prevNav); err != nil {
+				return nil, fmt.Errorf("scan nav row: %w", err)
+			}
+			if prevNav.Valid {
+				rec.PrevNAV = &prevNav.Float64
+			}
+			records = append(records, rec)
+		}
+		return records, rows.Err()
+	}
+
+	// For aggregated intervals
 	rows, err := r.db.QueryContext(ctx, query, isin, from, to)
 	if err != nil {
-		return nil, fmt.Errorf("query nav by date range: %w", err)
+		return nil, fmt.Errorf("query nav by interval: %w", err)
 	}
 	defer rows.Close()
 
@@ -120,6 +187,31 @@ func (r *NAVRepository) GetByDateRange(ctx context.Context, isin string, from, t
 	}
 
 	return records, rows.Err()
+}
+
+// GetDateRange returns the min and max dates available for an ISIN
+func (r *NAVRepository) GetDateRange(ctx context.Context, isin string) (minDate, maxDate time.Time, err error) {
+	query := `
+		SELECT MIN(date), MAX(date) 
+		FROM nav_data 
+		WHERE isin = ?
+	`
+	row := r.db.QueryRowContext(ctx, query, isin)
+	
+	var minDatePtr, maxDatePtr sql.NullTime
+	err = row.Scan(&minDatePtr, &maxDatePtr)
+	if err != nil {
+		return time.Time{}, time.Time{}, fmt.Errorf("scan date range: %w", err)
+	}
+	
+	if minDatePtr.Valid {
+		minDate = minDatePtr.Time
+	}
+	if maxDatePtr.Valid {
+		maxDate = maxDatePtr.Time
+	}
+	
+	return minDate, maxDate, nil
 }
 
 // GetLatestNAV retrieves the most recent NAV for an ISIN

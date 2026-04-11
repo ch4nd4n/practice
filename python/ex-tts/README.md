@@ -45,6 +45,32 @@ Generates `0.wav` with synthesized speech (voice cloning demo).
 - Reference audio-based synthesis
 - Outputs multi-speaker capabilities
 
+### Kokoro TTS - CLI Generator (Recommended for custom text)
+
+```sh
+uv run python tts_generator.py "Your text here"
+```
+
+Generates speech from custom text with optional output directory.
+
+**Usage:**
+```sh
+# Basic: saves to current directory
+uv run python tts_generator.py "What goes up must come down"
+
+# Custom output directory
+uv run python tts_generator.py "Your text here" -o ./my_audio
+
+# Multi-line text (quoted)
+uv run python tts_generator.py "First sentence. Second sentence."
+```
+
+**Features:**
+- Accept text from command line
+- Optional output directory (`-o` or `--output`)
+- Structured logging for progress tracking
+- Auto-creates output directory if needed
+
 ### Kokoro TTS - Apple Silicon Optimized
 
 ```sh
