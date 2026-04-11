@@ -48,3 +48,29 @@ make lint
 
 ### Phase 3 — API migration
 - Implement real API logic, migrate SQLite table to DuckDB for NAV data
+
+SQLite DB: ~/code/github/apps/packages/data-drizzle/test.db
+
+---
+
+## Legacy Node.js API Reference
+
+The existing Node.js API defines the `nav_data` schema as follows:
+
+```typescript
+export const navData = sqliteTable(
+  'nav_data',
+  {
+    isin: text('isin'),
+    date: text('date'),
+    nav: real('nav'),
+    code: text('code'),
+  },
+  (table) => {
+    return {
+      isinDateIdx: unique().on(table.isin, table.date),
+    };
+  }
+);
+```
+
