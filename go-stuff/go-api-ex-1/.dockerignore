@@ -1,0 +1,55 @@
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# Build artifacts
+server
+dist/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test files
+*_test.go
+*.test
+
+# Coverage
+coverage.out
+*.cov
+
+# Data files (mount at runtime)
+data/
+*.db
+*.duckdb
+*.wal
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose*.yml
+Dockerfile*
+.dockerignore
+
+# Loki/Grafana
+loki-config.yml
+promtail-config.yml
+grafana-datasource.yml
+
+# Temp
+tmp/
+temp/
+*.tmp
