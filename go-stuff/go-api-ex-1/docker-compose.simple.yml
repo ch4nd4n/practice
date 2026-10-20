@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    image: go-api-ex-1:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - DUCKDB_PATH=/app/data/nav.duckdb
+    volumes:
+      - ./data:/app/data:ro

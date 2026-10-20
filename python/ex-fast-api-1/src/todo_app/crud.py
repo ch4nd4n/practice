@@ -13,7 +13,6 @@ def get_todo(db: Session, todo_id: int) -> Optional[models.Todo]:
 	return db.query(models.Todo).filter(models.Todo.id == todo_id).first()
 
 def get_todos(db: Session, skip: int = 0, limit: int = 100) -> List[models.Todo]:
-	print('I am here')
 	data = db.query(models.Todo).offset(skip).limit(limit).all()
 	print(data)
 	return data

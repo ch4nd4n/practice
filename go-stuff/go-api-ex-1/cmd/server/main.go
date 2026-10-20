@@ -1,16 +1,19 @@
 package main
 
 import (
-	"log"
+	"log/slog"
 	"os"
 
 	"github.com/chandan/go-api-ex-1/internal/handler"
+	"github.com/chandan/go-api-ex-1/internal/middleware"
 	"github.com/chandan/go-api-ex-1/internal/repository"
 	"github.com/chandan/go-api-ex-1/internal/service"
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
+	slog.SetDefault(slog.New(slog.NewJSONHandler(os.Stdout, nil)))
+
 	// Get DuckDB path from env or use default
 	dbPath := os.Getenv("DUCKDB_PATH")
 	if dbPath == "" {
@@ -21,20 +24,23 @@ func main() {
 	dbPath = dbPath + "?access_mode=read_only"
 
 	// Initialize DuckDB repository
-	log.Printf("Connecting to DuckDB at %s...", dbPath)
+	slog.Info("connecting to DuckDB", "path", dbPath)
 	navRepo, err := repository.NewNAVRepository(dbPath)
 	if err != nil {
-		log.Fatalf("Failed to connect to DuckDB: %v", err)
+		slog.Error("failed to connect to DuckDB", "error", err)
+		os.Exit(1)
 	}
 	defer navRepo.Close()
-	log.Println("Connected to DuckDB successfully")
+	slog.Info("connected to DuckDB successfully")
 
 	// Initialize service and handler
 	navService := service.NewNAVService(navRepo)
 	navHandler := handler.NewNAVHandler(navService)
 
 	// Setup Gin router
-	r := gin.Default()
+	gin.SetMode(gin.ReleaseMode)
+	r := gin.New()
+	r.Use(gin.Recovery(), middleware.StructuredLogger())
 
 	v1 := r.Group("/api/v1")
 	handler.RegisterHealthRoutes(v1)
@@ -45,8 +51,9 @@ func main() {
 		port = "8080"
 	}
 
-	log.Printf("Starting server on :%s", port)
+	slog.Info("starting server", "port", port)
 	if err := r.Run(":" + port); err != nil {
-		log.Fatal(err)
+		slog.Error("server failed", "error", err)
+		os.Exit(1)
 	}
 }

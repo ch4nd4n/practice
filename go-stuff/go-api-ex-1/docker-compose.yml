@@ -11,14 +11,8 @@ services:
       - DUCKDB_PATH=/app/data/nav.duckdb
     volumes:
       - ./data:/app/data
-    logging:
-      driver: loki:latest
-      options:
-        loki-url: "http://localhost:3100/loki/api/v1/push"
-        loki-retries: "5"
-        loki-batch-size: "400"
-        labels: "service"
-        "loki-external-labels": "job=go-api,service=server"
+    labels:
+      logging: "yes"
     restart: unless-stopped
     networks:
       - monitoring

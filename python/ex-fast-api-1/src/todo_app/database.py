@@ -1,18 +1,14 @@
+import os
+from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-# Define the database URL. 
-# For local development, using SQLite is common. 
-# For production, you'd use a more robust database like PostgreSQL.
-SQLALCHEMY_DATABASE_URL = "sqlite:///./todo_app.db"
+load_dotenv()
 
-# Create a SQLAlchemy engine.
-# connect_args are specific to SQLite and are needed for SQLite to work with
-# concurrent requests.
-engine = create_engine(
-    SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
-)
+SQLALCHEMY_DATABASE_URL = os.getenv("DATABASE_URL")
+
+engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
 # Create a SessionLocal class. This is a factory for creating Session objects.
 # Each Session object is a database session.

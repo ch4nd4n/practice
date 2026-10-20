@@ -1,41 +1,34 @@
-# Build stage
-FROM golang:1.23 AS builder
+# Multi-stage build: compile inside container (no cross-compile needed)
+FROM golang:1.24-bookworm AS builder
 
 WORKDIR /app
 
-# Copy go mod files first for better cache
+# Cache dependencies
 COPY go.mod go.sum ./
 RUN go mod download
 
-# Copy source code
+# Build with CGO enabled (required by go-duckdb)
 COPY . .
-
-# Build the binary
-RUN CGO_ENABLED=1 go build -o server ./cmd/server/main.go
+RUN CGO_ENABLED=1 GOOS=linux go build -o server ./cmd/server/main.go
 
 # Runtime stage
 FROM debian:bookworm-slim
 
-# Install required libraries for DuckDB
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-# Copy binary from builder
-COPY --from=builder /app/server .
+COPY --from=builder /app/server ./server
 
-# Create data directory
 RUN mkdir -p /app/data
 
-# Environment variables
 ENV PORT=8080
 ENV DUCKDB_PATH=/app/data/nav.duckdb
 
 EXPOSE 8080
 
-# Run as non-root user for security
 RUN useradd -m -u 1001 appuser && chown -R appuser:appuser /app
 USER appuser
 

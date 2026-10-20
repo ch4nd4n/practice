@@ -14,9 +14,3 @@ datasources:
         httpHeaderValue1: 'tenant1'
     httpMethod: POST
     
-  - name: Prometheus
-    type: prometheus
-    access: proxy
-    url: http://prometheus:9090
-    editable: false
-    isDefault: false

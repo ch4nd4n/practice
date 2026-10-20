@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  # Go App using pre-built local image
+  app:
+    image: go-api-ex-1:local
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - DUCKDB_PATH=/app/data/nav.duckdb
+    volumes:
+      - ./data:/app/data
+    logging:
+      driver: loki:latest
+      options:
+        loki-url: "http://localhost:3100/loki/api/v1/push"
+        loki-retries: "5"
+        loki-batch-size: "400"
+        labels: "service"
+        "loki-external-labels": "job=go-api,service=server"
+    restart: unless-stopped
+    networks:
+      - monitoring
+
+  # Loki - Log aggregation
+  loki:
+    image: grafana/loki:3.0.0
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki-config.yml:/etc/loki/local-config.yaml
+      - loki-data:/loki
+    command: -config.file=/etc/loki/local-config.yaml
+    networks:
+      - monitoring
+
+  # Grafana - Visualization
+  grafana:
+    image: grafana/grafana:10.4.1
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_INSTALL_PLUGINS=grafana-lokiexplore-app
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana-datasource.yml:/etc/grafana/provisioning/datasources/datasource.yml
+    depends_on:
+      - loki
+    networks:
+      - monitoring
+
+  # Promtail - Log shipper
+  promtail:
+    image: grafana/promtail:3.0.0
+    volumes:
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./promtail-config.yml:/etc/promtail/config.yml
+    command: -config.file=/etc/promtail/config.yml
+    depends_on:
+      - loki
+    networks:
+      - monitoring
+
+networks:
+  monitoring:
+    driver: bridge
+
+volumes:
+  loki-data:
+  grafana-data:

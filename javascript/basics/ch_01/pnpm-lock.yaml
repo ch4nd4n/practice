@@ -1,14 +1,23 @@
-lockfileVersion: 5.4
+lockfileVersion: '9.0'
 
-specifiers:
-  ulid: ^2.3.0
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
-dependencies:
-  ulid: 2.3.0
+importers:
+
+  .:
+    dependencies:
+      ulid:
+        specifier: ^2.3.0
+        version: 2.4.0
 
 packages:
 
-  /ulid/2.3.0:
-    resolution: {integrity: sha512-keqHubrlpvT6G2wH0OEfSW4mquYRcbe/J8NMmveoQOjUqmo+hXtO+ORCpWhdbZ7k72UtY61BL7haGxW6enBnjw==}
+  ulid@2.4.0:
+    resolution: {integrity: sha512-fIRiVTJNcSRmXKPZtGzFQv9WRrZ3M9eoptl/teFJvjOzmpU+/K/JH6HZ8deBfb5vMEpicJcLn7JmvdknlMq7Zg==}
     hasBin: true
-    dev: false
+
+snapshots:
+
+  ulid@2.4.0: {}
