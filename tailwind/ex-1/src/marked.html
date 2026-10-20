@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script type="module">
+      import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+      const textarea = document.getElementById("markdown-input");
+      const content = document.getElementById("content");
+      function renderMarkdown() {
+        content.innerHTML = marked.parse(textarea.value);
+      }
+      textarea.addEventListener("input", renderMarkdown);
+      // Set initial content
+      textarea.value = "# Marked in the browser\n\nRendered by **marked**.";
+      renderMarkdown();
+    </script>
+
+    <style>
+    </style>
+  </head>
+  <body>
+    <textarea id="markdown-input" style="width: 100%; height: 120px;"></textarea>
+    <div id="content" style="margin-top: 1em;"></div>
+  </body>
+</html>
